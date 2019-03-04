@@ -1,0 +1,132 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/25/2019 1:27:32 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="INF-DR"
+  DTS:CreatorName="FFP\danielruiz"
+  DTS:DTSID="{94998294-8330-4A7F-8168-E87A88F5E58B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1100.123"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="DRSDownload"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{4250B269-11AC-4E4A-8E82-CDC7F9D03D49}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Comments_LocFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B9BD4105-B063-47FB-82AB-7B5929E30E8F}"
+      DTS:ObjectName="Comments_LocFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\ntfs\IS\DonorDirect\DRS Upload Download\Import Data\DRS_Portfolio_Comments.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CDONOR"
+              DTS:DTSID="{1D1ACF03-98C2-4F47-AF52-B0A9882DFC3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCOMDT"
+              DTS:DTSID="{092CF80C-9D92-4BA6-8915-F076C5D2CA83}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCOMNT"
+              DTS:DTSID="{B6F03329-23F6-4817-8309-2A3C83E92F2E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCNTYP"
+              DTS:DTSID="{09724CB6-DB07-4C12-800A-827582BB8C95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCTYPE"
+              DTS:DTSID="{4245211D-E32F-4000-B1B0-197BA8DEE316}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CTDESC"
+              DTS:DTSID="{3EC601DC-8A79-4713-8DED-E9C98DC579C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CGFAMT"
+              DTS:DTSID="{37C097FB-7AB3-4947-9D79-F4DED5F935CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CUSER"
+              DTS:DTSID="{B309112A-63DF-4D59-9B42-75E5B9C30B9E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AssignedToAccessorId"
+              DTS:DTSID="{B31B0209-0D91-44AF-A496-AC0BEBD509DD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TestServer]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{101B1CDA-8B2C-43E9-B92C-E1E8E0C54841}"
+      DTS:ObjectName="TestServer">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=172.16.50.39;Initial Catalog=SE_PROTO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables />
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

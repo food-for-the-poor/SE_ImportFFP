@@ -1,0 +1,718 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/13/2019 4:01:26 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="INF-DR"
+  DTS:CreatorName="FFP\danielruiz"
+  DTS:DTSID="{E6323BF7-2681-4E4E-B888-CD37BE7A7F0F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1100.123"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="DRSUpload"
+  DTS:PackageType="5"
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{4C764EC3-2822-4335-AB8C-407127C53EE5}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Comments_LocFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B69542B1-2F11-42AF-BEAE-58C6D2D52EE6}"
+      DTS:ObjectName="Comments_LocFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\ntfs\IS\DonorDirect\DRS Upload Download\Import Data\DRS_Portfolio_Comments.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CDONOR"
+              DTS:DTSID="{DDABD627-A9B7-4F27-8E44-31B9D3235203}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCOMDT"
+              DTS:DTSID="{9F9D23C7-64C8-4EC8-8FE5-A5A0C8AE2DBF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCOMNT"
+              DTS:DTSID="{D9462ED1-B491-42F1-B059-20C9C445D259}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCNTYP"
+              DTS:DTSID="{44BE7EAB-1131-4908-825D-720048D71F1A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CCTYPE"
+              DTS:DTSID="{9CB7452F-AA89-4257-AB4D-4DE77B71CF2C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CTDESC"
+              DTS:DTSID="{C122A8EF-93E7-4595-B103-4D738864A8B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CGFAMT"
+              DTS:DTSID="{AA88CBFC-5B83-441B-96CC-8B70BC0ED134}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CUSER"
+              DTS:DTSID="{F5A2AEAE-56EC-4A81-BE2B-3962E9762C88}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AssignedToAccessorId"
+              DTS:DTSID="{67BC8862-0D1D-4345-9A12-E9F85C40E679}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TestServer]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F5928E78-77F9-489C-AE6F-F19C2DDE62B5}"
+      DTS:ObjectName="TestServer">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=172.16.50.39;Initial Catalog=SE_PROTO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Comments"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F93BC573-77FD-4984-817B-C9075571075E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Comments"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Comments\Comments"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Comments"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Comments\Comments.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Comments_LocFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[Comments_LocFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Comments\Comments.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].Columns[CDONOR]"
+                      cachedDataType="i8"
+                      cachedName="CDONOR"
+                      externalMetadataColumnId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CDONOR]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CDONOR]" />
+                    <inputColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].Columns[CCOMDT]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="CCOMDT"
+                      externalMetadataColumnId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CCOMDT]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCOMDT]" />
+                    <inputColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].Columns[CCOMNT]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="CCOMNT"
+                      externalMetadataColumnId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CCOMNT]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCOMNT]" />
+                    <inputColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].Columns[CCNTYP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="CCNTYP"
+                      externalMetadataColumnId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CCNTYP]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCNTYP]" />
+                    <inputColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].Columns[CCTYPE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="CCTYPE"
+                      externalMetadataColumnId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CCTYPE]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCTYPE]" />
+                    <inputColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].Columns[CTDESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="40"
+                      cachedName="CTDESC"
+                      externalMetadataColumnId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CTDESC]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CTDESC]" />
+                    <inputColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].Columns[CGFAMT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="CGFAMT"
+                      externalMetadataColumnId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CGFAMT]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CGFAMT]" />
+                    <inputColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].Columns[CUSER]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="CUSER"
+                      externalMetadataColumnId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CUSER]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CUSER]" />
+                    <inputColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].Columns[AssignedToAccessorId]"
+                      cachedDataType="i8"
+                      cachedName="AssignedToAccessorId"
+                      externalMetadataColumnId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[AssignedToAccessorId]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[AssignedToAccessorId]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CDONOR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="CDONOR" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CCOMDT]"
+                      dataType="date"
+                      name="CCOMDT" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CCOMNT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="CCOMNT" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CCNTYP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="CCNTYP" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CCTYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="CCTYPE" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CTDESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="CTDESC" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CGFAMT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="CGFAMT" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[CUSER]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="CUSER" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\Comments.Inputs[Flat File Destination Input].ExternalColumns[AssignedToAccessorId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="AssignedToAccessorId" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Comments\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT TOP  100
+	DRSPORT.DONORNBR CDONOR
+	,FORMAT(A05.[Date],'MM/dd/yyyy','EN-US') AS  CCOMDT
+	,'"' + A05.LongComment +'"'   AS CCOMNT
+	,ISNULL(A05.[Status],'') 'CCNTYP'
+	,ISNULL(A05.CommunicationType,'') CCTYPE
+	, SELTypeDesc.[Description] AS CTDESC
+	,' ' AS CGFAMT
+	,ISNULL(FP30.WorkerName,'') CUSER
+	, A05.AssignedToAccessorId
+
+FROM  tbl_FFPDRSPortfolios DRSPORT WITH (NOLOCK)
+LEFT JOIN A01hAccountAssignments A01h WITH (NOLOCK) on A01h.AccountNumber = DRSPORT.DONORNBR and A01h.FunctionalCategory = 'DR'
+LEFT JOIN A05_AccountCommunications A05 WITH (NOLOCK) on A05.AccountNumber = DRSPORT.DONORNBR
+LEFT JOIN FP30_WorkerIdXref FP30 WITH (NOLOCK) on FP30.WorkerId = A05.AssignedToAccessorId
+
+OUTER APPLY
+	(SELECT TOP 1 [Description]
+	 FROM X04_COdeValues X04 WITH (NOLOCK)
+	 WHERE X04.[Type] = 'DDCCOMTYPE' 
+	 AND X04.[Value] = A05.CommunicationType
+	) SELTypeDesc
+
+ORDER BY A05.[Date] DESC</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Comments\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[TestServer]"
+                  connectionManagerRefId="Package.ConnectionManagers[TestServer]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CDONOR]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CDONOR]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CDONOR]"
+                      name="CDONOR"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCOMDT]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CCOMDT]"
+                      length="4000"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCOMDT]"
+                      name="CCOMDT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCOMNT]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CCOMNT]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCOMNT]"
+                      name="CCOMNT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCNTYP]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CCNTYP]"
+                      length="1"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCNTYP]"
+                      name="CCNTYP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCTYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CCTYPE]"
+                      length="10"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCTYPE]"
+                      name="CCTYPE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CTDESC]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CTDESC]"
+                      length="40"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CTDESC]"
+                      name="CTDESC"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CGFAMT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CGFAMT]"
+                      length="1"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CGFAMT]"
+                      name="CGFAMT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CUSER]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CUSER]"
+                      length="70"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[CUSER]"
+                      name="CUSER"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[AssignedToAccessorId]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AssignedToAccessorId]"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].Columns[AssignedToAccessorId]"
+                      name="AssignedToAccessorId"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CDONOR]"
+                      dataType="i8"
+                      name="CDONOR" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CCOMDT]"
+                      dataType="wstr"
+                      length="4000"
+                      name="CCOMDT" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CCOMNT]"
+                      codePage="1252"
+                      dataType="text"
+                      name="CCOMNT" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CCNTYP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="CCNTYP" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CCTYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="CCTYPE" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CTDESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="CTDESC" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CGFAMT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="CGFAMT" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CUSER]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="CUSER" />
+                    <externalMetadataColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AssignedToAccessorId]"
+                      dataType="i8"
+                      name="AssignedToAccessorId" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CDONOR]"
+                      dataType="i8"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CDONOR]"
+                      name="CDONOR" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CCOMDT]"
+                      dataType="wstr"
+                      length="4000"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CCOMDT]"
+                      name="CCOMDT" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CCOMNT]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CCOMNT]"
+                      name="CCOMNT" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CCNTYP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CCNTYP]"
+                      name="CCNTYP" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CCTYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CCTYPE]"
+                      name="CCTYPE" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CTDESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CTDESC]"
+                      name="CTDESC" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CGFAMT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CGFAMT]"
+                      name="CGFAMT" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CUSER]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CUSER]"
+                      name="CUSER" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AssignedToAccessorId]"
+                      dataType="i8"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AssignedToAccessorId]"
+                      name="AssignedToAccessorId" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Comments.Paths[OLE DB Source Output]"
+              endId="Package\Comments\Comments.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Comments\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Transactions"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{AE1E48EE-73E0-4860-939B-F484F05753B3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Transactions"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Comments"
+          TopLeft="23,72" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Transactions"
+          TopLeft="28,151" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Comments">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Comments\OLE DB Source"
+          TopLeft="73,25" />
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Comments\Comments"
+          TopLeft="321,52" />
+        <EdgeLayout
+          Id="Package\Comments.Paths[OLE DB Source Output]"
+          TopLeft="223,46">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="98,27"
+              Start="0,0"
+              End="90.5,27">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="45,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45,0"
+                    Point2="49,0"
+                    Point3="49,4" />
+                  <mssgle:LineSegment
+                    End="49,23" />
+                  <mssgle:CubicBezierSegment
+                    Point1="49,23"
+                    Point2="49,27"
+                    Point3="53,27" />
+                  <mssgle:LineSegment
+                    End="90.5,27" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Comments\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

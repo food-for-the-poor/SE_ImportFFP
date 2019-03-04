@@ -1,0 +1,117 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/27/2019 11:00:20 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="INF-DR"
+  DTS:CreatorName="FFP\danielruiz"
+  DTS:DelayValidation="True"
+  DTS:DTSID="{0166096D-FA62-48D7-8DBD-DD07C5F47C23}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1100.123"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="CAPSFileArchive"
+  DTS:PackageType="5"
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{E3251BA6-88E7-46B9-8479-3FB9F1B26576}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Dest]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{536C02B2-2C7C-45E3-9735-92FADB43C64A}"
+      DTS:ObjectName="Dest">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::Dest]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\SRCCODEBKUP\TABSrcUpload20190304.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Source]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{7B9D9500-602E-4461-BEB6-508ADF3650A1}"
+      DTS:ObjectName="Source">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\TABSRCUpload.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EA040097-7F98-428C-A7D4-E6FAC8BAE624}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::FilePath]+&quot;TABSrcUpload&quot;+ @[User::TimeStamp]+&quot;.txt&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Dest">
+      <DTS:VariableValue
+        DTS:DataType="8">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\SRCCODEBKUP\TABSrcUpload20190304.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{70CA2FC1-4F26-4D2B-B512-215AD60D26C0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\SRCCODEBKUP\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{824F8583-96E9-4D27-95EA-B2D589487F8A}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="REPLACE((DT_WSTR, 10)(DT_DBDATE)GETDATE(),&quot;-&quot;,&quot;&quot;)"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TimeStamp">
+      <DTS:VariableValue
+        DTS:DataType="8">20190304</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\File System Task"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="File System Task"
+      DTS:DTSID="{1E6B5D10-1CBC-4383-91F2-1F17DAF14EEB}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="File System Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="RenameFile"
+          TaskSourcePath="{7B9D9500-602E-4461-BEB6-508ADF3650A1}"
+          TaskDestinationPath="{536C02B2-2C7C-45E3-9735-92FADB43C64A}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\File System Task"
+          TopLeft="62,86" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
