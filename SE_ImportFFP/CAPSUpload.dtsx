@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="CAPSUpload"
   DTS:PackageType="5"
-  DTS:VersionBuild="72"
-  DTS:VersionGUID="{E9C8502C-00BC-413B-ABA5-0869991578D6}">
+  DTS:VersionBuild="84"
+  DTS:VersionGUID="{AD250E9B-8650-4197-AF74-D47B25B66E8C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -38,7 +38,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SourceCode"
-              DTS:DTSID="{C74C39EA-F7C8-45A3-8DAD-447B585AEFC4}"
+              DTS:DTSID="{8F3D65AB-9E37-427A-9D4A-CDC8347F58B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodeValue_GFTCOD"
-              DTS:DTSID="{AA6739A3-6C6E-4DA1-8B93-8578C7976D4C}"
+              DTS:DTSID="{FF9FE17C-1D75-4DED-8BE2-5518C3FA0A15}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Description"
-              DTS:DTSID="{8BD44CC8-DB8A-4CBF-90B8-C8CBF904F49E}"
+              DTS:DTSID="{A6D87B81-13E8-4D87-A6B4-146D37979EBD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -65,7 +65,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodeValue_Mailed"
-              DTS:DTSID="{9C28ED40-0A1D-49D1-A21F-1DD6E2E46B8C}"
+              DTS:DTSID="{B9AAF62A-11BD-4E22-978E-4E3B0620AA2D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -74,7 +74,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="StartDate"
-              DTS:DTSID="{6918D4ED-C56B-4A80-A21F-0B0981F7D55F}"
+              DTS:DTSID="{9CBC3484-1016-4312-A293-9FC040DFC063}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodeValue_SRCWRK"
-              DTS:DTSID="{5D488FDD-861A-4D0D-9AAC-0832DA6B71AA}"
+              DTS:DTSID="{D2454C63-B142-46BA-8569-784B27DD909B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -92,7 +92,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CodeValue_DEPCOD"
-              DTS:DTSID="{C637522B-E8DD-469A-A924-92DE25D5B27E}"
+              DTS:DTSID="{6F0A990B-E153-4A14-AA12-1D3BCDE9CCE1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -101,7 +101,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PostedOn"
-              DTS:DTSID="{D326E46C-1460-4163-8F74-152005F3786F}"
+              DTS:DTSID="{0EE83C0E-4982-4C48-A6E4-138A0841F8E0}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -118,7 +118,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAU90ppkGepxVBZ4LBcCLchAAAAAASAAACgAAAAEAAAANKOaYf3oh1J0Y4ct1jJepIYAAAALcRLdFjKIzMaHBIOuNKm+4CaIGxyObJtFAAAAMtu+Aj1S9S481PdqFJOGaJBy/gI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACPRWt9hVrb37gaVZAvahIsAAAAAASAAACgAAAAEAAAAHBgllBVdXzM3Lwpk0nBtAoYAAAAas7arXYWFhNruwfcpB2XgEg0QT7nuwK3FAAAABS7Bxw4e9QfJyiWMSrKf/9Vwnk2</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -130,17 +130,7 @@
       DTS:ObjectName="SMTPConn">
       <DTS:ObjectData>
         <SmtpConnectionManager
-          ConnectionString="SmtpServer=smtp.ffp.net;UseWindowsAuthentication=False;EnableSsl=True;Timeout=10000;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[TestServer]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{DCD9C0F2-8781-4D90-9B17-7488DE98DA5E}"
-      DTS:ObjectName="TestServer">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=172.16.50.39;Initial Catalog=SE_PROTO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          ConnectionString="SmtpServer=ex2013.ffp.net;UseWindowsAuthentication=False;EnableSsl=False;Timeout=10000;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -161,7 +151,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FilePath">
       <DTS:VariableValue
-        DTS:DataType="8">\\Oracle5\Users\Applications\VFP-DDSync\TABSRCUpload.TXT</DTS:VariableValue>
+        DTS:DataType="8">\\Oracle5\Users\Applications\VFP-DDSync\TABSrcUpload.txt</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -208,15 +198,6 @@
           Language="CSharp"
           ReadOnlyVariables="User::FilePath"
           ReadWriteVariables="User::FileExists">
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -336,6 +317,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8bea847639874a9b99c93f1a3f56108e.Properties.Settings.get_Default():ST_8bea847639874a9b99c93f1a3f56108e.Properties.Sett" +
+    "ings")]
+
+namespace ST_8bea847639874a9b99c93f1a3f56108e.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -567,50 +577,21 @@ namespace ST_8bea847639874a9b99c93f1a3f56108e
             Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:Language>msBuild</msb:Language>
 		<msb:CodeName>ST_8bea847639874a9b99c93f1a3f56108e</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
 		<msb:DisplayName>ST_8bea847639874a9b99c93f1a3f56108e</msb:DisplayName>
 		<msb:ProjectId>{50D3B9BE-61F3-44FA-BCC7-69D58EE54659}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="ST_8bea847639874a9b99c93f1a3f56108e.csproj"/>
-		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.Designer.cs"/>
 		<msb:File Include="ScriptMain.cs"/>
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_8bea847639874a9b99c93f1a3f56108e.Properties.Settings.get_Default():ST_8bea847639874a9b99c93f1a3f56108e.Properties.Sett" +
-    "ings")]
-
-namespace ST_8bea847639874a9b99c93f1a3f56108e.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
@@ -641,6 +622,15 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -712,7 +702,7 @@ namespace ST_8bea847639874a9b99c93f1a3f56108e.Properties {
           <BinaryItem
             Name="ST_8bea847639874a9b99c93f1a3f56108e.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJhwcFwAAAAAAAAAAOAAIiALATAAABAAAAAIAAAAAAAAIi4A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDABraflwAAAAAAAAAAOAAIiALATAAABAAAAAIAAAAAAAAIi4A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAANAtAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -741,7 +731,7 @@ AMkAtgMlANEA6wIrANEA4QIwAIkAFQM0AOEAVgU4AHEARgQGAIkARgQGAOkAkwA9AOkAfwVEAJEA
 RgRJALEARgQGAAgAFABiAAgAGABnACkAcwDTAC4ACwCrAC4AEwC0AC4AGwDTAC4AIwDcAC4AKwAF
 AS4AMwAFAS4AOwAFAS4AQwDcAC4ASwALAS4AUwAFAS4AWwAiAUMAYwBnAEkAcwDTAGEAewBnAGMA
 awBnAAMAAQAEAAMAAAA2BJwAAAD3AKEAAABoBaYAAgAFAAMAAgAGAAUAAQAHAAUAAgAIAAcABIAA
-AAEAAABQG2R3AAAAAAAARAAAAAQAAAAAAAAAAAAAAFAAOwAAAAAADQAAAAAAAAAAAAAAWQAeAwAA
+AAEAAABbG+VrAAAAAAAARAAAAAQAAAAAAAAAAAAAAFAAOwAAAAAADQAAAAAAAAAAAAAAWQAeAwAA
 AAAEAAAAAAAAAAAAAABQAL8DAAAAAA0AAAAAAAAAAAAAAFkAFAAAAAAAAAAAAAEAAACXBAAABQAC
 AAAAADxNb2R1bGU+AFN5c3RlbS5JTwBNaWNyb3NvZnQuU3FsU2VydmVyLk1hbmFnZWREVFMAdmFs
 dWVfXwBtc2NvcmxpYgBTVF84YmVhODQ3NjM5ODc0YTliOTljOTNmMWEzZjU2MTA4ZQBkZWZhdWx0
@@ -771,7 +761,7 @@ ZUV4aXN0cwBPYmplY3QAZ2V0X0RlZmF1bHQAc2V0X1Rhc2tSZXN1bHQAZ2V0X0Fzc2VtYmx5AAAh
 VQBzAGUAcgA6ADoARgBpAGwAZQBFAHgAaQBzAHQAcwAAHVUAcwBlAHIAOgA6AEYAaQBsAGUAUABh
 AHQAaAAAcVMAVABfADgAYgBlAGEAOAA0ADcANgAzADkAOAA3ADQAYQA5AGIAOQA5AGMAOQAzAGYA
 MQBhADMAZgA1ADYAMQAwADgAZQAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBj
-AGUAcwAAAPkhk06d+StBkM6GA5EV9PMABCABAQgDIAABBSABARERBCABAQ4FIAEBEVEEIAASYQQg
+AGUAcwAAAO+JH9AZvwJNlFAbdk9fGpkABCABAQgDIAABBSABARERBCABAQ4FIAEBEVEEIAASYQQg
 ABJlBSABEmkcBCABARwDIAAcAyAADgQAAQIOBgABEnUReQQgABJ9BiACAQ4SfQi3elxWGTTgiQiJ
 hF3NgIDMkQQAAAAABAEAAAADBhJJAwYSTQMGEhACBggDBhEUAyAAAgQAABJJBAAAEk0FAAEBEk0E
 AAASEAMAAAEECAASSQQIABJNBAgAEhAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25U
@@ -793,14 +783,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAA
 AABIAAAAWEAAABoEAAAAAAAAAAAAABoENAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBP
-AAAAAAC9BO/+AAABAAAAAQBkd1AbAAABAGR3UBs/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
+AAAAAAC9BO/+AAABAAAAAQDla1sbAAABAOVrWxs/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAA
 RAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBv
 AG4AAAAAAAAAsAR6AwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAABWAwAAAQAwADAA
 MAAwADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABh
 AG4AeQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4A
 AAAAAFMAVABfADgAYgBlAGEAOAA0ADcANgAzADkAOAA3ADQAYQA5AGIAOQA5AGMAOQAzAGYAMQBh
 ADMAZgA1ADYAMQAwADgAZQAAAD4ADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAA
-LgA2ADkAOQAyAC4AMwAwADUANgA0AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAA
+LgA3ADAAMAAzAC4AMgA3ADYAMgAxAAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAA
 AFMAVABfADgAYgBlAGEAOAA0ADcANgAzADkAOAA3ADQAYQA5AGIAOQA5AGMAOQAzAGYAMQBhADMA
 ZgA1ADYAMQAwADgAZQAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0
 AAAAQwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAAMQA5AAAAKgABAAEATABlAGcAYQBsAFQA
@@ -809,8 +799,8 @@ AGEAbQBlAAAAUwBUAF8AOABiAGUAYQA4ADQANwA2ADMAOQA4ADcANABhADkAYgA5ADkAYwA5ADMA
 ZgAxAGEAMwBmADUANgAxADAAOABlAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBt
 AGUAAAAAAFMAVABfADgAYgBlAGEAOAA0ADcANgAzADkAOAA3ADQAYQA5AGIAOQA5AGMAOQAzAGYA
 MQBhADMAZgA1ADYAMQAwADgAZQAAAEIADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAA
-ADEALgAwAC4ANgA5ADkAMgAuADMAMAA1ADYANAAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
-VgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANgA5ADkAMgAuADMAMAA1ADYANAAAAAAAAAAAAAAAAAAA
+ADEALgAwAC4ANwAwADAAMwAuADIANwA2ADIAMQAAAAAARgAPAAEAQQBzAHMAZQBtAGIAbAB5ACAA
+VgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANwAwADAAMwAuADIANwA2ADIAMQAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1363,7 +1353,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:refId="Package\No File notification"
       DTS:CreationName="Microsoft.SendMailTask"
       DTS:Description="Send Mail Task"
-      DTS:Disabled="True"
       DTS:DTSID="{48BC766F-7386-4CE7-B4FC-25EF8102050A}"
       DTS:ExecutableType="Microsoft.SendMailTask"
       DTS:LocaleID="-1"
@@ -1375,7 +1364,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           SendMailTask:SMTPServer="{EBF8FCE0-0BF1-4FD1-813F-8FB9570D64D2}"
           SendMailTask:From="danielruiz@foodforthepoor.com"
           SendMailTask:To="danielruiz@foodforthepoor.com"
-          SendMailTask:Subject="Files does not exist"
+          SendMailTask:Subject="CAPS Upload-Files does not exist"
           SendMailTask:MessageSource="File does not exist, therefore process stopped" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1475,37 +1464,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <NodeLayout
           Size="239,42"
           Id="Package\Import Data from Tab file to table"
-          TopLeft="298,202" />
+          TopLeft="297,200" />
         <NodeLayout
           Size="166,42"
           Id="Package\No File notification"
           TopLeft="46,226" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="417.5,244">
+          TopLeft="416.5,242">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8,74"
+              EndConnector="9,76"
               Start="0,0"
-              End="8,66.5">
+              End="9,68.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33" />
+                    End="0,34" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,33"
-                    Point2="0,37"
-                    Point3="4,37" />
+                    Point1="0,34"
+                    Point2="0,38"
+                    Point3="4,38" />
                   <mssgle:LineSegment
-                    End="4,37" />
+                    End="5,38" />
                   <mssgle:CubicBezierSegment
-                    Point1="4,37"
-                    Point2="8,37"
-                    Point3="8,41" />
+                    Point1="5,38"
+                    Point2="9,38"
+                    Point3="9,42" />
                   <mssgle:LineSegment
-                    End="8,66.5" />
+                    End="9,68.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1556,33 +1545,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="146.833333333333,108"
+              EndConnector="145.833333333333,106"
               Start="0,0"
-              End="146.833333333333,100.5">
+              End="145.833333333333,98.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.8223289315726" />
+                    End="0,39.0108043217287" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,39.8223289315726"
-                    Point2="0,43.8223289315726"
-                    Point3="4,43.8223289315726" />
+                    Point1="0,39.0108043217287"
+                    Point2="0,43.0108043217287"
+                    Point3="4,43.0108043217287" />
                   <mssgle:LineSegment
-                    End="142.833333333333,43.8223289315726" />
+                    End="141.833333333333,43.0108043217287" />
                   <mssgle:CubicBezierSegment
-                    Point1="142.833333333333,43.8223289315726"
-                    Point2="146.833333333333,43.8223289315726"
-                    Point3="146.833333333333,47.8223289315726" />
+                    Point1="141.833333333333,43.0108043217287"
+                    Point2="145.833333333333,43.0108043217287"
+                    Point3="145.833333333333,47.0108043217287" />
                   <mssgle:LineSegment
-                    End="146.833333333333,100.5" />
+                    End="145.833333333333,98.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="65.4166666666667,48.8223289315726,16,16"
+              BoundingBox="64.9166666666667,48.0108043217287,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

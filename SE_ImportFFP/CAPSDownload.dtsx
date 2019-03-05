@@ -11,21 +11,11 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="CAPSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{28F020B4-F514-4519-859B-7DAE4488A97E}">
+  DTS:VersionBuild="38"
+  DTS:VersionGUID="{A5EFC7BD-F742-4AA4-8EBC-DD97D4BD9011}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[172.16.50.39.SE_PROTO]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{4165F697-927A-4614-9CA0-B75EF742D2BE}"
-      DTS:ObjectName="172.16.50.39.SE_PROTO">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=172.16.50.39;Initial Catalog=SE_PROTO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[172.16.50.8.SE_PROD]"
       DTS:CreationName="OLEDB"
@@ -37,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB3kB2kUIeQo57uUc2p6eVOAAAAAASAAACgAAAAEAAAALWafKOqdmL+wgDTdpDg+CgYAAAAhq3z477Y/8S2evJ/QcDAR5BSpfTNuRRkFAAAAFl5Cz7wfgFdPGWk7BYR8nRthnGZ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD2CwkCSscGFL0oCY7CZ1suAAAAAASAAACgAAAAEAAAAL8aCLL6tMwE+LzPnzRW1GYYAAAAjSWEaoFNN9UG6uV/oSpPcNKQAn5RkSAhFAAAAPyC2Rk2pxhcz4tbklxvyGHGlpDR</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -110,7 +100,7 @@
       DTS:ObjectName="SMTPConn">
       <DTS:ObjectData>
         <SmtpConnectionManager
-          ConnectionString="SmtpServer=smtp.ffp.net;UseWindowsAuthentication=False;EnableSsl=True;Timeout=10000;" />
+          ConnectionString="SmtpServer=ex2013.ffp.net;UseWindowsAuthentication=False;EnableSsl=False;Timeout=10000;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -151,7 +141,6 @@
       DTS:refId="Package\Email notification nothing processed"
       DTS:CreationName="Microsoft.SendMailTask"
       DTS:Description="Send Mail Task"
-      DTS:Disabled="True"
       DTS:DTSID="{1AEFD7A0-6082-4171-A34F-2FB688BC6DEF}"
       DTS:ExecutableType="Microsoft.SendMailTask"
       DTS:LocaleID="-1"
