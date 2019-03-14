@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/15/2019 9:51:58 AM"
@@ -12,7 +12,7 @@
   DTS:ObjectName="CAPSDownload"
   DTS:PackageType="5"
   DTS:VersionBuild="38"
-  DTS:VersionGUID="{A5EFC7BD-F742-4AA4-8EBC-DD97D4BD9011}">
+  DTS:VersionGUID="{49C5B02B-64A3-4899-85A5-C55DFEEDC8ED}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD2CwkCSscGFL0oCY7CZ1suAAAAAASAAACgAAAAEAAAAL8aCLL6tMwE+LzPnzRW1GYYAAAAjSWEaoFNN9UG6uV/oSpPcNKQAn5RkSAhFAAAAPyC2Rk2pxhcz4tbklxvyGHGlpDR</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADYVxVLM0iEMNJ7xF9Qyt8FAAAAAASAAACgAAAAEAAAAJKeTADl151av97WMWzLVXMYAAAA8E7iEForOiOSJckg1n+XDT9X30HtFtdEFAAAACMLz3BP8ODuVn1R8w6951nFoUpj</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>

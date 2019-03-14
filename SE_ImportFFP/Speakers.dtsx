@@ -12,7 +12,7 @@
   DTS:ObjectName="Speakers"
   DTS:PackageType="5"
   DTS:VersionBuild="3"
-  DTS:VersionGUID="{23F589BD-92DE-4D73-837E-7981CCDC37AE}">
+  DTS:VersionGUID="{5A1CF835-B3B8-459A-ACD1-432A7847F4DB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

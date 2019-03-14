@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/25/2019 1:27:32 PM"
@@ -12,7 +12,7 @@
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
   DTS:VersionBuild="3"
-  DTS:VersionGUID="{4250B269-11AC-4E4A-8E82-CDC7F9D03D49}">
+  DTS:VersionGUID="{36566A21-2873-4FE9-89C8-DEA7DC5FF1AA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
