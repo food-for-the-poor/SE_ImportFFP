@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="110"
-  DTS:VersionGUID="{3DBEE86A-17DF-439D-BE9E-B2031CD801B9}">
+  DTS:VersionBuild="112"
+  DTS:VersionGUID="{359B9C8D-BB6D-4083-A8A1-E02CB511DC55}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2215,14 +2215,6 @@ ORDER BY A05.[Date] DESC</property>
                       externalMetadataColumnId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CDATE]"
                       lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[CDATE]" />
                     <inputColumn
-                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DCLASS]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="2"
-                      cachedName="DCLASS"
-                      externalMetadataColumnId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DCLASS]"
-                      lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[DCLASS]" />
-                    <inputColumn
                       refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DORGAN]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -2626,6 +2618,14 @@ ORDER BY A05.[Date] DESC</property>
                       cachedName="DRLSTCALL"
                       externalMetadataColumnId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DRLSTCALL]"
                       lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[DRLSTCALL]" />
+                    <inputColumn
+                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LETSENTOUT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="LETSENTOUT"
+                      externalMetadataColumnId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LETSENTOUT]"
+                      lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[LETSENTOUT]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2815,12 +2815,6 @@ ORDER BY A05.[Date] DESC</property>
                       dataType="str"
                       length="10"
                       name="CDATE" />
-                    <externalMetadataColumn
-                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DCLASS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="2"
-                      name="DCLASS" />
                     <externalMetadataColumn
                       refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DORGAN]"
                       codePage="1252"
@@ -3117,6 +3111,12 @@ ORDER BY A05.[Date] DESC</property>
                       dataType="str"
                       length="10"
                       name="DRLSTCALL" />
+                    <externalMetadataColumn
+                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LETSENTOUT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="LETSENTOUT" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -3211,7 +3211,7 @@ ORDER BY A05.[Date] DESC</property>
 	COALESCE(CONVERT(VARCHAR(10),DonorStats.[Date Largest Gift], (101)) , '') AS LDATE,
 	--iif(SELA01d2.LastContactDate is not null, format(SELA01d2.LastContactDate,'MM/dd/yyyy','en-US'),'') CDATE,
 	COALESCE(CONVERT(VARCHAR(10),SELA01d2.LastContactDate,(101)), '') AS CDATE, 
-	'' DCLASS,	-- Classification		As per Frank this field is not in DRS
+	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') FROM FP07_Campaign dtsnd WHERE dtsnd.AccountNumber = A01.AccountNumber AND dtsnd.[EventCode] IN ('HD18S3', 'HD18D3', 'MD18C3','MD19S1') )  ,
 	isnull(A01c2.CodeValue,'')  AS DORGAN,	
 	isnull(A01c11.CodeValue,'') AS  DPHNCD,	
 	''  DPHON2,							-- As per Framk we are bringing Primary phone only
@@ -3298,7 +3298,7 @@ ORDER BY A05.[Date] DESC</property>
 	
 from A01_AccountMaster A01 (NOLOCK)
 left join FP07_Campaign FP07 (NOLOCK)
-on FP07.[AccountNumber] = A01.AccountNumber and FP07.[EventCode] in ('HD18S3', 'HD18D3', 'MD18C3')
+on FP07.[AccountNumber] = A01.AccountNumber and FP07.[EventCode] in ('HD18S3', 'HD18D3', 'MD18C3', 'MD19S1')
 join A01hAccountAssignments A01h (NOLOCK)
 on A01.AccountNumber = A01h.AccountNumber
 join A02_AccountAddresses A02 with (NOLOCK)	
@@ -3798,17 +3798,6 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       length="10"
                       lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[CDATE]"
                       name="CDATE"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[DCLASS]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DCLASS]"
-                      length="2"
-                      lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[DCLASS]"
-                      name="DCLASS"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[DORGAN]"
@@ -4494,6 +4483,17 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[PORTAOHITM]"
                       name="PORTAOHITM"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[LETSENTOUT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LETSENTOUT]"
+                      length="10"
+                      lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].Columns[LETSENTOUT]"
+                      name="LETSENTOUT"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4683,12 +4683,6 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       dataType="str"
                       length="10"
                       name="CDATE" />
-                    <externalMetadataColumn
-                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DCLASS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="DCLASS" />
                     <externalMetadataColumn
                       refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DORGAN]"
                       codePage="1252"
@@ -5043,6 +5037,12 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       dataType="str"
                       length="1"
                       name="PORTAOHITM" />
+                    <externalMetadataColumn
+                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LETSENTOUT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="LETSENTOUT" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -5273,12 +5273,12 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CDATE]"
                       name="CDATE" />
                     <outputColumn
-                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DCLASS]"
+                      refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LETSENTOUT]"
                       codePage="1252"
                       dataType="str"
-                      length="1"
-                      lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DCLASS]"
-                      name="DCLASS" />
+                      length="10"
+                      lineageId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LETSENTOUT]"
+                      name="LETSENTOUT" />
                     <outputColumn
                       refId="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DORGAN]"
                       codePage="1252"
@@ -5807,7 +5807,8 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
 	COALESCE(CONVERT(VARCHAR(10),DonorStats.[Date Largest Gift], (101)) , '') AS LDATE,
 	--iif(SELA01d2.LastContactDate is not null, format(SELA01d2.LastContactDate,'MM/dd/yyyy','en-US'),'') CDATE,
 	COALESCE(CONVERT(VARCHAR(10),SELA01d2.LastContactDate,(101)), '') AS CDATE, 
-	'' DCLASS,	-- Classification		As per Frank this field is not in DRS
+	--'' DCLASS,	-- Classification		As per Frank this field is not in DRS
+	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') FROM FP07_Campaign dtsnd WHERE dtsnd.AccountNumber = A01.AccountNumber AND dtsnd.[EventCode] IN ('HD18S3', 'HD18D3', 'MD18C3','MD19S1') )  ,
 	isnull(A01c2.CodeValue,'')  AS DORGAN,	
 	isnull(A01c11.CodeValue,'') AS  DPHNCD,	
 	''  DPHON2,							-- As per Framk we are bringing Primary phone only
@@ -5895,7 +5896,7 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
 	
 from A01_AccountMaster A01 (NOLOCK)
 left join FP07_Campaign FP07 (NOLOCK)
-on FP07.[AccountNumber] = A01.AccountNumber and FP07.[EventCode] in ('HD19S1', 'HD19D1', 'MD19C1')
+on FP07.[AccountNumber] = A01.AccountNumber and FP07.[EventCode] in ('HD19S1', 'HD19D1', 'MD19C1','MD19S1')
 join A01hAccountAssignments A01h (NOLOCK)
 on A01.AccountNumber = A01h.AccountNumber
 join A02_AccountAddresses A02 with (NOLOCK)	
@@ -6405,17 +6406,6 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       length="10"
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CDATE]"
                       name="CDATE"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DCLASS]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DCLASS]"
-                      length="1"
-                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DCLASS]"
-                      name="DCLASS"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DORGAN]"
@@ -7112,6 +7102,17 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DRDATE]"
                       name="DRDATE"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[LETSENTOUT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LETSENTOUT]"
+                      length="10"
+                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[LETSENTOUT]"
+                      name="LETSENTOUT"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -7301,12 +7302,6 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       dataType="str"
                       length="10"
                       name="CDATE" />
-                    <externalMetadataColumn
-                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DCLASS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
-                      name="DCLASS" />
                     <externalMetadataColumn
                       refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DORGAN]"
                       codePage="1252"
@@ -7667,6 +7662,12 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       dataType="str"
                       length="10"
                       name="DRDATE" />
+                    <externalMetadataColumn
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LETSENTOUT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="LETSENTOUT" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -7897,12 +7898,12 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CDATE]"
                       name="CDATE" />
                     <outputColumn
-                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DCLASS]"
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LETSENTOUT]"
                       codePage="1252"
                       dataType="str"
-                      length="1"
-                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DCLASS]"
-                      name="DCLASS" />
+                      length="10"
+                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LETSENTOUT]"
+                      name="LETSENTOUT" />
                     <outputColumn
                       refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DORGAN]"
                       codePage="1252"
@@ -8641,14 +8642,6 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       externalMetadataColumnId="Package\Portfolios Export\Portfolios.Inputs[Flat File Destination Input].ExternalColumns[Column 35]"
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CDATE]" />
                     <inputColumn
-                      refId="Package\Portfolios Export\Portfolios.Inputs[Flat File Destination Input].Columns[DCLASS]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="DCLASS"
-                      externalMetadataColumnId="Package\Portfolios Export\Portfolios.Inputs[Flat File Destination Input].ExternalColumns[Column 36]"
-                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DCLASS]" />
-                    <inputColumn
                       refId="Package\Portfolios Export\Portfolios.Inputs[Flat File Destination Input].Columns[DORGAN]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -9142,6 +9135,14 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       cachedName="DRDATE"
                       externalMetadataColumnId="Package\Portfolios Export\Portfolios.Inputs[Flat File Destination Input].ExternalColumns[Column 103]"
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DRDATE]" />
+                    <inputColumn
+                      refId="Package\Portfolios Export\Portfolios.Inputs[Flat File Destination Input].Columns[LETSENTOUT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="LETSENTOUT"
+                      externalMetadataColumnId="Package\Portfolios Export\Portfolios.Inputs[Flat File Destination Input].ExternalColumns[Column 36]"
+                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[LETSENTOUT]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -10760,13 +10761,13 @@ outer apply
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="123,42"
-          Id="Package\Portfolios Export\Portfolios"
-          TopLeft="335,105" />
-        <NodeLayout
           Size="150,42"
           Id="Package\Portfolios Export\OLE DB Source"
           TopLeft="131,98" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\Portfolios Export\Portfolios"
+          TopLeft="335,105" />
         <EdgeLayout
           Id="Package\Portfolios Export.Paths[OLE DB Source Output]"
           TopLeft="281,122.5">
