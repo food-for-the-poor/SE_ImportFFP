@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="112"
-  DTS:VersionGUID="{359B9C8D-BB6D-4083-A8A1-E02CB511DC55}">
+  DTS:VersionBuild="116"
+  DTS:VersionGUID="{A95477CA-591D-47EB-A82E-A3BD892B2BBC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3211,7 +3211,7 @@ ORDER BY A05.[Date] DESC</property>
 	COALESCE(CONVERT(VARCHAR(10),DonorStats.[Date Largest Gift], (101)) , '') AS LDATE,
 	--iif(SELA01d2.LastContactDate is not null, format(SELA01d2.LastContactDate,'MM/dd/yyyy','en-US'),'') CDATE,
 	COALESCE(CONVERT(VARCHAR(10),SELA01d2.LastContactDate,(101)), '') AS CDATE, 
-	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') FROM FP07_Campaign dtsnd WHERE dtsnd.AccountNumber = A01.AccountNumber AND dtsnd.[EventCode] IN ('HD18S3', 'HD18D3', 'MD18C3','MD19S1') )  ,
+	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') FROM FP07_Campaign dtsnd WHERE dtsnd.AccountNumber = A01.AccountNumber AND dtsnd.[EventCode] IN ('HD19S1', 'HD19D1', 'MD19C3','MD19S1') )  ,
 	isnull(A01c2.CodeValue,'')  AS DORGAN,	
 	isnull(A01c11.CodeValue,'') AS  DPHNCD,	
 	''  DPHON2,							-- As per Framk we are bringing Primary phone only
@@ -3298,7 +3298,7 @@ ORDER BY A05.[Date] DESC</property>
 	
 from A01_AccountMaster A01 (NOLOCK)
 left join FP07_Campaign FP07 (NOLOCK)
-on FP07.[AccountNumber] = A01.AccountNumber and FP07.[EventCode] in ('HD18S3', 'HD18D3', 'MD18C3', 'MD19S1')
+on FP07.[AccountNumber] = A01.AccountNumber and FP07.[EventCode] in ('HD19S1', 'HD19D1', 'MD19C1', 'MD19S1')
 join A01hAccountAssignments A01h (NOLOCK)
 on A01.AccountNumber = A01h.AccountNumber
 join A02_AccountAddresses A02 with (NOLOCK)	
@@ -5808,7 +5808,7 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
 	--iif(SELA01d2.LastContactDate is not null, format(SELA01d2.LastContactDate,'MM/dd/yyyy','en-US'),'') CDATE,
 	COALESCE(CONVERT(VARCHAR(10),SELA01d2.LastContactDate,(101)), '') AS CDATE, 
 	--'' DCLASS,	-- Classification		As per Frank this field is not in DRS
-	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') FROM FP07_Campaign dtsnd WHERE dtsnd.AccountNumber = A01.AccountNumber AND dtsnd.[EventCode] IN ('HD18S3', 'HD18D3', 'MD18C3','MD19S1') )  ,
+	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') FROM FP07_Campaign dtsnd WHERE dtsnd.AccountNumber = A01.AccountNumber AND dtsnd.[EventCode] IN ('HD19S1', 'HD19D1', 'MD19C1','MD19S1') )  ,
 	isnull(A01c2.CodeValue,'')  AS DORGAN,	
 	isnull(A01c11.CodeValue,'') AS  DPHNCD,	
 	''  DPHON2,							-- As per Framk we are bringing Primary phone only
@@ -7898,13 +7898,6 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CDATE]"
                       name="CDATE" />
                     <outputColumn
-                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LETSENTOUT]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LETSENTOUT]"
-                      name="LETSENTOUT" />
-                    <outputColumn
                       refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DORGAN]"
                       codePage="1252"
                       dataType="str"
@@ -8325,13 +8318,6 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PORTAOHITM]"
                       name="PORTAOHITM" />
                     <outputColumn
-                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DRDATE]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DRDATE]"
-                      name="DRDATE" />
-                    <outputColumn
                       refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
@@ -8343,6 +8329,20 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DRDATE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DRDATE]"
+                      name="DRDATE" />
+                    <outputColumn
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LETSENTOUT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LETSENTOUT]"
+                      name="LETSENTOUT" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
