@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/27/2019 11:00:20 AM"
@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="CAPSFileArchive"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{01310A57-47DF-4553-9918-64FD943D547D}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{0D0CB6D2-95EA-4C46-950C-9443A8231ED4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:FileUsageType="1"
-          DTS:ConnectionString="\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\SRCCODEBKUP\TABSrcUpload20190314.txt" />
+          DTS:ConnectionString="\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\SRCCODEBKUP\TABSrcUpload20190404.txt" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -52,7 +52,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Dest">
       <DTS:VariableValue
-        DTS:DataType="8">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\SRCCODEBKUP\TABSrcUpload20190314.txt</DTS:VariableValue>
+        DTS:DataType="8">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\SRCCODEBKUP\TABSrcUpload20190404.txt</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -72,7 +72,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="TimeStamp">
       <DTS:VariableValue
-        DTS:DataType="8">20190314</DTS:VariableValue>
+        DTS:DataType="8">20190404</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
