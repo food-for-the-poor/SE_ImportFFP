@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="134"
-  DTS:VersionGUID="{65B45921-3FA7-44EC-8CAB-57B76D4F32D0}">
+  DTS:VersionBuild="153"
+  DTS:VersionGUID="{601D81F9-7EAE-44FC-8667-307EE4CD7D40}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1324,50 +1324,57 @@
                   name="Flat File Destination Input">
                   <inputColumns>
                     <inputColumn
+                      refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CMTDONOR]"
+                      cachedDataType="i8"
+                      cachedName="CMTDONOR"
+                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CMTDONOR]" />
+                    <inputColumn
                       refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CCOMDT]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CCOMDT"
-                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 1]"
                       lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCOMDT]" />
-                    <inputColumn
-                      refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CCTYPE]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="CCTYPE"
-                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
-                      lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCTYPE]" />
-                    <inputColumn
-                      refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CUSER]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="70"
-                      cachedName="CUSER"
-                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
-                      lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CUSER]" />
-                    <inputColumn
-                      refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CMTDONOR]"
-                      cachedDataType="i8"
-                      cachedName="CMTDONOR"
-                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
-                      lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CMTDONOR]" />
                     <inputColumn
                       refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CSEQMBR]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1"
                       cachedName="CSEQMBR"
-                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 2]"
                       lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CSEQMBR]" />
+                    <inputColumn
+                      refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CCOMNT]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="CCOMNT"
+                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
+                      lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCOMNT]" />
+                    <inputColumn
+                      refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CCNTYP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="CCNTYP"
+                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
+                      lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCNTYP]" />
+                    <inputColumn
+                      refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CCTYPE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="CCTYPE"
+                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
+                      lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CCTYPE]" />
                     <inputColumn
                       refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[COMTDESC]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="40"
                       cachedName="COMTDESC"
-                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
+                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
                       lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[COMTDESC]" />
                     <inputColumn
                       refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[COMTAMT]"
@@ -1375,8 +1382,16 @@
                       cachedDataType="str"
                       cachedLength="1"
                       cachedName="COMTAMT"
-                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
                       lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[COMTAMT]" />
+                    <inputColumn
+                      refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[CUSER]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="CUSER"
+                      externalMetadataColumnId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      lineageId="Package\Comments Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[CUSER]" />
                     <inputColumn
                       refId="Package\Comments Export\Comments.Inputs[Flat File Destination Input].Columns[COMTDATE]"
                       cachedCodepage="1252"
@@ -1477,11 +1492,17 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
-	DRSPORT.DONORNBR CMTDONOR
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">WITH ConvComms
+AS
+
+(
+
+
+SELECT 
+	a01.AccountNumber CMTDONOR
 	,CONVERT(VARCHAR(10), A05.[Date], 112) AS  CCOMDT
 	, '0' AS CSEQMBR
-                    ,'"' + LEFT(Replace(Replace([dbo].[udf_ffp_StripHTML](A05.LongComment),CHAR(10),''),CHAR(13),''),254) +'"'   AS CCOMNT
+    ,'"' + LEFT(Replace(Replace(Replace(Replace([dbo].[udf_ffp_StripHTML](A05.LongComment),CHAR(10),''),CHAR(13),''),CHAR(34),''),CHAR(150),''),254) +'"'   AS CCOMNT
 	,ISNULL(A05.[Status],'') 'CCNTYP'
 	,ISNULL(A05.CommunicationType,'') CCTYPE
 	, SELTypeDesc.[Description] AS COMTDESC
@@ -1489,26 +1510,13 @@
 	,ISNULL(FP30.WorkerName,'') CUSER
 	, CONVERT(VARCHAR(10),A05.[Date],(101)) AS COMTDATE
 
+
 FROM  tbl_FFPDRSPortfolios DRSPORT WITH (NOLOCK)
-LEFT JOIN A01hAccountAssignments A01h WITH (NOLOCK) on A01h.AccountNumber = DRSPORT.DONORNBR and A01h.FunctionalCategory = 'DR'
---LEFT JOIN A05_AccountCommunications A05 WITH (NOLOCK) on A05.AccountNumber = DRSPORT.DONORNBR
-OUTER APPLY
-(select A05oa.* 
-from [dbo].[A05_AccountCommunications]  A05oa WITH (NOLOCK) JOIN
-       A01_AccountMaster A01oa with (nolock) ON A05oa.AccountNumber = A01oa.AccountNumber
-where A01oa.FamilyId = DRSPORT.DONORNBR
-AND A01oa.FamilyId &lt;&gt; 0
-UNION ALL
---INDIVIDUALS NOT ASSOCIATED WITH A FAMILY
-select A05oa2.* 
-from [dbo].[A05_AccountCommunications]  A05oa2 WITH (NOLOCK) JOIN
-       A01_AccountMaster A01oa2 with (nolock) ON A05oa2.AccountNumber = A01oa2.AccountNumber
-where A05oa2.accountnumber = DRSPORT.DONORNBR
-AND A01oa2.FamilyId = 0
+INNER JOIN A01_AccountMaster A01 WITH (NOLOCK) ON  DRSPORT.DONORNBR = A01.AccountNumber
+LEFT OUTER JOIN A01hAccountAssignments A01h WITH (NOLOCK) on A01h.AccountNumber = A01.AccountNumber
+LEFT OUTER JOIN A05_AccountCommunications A05 WITH (NOLOCK) on A05.AccountNumber = A01.AccountNumber
 
-)A05
-
-LEFT JOIN FP30_WorkerIdXref FP30 WITH (NOLOCK) on FP30.WorkerId = A05.AssignedToAccessorId
+LEFT OUTER JOIN FP30_WorkerIdXref FP30 WITH (NOLOCK) on FP30.WorkerId = A05.AssignedToAccessorId
 
 OUTER APPLY
 	(SELECT TOP 1 [Description]
@@ -1516,10 +1524,97 @@ OUTER APPLY
 	 WHERE X04.[Type] = 'DDCCOMTYPE' 
 	 AND X04.[Value] = A05.CommunicationType
 	) SELTypeDesc
-	
 WHERE A05.LongComment IS NOT NULL 
 AND A05.[Date] IS NOT NULL 
-ORDER BY A05.[Date] DESC</property>
+AND A01h.FunctionalCategory = 'DR' 
+AND A01h.Active = 1 
+AND A01h.[Primary] = 1 
+AND A01.FamilyiD ='0' 
+
+--ORDER BY A05.[Date] DESC
+
+
+UNION ALL 
+
+
+
+SELECT 
+	a01.AccountNumber CMTDONOR
+	,CONVERT(VARCHAR(10), A05.[Date], 112) AS  CCOMDT
+	, '0' AS CSEQMBR
+    ,'"' + LEFT(Replace(Replace(Replace(Replace([dbo].[udf_ffp_StripHTML](A05.LongComment),CHAR(10),''),CHAR(13),''),CHAR(34),''),CHAR(150),''),254) +'"'   AS CCOMNT
+	,ISNULL(A05.[Status],'') 'CCNTYP'
+	,ISNULL(A05.CommunicationType,'') CCTYPE
+	, SELTypeDesc.[Description] AS COMTDESC
+	,' ' AS COMTAMT
+	,ISNULL(FP30.WorkerName,'') CUSER
+	, CONVERT(VARCHAR(10),A05.[Date],(101)) AS COMTDATE
+
+
+FROM  tbl_FFPDRSPortfolios DRSPORT WITH (NOLOCK)
+INNER JOIN A01_AccountMaster A01 WITH (NOLOCK) ON  DRSPORT.DONORNBR = A01.AccountNumber
+LEFT OUTER JOIN A01hAccountAssignments A01h WITH (NOLOCK) on A01h.AccountNumber = A01.AccountNumber
+LEFT OUTER JOIN A05_AccountCommunications A05 WITH (NOLOCK) on A05.AccountNumber = A01.AccountNumber
+
+LEFT OUTER JOIN FP30_WorkerIdXref FP30 WITH (NOLOCK) on FP30.WorkerId = A05.AssignedToAccessorId
+
+OUTER APPLY
+	(SELECT TOP 1 [Description]
+	 FROM X04_COdeValues X04 WITH (NOLOCK)
+	 WHERE X04.[Type] = 'DDCCOMTYPE' 
+	 AND X04.[Value] = A05.CommunicationType
+	) SELTypeDesc
+WHERE A05.LongComment IS NOT NULL 
+AND A05.[Date] IS NOT NULL 
+AND A01h.FunctionalCategory = 'DR' 
+AND A01h.Active = 1 
+AND A01h.[Primary] = 1 
+AND A01.FamilyiD =A01.AccountNumber
+
+
+UNION ALL 
+
+SELECT  a01.FamilyId CMTDONOR
+,CONVERT(VARCHAR(10), A05.[Date], 112) AS  CCOMDT
+	, '0' AS CSEQMBR
+    ,'"' + LEFT(Replace(Replace(Replace(Replace([dbo].[udf_ffp_StripHTML](A05.LongComment),CHAR(10),''),CHAR(13),''),CHAR(34),''),CHAR(150),''),254) +'"'   AS CCOMNT
+	,ISNULL(A05.[Status],'') 'CCNTYP'
+	,ISNULL(A05.CommunicationType,'') CCTYPE
+	, SELTypeDesc.[Description] AS COMTDESC
+	,' ' AS COMTAMT
+	,ISNULL(FP30.WorkerName,'') CUSER
+	, CONVERT(VARCHAR(10),A05.[Date],(101)) AS COMTDATE
+
+
+FROM  tbl_FFPDRSPortfolios DRSPORT WITH (NOLOCK)
+INNER JOIN A01_AccountMaster A01 WITH (NOLOCK) ON  DRSPORT.DONORNBR = A01.FamilyId
+LEFT JOIN A01hAccountAssignments A01h WITH (NOLOCK) on A01h.AccountNumber = A01.AccountNumber
+LEFT JOIN A05_AccountCommunications A05 WITH (NOLOCK) on A05.AccountNumber = A01.AccountNumber
+ 
+LEFT OUTER JOIN FP30_WorkerIdXref FP30 WITH (NOLOCK) on FP30.WorkerId = A05.AssignedToAccessorId
+
+OUTER APPLY
+	(SELECT TOP 1 [Description]
+	 FROM X04_COdeValues X04 WITH (NOLOCK)
+	 WHERE X04.[Type] = 'DDCCOMTYPE' 
+	 AND X04.[Value] = A05.CommunicationType
+	) SELTypeDesc
+
+WHERE A05.LongComment IS NOT NULL 
+AND A05.[Date] IS NOT NULL 
+AND A01h.FunctionalCategory = 'DR' 
+AND A01h.Active = 1 
+AND A01h.[Primary] = 1 
+AND A01.FamilyMemberType IN ('SP','CN','DP')
+
+--ORDER BY A05.[Date] DESC
+
+) 
+
+SELECT DISTINCT * 
+FROM ConvComms
+--WHERE CMTDONOR in ('22585533')
+ORDER by CCOMDT DESC</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1957,7 +2052,7 @@ ORDER BY A05.[Date] DESC</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT 
 A01.AccountNumber
 ,A01.FamilyID
 ,CASE WHEN A01.FamilyMemberType = 'SP' THEN 'SPOUSE'
@@ -1974,6 +2069,7 @@ A01.AccountNumber
 --,A01.MiddleName
 --,A01.LastName
 FROM A01_AccountMaster A01
+INNER JOIN tbl_FFPDRSPortfolios p ON A01.AccountNumber = p.DONORNBR
 WHERE (( A01.AccountType = 'I'  AND  FamilyMemberType in ('SP','DP')) 
 or (A01.AccountType = 'O' and A01.FamilyMemberType = 'CN'))</property>
                 <property
@@ -3611,16 +3707,16 @@ outer apply(
     Where DonStats.AccountNumber = A01.AccountNumber
     ) SELFstGftDte
 outer apply (
-        select top 1
+        select 
                 A01d.DateValue as 'InceptionDate'
         from
                 A01dAccountDates A01d WITH (NOLOCK)
         where
-                A01d.AccountNumber = A01.AccountNumber and A01d.DateType = 'DDCINCEPT'
+                A01d.AccountNumber = A01.AccountNumber and A01d.DateType = 'DDCINCEPT' and A01d.Active ='1'
         ) SELA01d
 outer apply (
-        select top 1
-                A01d2.DateValue as 'LastContactDate'
+        select 
+                MAX(A01d2.DateValue) as 'LastContactDate'
         from
                 A01dAccountDates A01d2 WITH (NOLOCK)
         where
@@ -7394,6 +7490,8 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
 	isnull(FP07.CallWeek,0) AS  DRMWNCAL,
 	isnull(FP07.FollowUpWeek,0) AS  DRMWNFUP,
 	DRWKWTP = case
+				when A01h.AssignedToAccessorId = 11837 then ''
+				when A01h.AssignedToAccessorId = 1339 then ''
 				when A01h.AssignmentType = 'SDA' then 'H'
 				when A01h.AssignmentType = 'DA' then 'P'
 				when A01h.AssignmentType = 'SCA' then 'M'
@@ -7403,7 +7501,7 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
 				when A01h.AssignmentType = 'SDA' then '1'
 				when A01h.AssignmentType = 'DA' then '2'
 				when A01h.AssignmentType = 'SCA' then '3'
-				when A01h.AssignedToAccessorId = 1158 then '6'
+				when A01h.AssignedToAccessorId = 11837 then '6'
 				when A01h.AssignedToAccessorId = 1339 then '5'
 				else ''
 				end,
@@ -7530,16 +7628,16 @@ outer apply(
     Where DonStats.AccountNumber = A01.AccountNumber
     ) SELFstGftDte
 outer apply (
-        select top 1
+        select 
                 A01d.DateValue as 'InceptionDate'
         from
                 A01dAccountDates A01d WITH (NOLOCK)
         where
-                A01d.AccountNumber = A01.AccountNumber and A01d.DateType = 'DDCINCEPT'
+                A01d.AccountNumber = A01.AccountNumber and A01d.DateType = 'DDCINCEPT' and A01d.Active = '1' 
         ) SELA01d
 outer apply (
-        select top 1
-                A01d2.DateValue as 'LastContactDate'
+        select 
+                MAX(A01d2.DateValue) as 'LastContactDate'
         from
                 A01dAccountDates A01d2 WITH (NOLOCK)
         where
@@ -10425,16 +10523,16 @@ outer apply
         <NodeLayout
           Size="222,42"
           Id="Package\Truncate tbl_FFPDRSPortfolios"
-          TopLeft="21,12" />
+          TopLeft="21,53" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="243,33">
+          TopLeft="243,74">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="195,55"
+              EndConnector="195,14"
               Start="0,0"
-              End="187.5,55">
+              End="187.5,14">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -10445,13 +10543,13 @@ outer apply
                     Point2="97.5,0"
                     Point3="97.5,4" />
                   <mssgle:LineSegment
-                    End="97.5,51" />
+                    End="97.5,10" />
                   <mssgle:CubicBezierSegment
-                    Point1="97.5,51"
-                    Point2="97.5,55"
-                    Point3="101.5,55" />
+                    Point1="97.5,10"
+                    Point2="97.5,14"
+                    Point3="101.5,14" />
                   <mssgle:LineSegment
-                    End="187.5,55" />
+                    End="187.5,14" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10463,7 +10561,7 @@ outer apply
         <NodeLayout
           Size="163,42"
           Id="Package\Comments Export"
-          TopLeft="60.5,417.5" />
+          TopLeft="65.5,361.5" />
         <NodeLayout
           Size="264,42"
           Id="Package\Portfolio Import to tbl_FFPDRSPortolios"
@@ -10475,21 +10573,21 @@ outer apply
         <NodeLayout
           Size="172,42"
           Id="Package\Transactions Export"
-          TopLeft="53.5,303.5" />
+          TopLeft="56.5,270.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="137.5,236.5">
+          TopLeft="139,236.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,67"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,59.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.5" />
+                    End="0,26.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10500,18 +10598,18 @@ outer apply
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="140.75,345.5">
+          TopLeft="144.75,312.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,72"
+              EndConnector="0,49"
               Start="0,0"
-              End="0,64.5">
+              End="0,41.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,64.5" />
+                    End="0,41.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10597,8 +10695,8 @@ outer apply
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="282,514"
-          Size="282,558"
+          PanelSize="282,496"
+          Size="282,539"
           Id="396ab4d5-b440-411a-b6bb-775395dfea39"
           TopLeft="432.5,18.5">
           <GroupLayout.ChildrenIds>
@@ -10620,7 +10718,7 @@ outer apply
     design-time-name="Package\Comments Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
           Id="Package\Comments Export\OLE DB Source"
@@ -10648,9 +10746,7 @@ outer apply
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10668,7 +10764,7 @@ outer apply
     design-time-name="Package\Portfolio Import to tbl_FFPDRSPortolios">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
           Id="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination"
@@ -10708,9 +10804,7 @@ outer apply
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10787,7 +10881,7 @@ outer apply
     design-time-name="Package\Transactions Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
           Id="Package\Transactions Export\OLE DB Source"
@@ -10815,9 +10909,7 @@ outer apply
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
