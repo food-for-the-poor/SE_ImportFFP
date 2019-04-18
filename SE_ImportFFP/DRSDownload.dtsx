@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="153"
-  DTS:VersionGUID="{601D81F9-7EAE-44FC-8667-307EE4CD7D40}">
+  DTS:VersionBuild="160"
+  DTS:VersionGUID="{BFA11908-34D5-4C23-AF12-7ED63C04B45C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{BA069980-B36F-4780-AF90-8206073671A9}"
+              DTS:DTSID="{03C97A59-50E5-4BDB-A459-B408C0A79A27}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 1"
-              DTS:DTSID="{5EF0A07F-B20A-42EB-86AE-0EC5C27FECCE}"
+              DTS:DTSID="{6D35256E-8A1E-4EBE-A3E7-1F348C6AE03E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -55,7 +55,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 2"
-              DTS:DTSID="{FF02121A-8009-4764-84EE-0216B9CCBDAC}"
+              DTS:DTSID="{E457F46F-4D87-444F-B389-F32CCA04BDF3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -63,7 +63,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 3"
-              DTS:DTSID="{CEB9F19B-4324-411C-8ADA-6BEE3F523BB4}"
+              DTS:DTSID="{06A1747A-A970-4826-A0B8-52AF92817643}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -71,7 +71,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 4"
-              DTS:DTSID="{CDCE27C1-0955-4BA5-B8EB-0C30795DE729}"
+              DTS:DTSID="{B54F2925-47C9-4D30-B2AC-BE8D48DF26BE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -79,7 +79,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 5"
-              DTS:DTSID="{6481F7EB-53CB-4949-AE9D-8982C3AC367F}"
+              DTS:DTSID="{7A1CB795-37D2-4AB7-B951-4BE3ED2F7D38}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -87,7 +87,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 6"
-              DTS:DTSID="{A6ED30F2-36AE-4659-B4AD-01A5A87ECA42}"
+              DTS:DTSID="{5478B27F-56DB-4D3A-9D00-95503CB21114}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -95,7 +95,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 7"
-              DTS:DTSID="{487EE451-18BF-4D54-B734-58CAD146F8C8}"
+              DTS:DTSID="{DC64AF2A-3F4E-49D4-91D8-B9BB95ECADB5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 8"
-              DTS:DTSID="{61A1D089-3BBE-4EFE-A21D-4C886D2FDB73}"
+              DTS:DTSID="{E821A303-B424-4F85-AECC-A32F4C85AA40}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 9"
-              DTS:DTSID="{89913EAD-41B3-4C80-9D08-762D944F2C5C}"
+              DTS:DTSID="{5A270853-4A35-4972-BA2E-DFA545354999}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -122,6 +122,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{555a0287-a84c-4e41-a9b3-1d9b4bbb23bb}"
       DTS:ObjectName="GroupRecord">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FolderPath]+ @[User::TABGrpRec]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -139,7 +141,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{9B0B4999-BB03-4BAA-9575-8CFE7564D085}"
+              DTS:DTSID="{1A7F8956-9062-49EF-9E1A-D359786B32A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +149,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 1"
-              DTS:DTSID="{7208D99B-B17D-4A9A-BCAA-8AD0BA24464C}"
+              DTS:DTSID="{B1CA004A-F54D-4A63-996C-0FC8C792B55C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -155,7 +157,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 2"
-              DTS:DTSID="{7EEEAA57-51A5-4BC1-9A96-57252186FAF9}"
+              DTS:DTSID="{B82AB3F6-5393-4453-AF74-32C14BBCBDD2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -163,7 +165,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 3"
-              DTS:DTSID="{1DC9C5B7-566B-4B33-94E3-5026C6DD2AFD}"
+              DTS:DTSID="{D1D6EB08-F8DA-4188-96E3-09C4F141CBCC}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1039,16 +1041,6 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[TestServer]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{F5928E78-77F9-489C-AE6F-F19C2DDE62B5}"
-      DTS:ObjectName="TestServer">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=SEMIGRATION;Initial Catalog=Dev_SE_PROD;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Transactions_LocFile]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{d06f3e5b-71a1-4cbf-a29d-33a4360284a5}"
@@ -1244,6 +1236,15 @@
       DTS:ObjectName="TABComments">
       <DTS:VariableValue
         DTS:DataType="8">TABDRSComments.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0E6FA24D-5411-4827-9C86-7F3F1BD5F1E9}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TABGrpRec">
+      <DTS:VariableValue
+        DTS:DataType="8">TABDRSFamRec.txt</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -9842,38 +9843,30 @@ AND A01h.[Primary] = '1'</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select 
-	DRSPORT.DonorNbr as 'TRDOOR'
-	,T04.SourceCode as 'TRNSRCCOD'
-	,P04.Description as 'TRNSRCDSC'
-	,0 as 'TRNBATCH'
-	,isnull(SELA10.PledgeCode,'') as 'TRNPLEDGE'
-	,SELBank.BankCode as 'TRNBANK'
-	,' ' as 'TRNGFTDATE'
-	,' ' as 'TRNPRODATE'
-	,0 as 'TRNCOUNT'
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT 
+	DRSPORT.DonorNbr AS 'TRDOOR'
+	,T04.SourceCode AS 'TRNSRCCOD'
+	,P04.[Description] AS  'TRNSRCDSC'
+	,0 AS 'TRNBATCH'
+	,isnull(SELA10.PledgeCode,'') AS 'TRNPLEDGE'
+	,SELBank.BankCode AS 'TRNBANK'
+	,' ' AS 'TRNGFTDATE'
+	,' ' AS 'TRNPRODATE'
+	,0 AS 'TRNCOUNT'
 	,T04.TotalAmount 'TRNAMT'
-	,format(T01.Date,'MM/dd/yyyy') as 'DTRNGFTDTE'
+	,format(T01.[Date],'MM/dd/yyyy') AS 'DTRNGFTDTE'
 
-	,COALESCE(CONVERT(VARCHAR(10),D03.printdate,(101)), '') as 'DTRNPRODTE' 	
-	, P04C.CodeValue as 'TRNDEPT'
+	--,COALESCE(CONVERT(VARCHAR(10),D03.printdate,(101)), '') AS 'DTRNPRODTE' 	
+	,'' AS 'DTRNPRODTE'
+	, P04C.CodeValue AS 'TRNDEPT'
 from
-	tbl_FFPDRSPortfolios DRSPORT
-left outer join T01_TransactionMaster T01 with (nolock) on	T01.AccountNumber = DRSPORT.DonorNbr
-inner join T04_GiftDetails T04 (nolock) on T04.DocumentNumber = T01.DocumentNumber
-left outer join T12_TransactionResponseDetails T12 with (nolock)
-on T12.ResponseID = T04.ResponseID
-left outer join D03_ProductionProfiledGroupPrintGroups D03 with (nolock) 
-on D03.PrintGroupId = T12.PrintGroupId AND T12.CommunicationType = 'RECEIPT' AND T12.ProfileGroupId &gt; 1
-join
-        P04_SourceCodesMaster P04 WITH (NOLOCK)
-ON
-        P04.SourceCode = T04.SourceCode
-join
-        P04cSourceCodes P04C WITH (NOLOCK)
-on
-        P04.SourceCode = P04C.SourceCode and
-        P04C.CodeType = 'DEPCOD'
+tbl_FFPDRSPortfolios DRSPORT WITH (NOLOCK)
+left outer join T01_TransactionMaster T01 WITH(NOLOCK) ON	T01.AccountNumber = DRSPORT.DonorNbr
+inner join T04_GiftDetails T04 WITH(NOLOCK) ON T04.DocumentNumber = T01.DocumentNumber
+--left outer join T12_TransactionResponseDetails T12 WITH(NOLOCK) ON T12.ResponseID = T04.ResponseID
+--left outer join D03_ProductionProfiledGroupPrintGroups D03 WITH(NOLOCK) ON D03.PrintGroupId = T12.PrintGroupId 
+join P04_SourceCodesMaster P04 WITH (NOLOCK) ON P04.SourceCode = T04.SourceCode
+join P04cSourceCodes P04C WITH (NOLOCK) ON P04.SourceCode = P04C.SourceCode 
 outer apply
    (SELECT top 1 B03.BankCode
 	 FROM T13_TransactionDeposits T13 WITH (NOLOCK)
@@ -9884,12 +9877,17 @@ outer apply
 outer apply
 	(select top 1
 		A10.PledgeCode		
-	 from
-		A10_AccountPledges A10 with (NOLOCK)
+	 from A10_AccountPledges A10 with (NOLOCK)
 	 where
-		A10.AccountNumber = T01.AccountNumber and
-		A10.SourceCode = T04.SourceCode
-	) SELA10</property>
+	  A10.AccountNumber = T01.AccountNumber 
+	 and A10.SourceCode = T04.SourceCode
+	) SELA10
+
+WHERE 
+--T12.CommunicationType = 'RECEIPT' 
+--AND T12.ProfileGroupId &gt; 1
+--and
+ P04C.CodeType = 'DEPCOD'</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -10122,7 +10120,7 @@ outer apply
                       refId="Package\Transactions Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DTRNPRODTE]"
                       codePage="1252"
                       dataType="str"
-                      length="10"
+                      length="1"
                       name="DTRNPRODTE" />
                     <externalMetadataColumn
                       refId="Package\Transactions Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TRNDEPT]"
@@ -10209,7 +10207,7 @@ outer apply
                       refId="Package\Transactions Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DTRNPRODTE]"
                       codePage="1252"
                       dataType="str"
-                      length="10"
+                      length="1"
                       lineageId="Package\Transactions Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DTRNPRODTE]"
                       name="DTRNPRODTE" />
                     <outputColumn
@@ -10720,13 +10718,13 @@ outer apply
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150,42"
-          Id="Package\Comments Export\OLE DB Source"
-          TopLeft="50,52" />
-        <NodeLayout
           Size="129,42"
           Id="Package\Comments Export\Comments"
           TopLeft="290,52" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Comments Export\OLE DB Source"
+          TopLeft="50,52" />
         <EdgeLayout
           Id="Package\Comments Export.Paths[OLE DB Source Output]"
           TopLeft="200,73">
@@ -10754,6 +10752,52 @@ outer apply
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Comments Export\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Group Record Export">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Group Record Export\OLE DB Source"
+          TopLeft="175,120" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Group Record Export\Flat File Destination"
+          TopLeft="402,114" />
+        <EdgeLayout
+          Id="Package\Group Record Export.Paths[OLE DB Source Output]"
+          TopLeft="325,138">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77,0"
+              Start="0,0"
+              End="69.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Group Record Export\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10835,7 +10879,7 @@ outer apply
     design-time-name="Package\Portfolios Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,45"
           Id="Package\Portfolios Export\OLE DB Source"
@@ -10863,7 +10907,9 @@ outer apply
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10917,52 +10963,6 @@ outer apply
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Transactions Export\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Group Record Export">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Group Record Export\OLE DB Source"
-          TopLeft="175,120" />
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Group Record Export\Flat File Destination"
-          TopLeft="402,114" />
-        <EdgeLayout
-          Id="Package\Group Record Export.Paths[OLE DB Source Output]"
-          TopLeft="325,138">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="77,0"
-              Start="0,0"
-              End="69.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="69.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Group Record Export\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
