@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">INF-DR</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAACAAAAAAADZgAAwAAAABAAAAA+YTsYdHoH2LoxYbtOboZBAAAAAASAAACgAAAAEAAAAMHD5o6P5JDiGo0YH2RhR2eIAAAAffHYWr7DG3ywOInItQGk9giFP7AT69rYliNv+T/jpEP6JiO15nUOWxpownF+iywLpISCURPfWFLvC0BFAtlUhXTi6xk5tEBnbMPjwM/KSpvzPOjAwgE5bDuRGzPJN2/JaRY/mEKkRX1BTurqqSvgRZK7enBLMngXTx2YSJRHaANRcvRMZfnaKRQAAABoCfwcLR7QIys3JwePY/n2Gg1hqg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAACAAAAAAADZgAAwAAAABAAAAAUy5EiokTxhOuWgxVgvyI4AAAAAASAAACgAAAAEAAAADl3/PtZH/+whDUzWvte3aWIAAAAsNQ46lKE3deHrevOIY/Yy0B8W8Jcbi1okTpnDm7cm8LNAzEggIYyTCeejaglB7ItHU1bES1GM+fKPjC2+acMejPBqaqQgrreLjVZ7Ag+4tDg7ZR+AdOdwlfQeqFMpvYJQaAcZUrYyyo9/fRqdmepRJIseKyxIe6nAb7aNXel8FD5WqvRS4XbbxQAAAC/wi5h+kkDz7uyihxNJEMzxU+PQg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -38,6 +38,7 @@
           <SSIS:Package SSIS:Name="DRSDownload.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="DRSUploadComments.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="DRSUploadCampaigns.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="DRSFileArchive.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
@@ -384,7 +385,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">140</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">150</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1185,10 +1186,10 @@
                 <SSIS:Property SSIS:Name="Name">DRSDownload</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">160</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">171</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{BFA11908-34D5-4C23-AF12-7ED63C04B45C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A97208A9-00D5-476D-928B-3D78ADE1E6A0}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1959,10 +1960,10 @@
                 <SSIS:Property SSIS:Name="Name">DRSUploadComments</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">61</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">87</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{00C0C051-17FE-4A98-83CC-80AA4881B380}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{1C6B0EDE-45C3-4DB1-BE21-8C08380552B5}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2307,10 +2308,10 @@
                 <SSIS:Property SSIS:Name="Name">DRSUploadCampaigns</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">90</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">100</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{3FBFFB89-FBA5-4BB2-8DDE-BEB5BC60495D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{4AA1E522-4D55-42DD-B3C0-08CDFA861692}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2449,6 +2450,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2646,6 +2649,23 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
               </SSIS:Parameters>
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="DRSFileArchive.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{FDDE1294-AC8D-4B26-AC22-2493BE542EB6}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">DRSFileArchive</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{BA4F313B-F1C2-49DD-822C-880B5C8216E1}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="160"
-  DTS:VersionGUID="{BFA11908-34D5-4C23-AF12-7ED63C04B45C}">
+  DTS:VersionBuild="172"
+  DTS:VersionGUID="{97048F9E-0C64-4797-B14F-241D207E14F3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -196,7 +196,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{88C1A95A-DF29-415E-9F76-765000B2DCB6}"
+              DTS:DTSID="{84F08984-00B1-4315-98CC-3D94D97EAD1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -205,7 +205,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 1"
-              DTS:DTSID="{D2BBF745-CB61-4A9D-AE6D-0C2839E5DDAF}"
+              DTS:DTSID="{E3C170E0-4378-4A26-AFC5-4DB19C169418}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -214,7 +214,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 2"
-              DTS:DTSID="{3463DFA5-770E-452A-8AB3-8E62ED9C1E55}"
+              DTS:DTSID="{6E5A41B1-A84C-4A4B-833E-2974C51DE326}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -223,7 +223,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 3"
-              DTS:DTSID="{3C8C5D8D-1E95-4ADF-8A0A-F9237785DA75}"
+              DTS:DTSID="{7D8E7846-ACE2-4661-B6F0-B14DD87D33D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -232,7 +232,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 4"
-              DTS:DTSID="{9CF627C1-9D68-4841-A45C-7270261B98F5}"
+              DTS:DTSID="{0E26300E-5DE4-4A42-B443-936AA2FC43C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -241,7 +241,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 5"
-              DTS:DTSID="{17182E36-C1BB-46DB-8E10-642CDBE3EBC2}"
+              DTS:DTSID="{25B6D3AC-92F9-4C13-86FC-F0A1F540673F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -250,7 +250,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 6"
-              DTS:DTSID="{D79E7444-9292-4735-B0B7-5829CD739B27}"
+              DTS:DTSID="{2D961C2F-AE68-478B-A038-BAE1B54127CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -259,7 +259,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 7"
-              DTS:DTSID="{3AC6739A-7DB6-49BD-9064-98DDE0236DAB}"
+              DTS:DTSID="{47ABB97D-1BE8-4B0D-B812-6153C0B0C030}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -268,7 +268,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 8"
-              DTS:DTSID="{F91158B3-9E3D-4E05-A8CE-386B622919BA}"
+              DTS:DTSID="{E00003AD-8AC1-4659-8A18-47EEF57CC33E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -277,7 +277,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 9"
-              DTS:DTSID="{34DB8F36-0325-4AA3-8E23-5614788DBD3F}"
+              DTS:DTSID="{C6DFAD45-9723-4C3F-B68F-B8FF19C57AD3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -286,7 +286,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 10"
-              DTS:DTSID="{F02F21B4-C5D4-491B-A949-F8CA623B0744}"
+              DTS:DTSID="{B7B11918-C500-4A36-ADB8-A6A7287FE4C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -295,7 +295,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 11"
-              DTS:DTSID="{9295F6BF-2A66-4E75-982F-A74F1B4B6114}"
+              DTS:DTSID="{12B25DEC-3A52-46CE-BD36-ACAA4EBCA954}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -304,7 +304,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 12"
-              DTS:DTSID="{2E70F0BA-628F-4BA4-A03C-3B544BAE79C7}"
+              DTS:DTSID="{D5102DC9-66DE-4A4B-8137-5D564C78E750}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -313,7 +313,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 13"
-              DTS:DTSID="{ECEB5703-18B8-4D0C-BFAF-242E9C1B7BFA}"
+              DTS:DTSID="{9D22E10A-0AFF-4841-AE0E-E3609552D3F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -322,7 +322,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 14"
-              DTS:DTSID="{07529A87-6D12-441B-B933-37B07954429A}"
+              DTS:DTSID="{F6B1E97F-B0C1-4437-A879-86157485C30B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -331,7 +331,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 15"
-              DTS:DTSID="{4FFD7B55-DE7E-4C27-95CB-1E9612F3B554}"
+              DTS:DTSID="{9878E248-47B0-4E86-87EE-7E9DBFDC4478}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -340,7 +340,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 16"
-              DTS:DTSID="{66F48845-2FDE-4675-A8A6-494B23B329D2}"
+              DTS:DTSID="{C9F4F84B-983A-402D-B589-D352FD2DE345}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -349,7 +349,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 17"
-              DTS:DTSID="{AB674FCD-807E-4A11-B5A0-B25DBEC5153E}"
+              DTS:DTSID="{C7F9DA33-5D87-4D6A-96F0-8FF51C5D6DCC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -358,7 +358,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 18"
-              DTS:DTSID="{CDB9BC8F-8CE9-423C-8AC0-012B619157A3}"
+              DTS:DTSID="{D88D1DE3-F85F-44D0-9222-BAD13BCF5AE0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -367,7 +367,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 19"
-              DTS:DTSID="{4C63C2FB-8DE4-488C-A5F8-22D8AB780315}"
+              DTS:DTSID="{61FEFC17-6A9D-4B39-846D-6C2DDA93F149}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -376,7 +376,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 20"
-              DTS:DTSID="{B5C1BF57-92D2-4856-A4EC-403BACA5516A}"
+              DTS:DTSID="{9149F7C2-C6A1-4568-B5A2-A0FA49EE76BD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -385,7 +385,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 21"
-              DTS:DTSID="{37623B15-0EA6-4D39-9E3B-763941125AC3}"
+              DTS:DTSID="{FB8E8D7D-714C-48AB-815E-B1094A673652}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -394,7 +394,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 22"
-              DTS:DTSID="{86786B52-AC82-473E-9B7F-3516637CA550}"
+              DTS:DTSID="{BE2B619B-F098-47AF-ABD8-E8D33AE39BE8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -403,7 +403,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 23"
-              DTS:DTSID="{6A8FFE83-9681-4E4C-A0F4-5264F9342A40}"
+              DTS:DTSID="{69B0EA6A-7DC6-4974-814C-DB63348E7A46}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -412,7 +412,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 24"
-              DTS:DTSID="{B9EBBBA4-3B27-45F1-A49F-5796DFC7C3B2}"
+              DTS:DTSID="{A1F68EEB-6335-433A-A251-17E0F67C0964}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -421,7 +421,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 25"
-              DTS:DTSID="{11763967-B7E4-41AC-9448-73BDBDFF653B}"
+              DTS:DTSID="{8A4D6137-4B83-4A9E-BBFA-5F3F360F8ED4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -430,7 +430,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 26"
-              DTS:DTSID="{CB05D926-C6FA-4C47-9400-184C2512CB1F}"
+              DTS:DTSID="{FA846003-9315-46A2-9531-CA9795B3A9E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -439,7 +439,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 27"
-              DTS:DTSID="{44F8C4D7-CACF-4FC6-A0F3-2103F9A44053}"
+              DTS:DTSID="{7ACC8EBA-FD1F-46C2-B2D7-5205C8FCD56E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -448,7 +448,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 28"
-              DTS:DTSID="{4748EF32-376E-4CD1-9A0F-93B6591FC4A0}"
+              DTS:DTSID="{F5DA9BAB-0190-4ED3-9663-E5FA8FB9D75E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -457,7 +457,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 29"
-              DTS:DTSID="{146A1C49-C486-48B1-94AE-BDA5D270C723}"
+              DTS:DTSID="{681C18DF-8632-4E31-8592-0FC7B75850F8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -466,7 +466,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 30"
-              DTS:DTSID="{F54D492C-5C0B-4791-AAAD-833BD35C6331}"
+              DTS:DTSID="{830CF82D-8A1F-4562-BE1C-D4F83467B59F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -475,7 +475,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 31"
-              DTS:DTSID="{F5AB0249-5D02-4CDD-B9D8-C00C4F4E1C68}"
+              DTS:DTSID="{3465500B-5240-4269-A973-968FFFEC6AEA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -484,7 +484,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 32"
-              DTS:DTSID="{53F3F48B-6813-4D26-867D-2C16ECEA94A3}"
+              DTS:DTSID="{81B95CDD-52DB-4970-96F4-C36078B9B65A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -493,7 +493,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 33"
-              DTS:DTSID="{8745CEB3-45F5-4772-A191-91D2A4D21851}"
+              DTS:DTSID="{1C927012-DD70-48A7-B92F-3CA63A18AD32}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -502,7 +502,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 34"
-              DTS:DTSID="{31C61A01-CA6A-4532-A1EC-2AF21E7871A1}"
+              DTS:DTSID="{C3ACB9DC-7739-4984-B7B6-EA9CA6A71F1F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -511,7 +511,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 35"
-              DTS:DTSID="{44677796-D7C5-4118-BD47-12F7BDB34356}"
+              DTS:DTSID="{6B7CD972-EE76-4651-BFAD-08AAC4E9D2C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -520,7 +520,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 36"
-              DTS:DTSID="{49067F82-5C4E-40F0-B674-EBC9180586FF}"
+              DTS:DTSID="{C3F65561-8391-428D-A885-BA25113010F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -529,7 +529,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 37"
-              DTS:DTSID="{27470692-97D9-4F5A-B1E4-87D6FE04114D}"
+              DTS:DTSID="{0E294EA0-13D0-4211-93F6-8974762C549D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -538,7 +538,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 38"
-              DTS:DTSID="{FB53B9BC-23A8-4B3B-8EE3-A71F79CA099F}"
+              DTS:DTSID="{D5200DD2-7533-4752-8D76-98BA60492BCE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -547,7 +547,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 39"
-              DTS:DTSID="{6E4E8889-2AF9-45F7-9C92-59B32E006392}"
+              DTS:DTSID="{5673770A-5109-4EDF-B908-F888E7B3D849}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -556,7 +556,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 40"
-              DTS:DTSID="{367A6913-57CB-4F57-892B-35488476437C}"
+              DTS:DTSID="{1A9D5E59-00A7-4563-A469-937851432EC1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -565,7 +565,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 41"
-              DTS:DTSID="{E921C7FB-EF34-4AB3-8EFF-CF8889DA9432}"
+              DTS:DTSID="{D8769635-2742-450C-AABB-F08C795DA47F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -574,7 +574,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 42"
-              DTS:DTSID="{31FD43EB-117F-4E3D-B041-1403538FAC5E}"
+              DTS:DTSID="{89266F7B-B4C8-4495-83B8-02E341B41AE9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -583,7 +583,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 43"
-              DTS:DTSID="{F731D92D-32EB-4714-BB71-5BABF8565BF7}"
+              DTS:DTSID="{F2B78998-A4AF-4A99-8F43-60AE88E397C6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -592,7 +592,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 44"
-              DTS:DTSID="{7067377F-C96D-4D42-85AB-9F98A8F1344A}"
+              DTS:DTSID="{BB535CD7-3A1D-4DB6-802B-A232F5E27571}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -601,7 +601,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 45"
-              DTS:DTSID="{4B5B4BB9-79FE-432B-8933-C9724739271B}"
+              DTS:DTSID="{EB22E1BF-9727-4493-B30D-E183769159F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -610,7 +610,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 46"
-              DTS:DTSID="{CBC38593-BA07-4E8B-B56B-5ED11DF8F0CC}"
+              DTS:DTSID="{87457D5C-B061-41A8-AB51-B9F777C6A42E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -619,7 +619,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 47"
-              DTS:DTSID="{AC9CEF4B-5125-4A8C-98A4-FCB54386576F}"
+              DTS:DTSID="{363AE916-7DAB-4B44-821F-548BD67BB7BD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -628,7 +628,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 48"
-              DTS:DTSID="{A83327FE-EEA5-4E1D-8589-3C8C4E17AC0E}"
+              DTS:DTSID="{FE548CED-B117-4150-8AA3-0AB3D478E0B4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -637,7 +637,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 49"
-              DTS:DTSID="{88E36A53-8E5E-4BF2-97A0-2E2DFE4BCEFD}"
+              DTS:DTSID="{396CC554-97A8-4911-9032-CE9F97111445}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -646,7 +646,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 50"
-              DTS:DTSID="{1DBEAF3E-57B5-4165-8A66-A0E1E80CC46C}"
+              DTS:DTSID="{E0541201-F816-4AF9-9675-89256F87017C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -655,7 +655,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 51"
-              DTS:DTSID="{090CE2BD-7266-4C13-8790-236A8BB2F137}"
+              DTS:DTSID="{2D13B945-22E5-4F52-84CB-963D86C616B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -664,7 +664,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 52"
-              DTS:DTSID="{0DBC80B3-4E50-4C9C-8FA2-52EDBE2B9790}"
+              DTS:DTSID="{20F3A5CB-7E1B-4699-963F-25621E09FE06}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -673,7 +673,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 53"
-              DTS:DTSID="{EB65166B-ADAD-4375-9EF5-726789A5E4B6}"
+              DTS:DTSID="{B489563C-5662-48F8-B463-1FEBFA292C5B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -682,7 +682,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 54"
-              DTS:DTSID="{19476D22-4EA1-4B6F-B2D6-62446D80AFB1}"
+              DTS:DTSID="{5FB09886-32FD-464B-9C00-1F13666EB6D9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -691,7 +691,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 55"
-              DTS:DTSID="{480D66C1-4263-404F-9FC3-C7158E4C44B9}"
+              DTS:DTSID="{1D8139D6-52DC-4668-881C-B07CC4D56688}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -700,7 +700,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 56"
-              DTS:DTSID="{867737AA-C18B-47C2-8FE5-D4794F8BA495}"
+              DTS:DTSID="{57A6932D-8F43-48C6-BCE6-97A7108C45D1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -709,7 +709,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 57"
-              DTS:DTSID="{0881E1E9-97E0-4DF5-B783-DA18DA73B728}"
+              DTS:DTSID="{BE7D38C6-4511-4B8D-B660-99DFA315545B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -718,7 +718,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 58"
-              DTS:DTSID="{537704A7-CD26-45CD-B392-C53D12D9DE5C}"
+              DTS:DTSID="{876D6557-3CA0-4E14-A284-F0471ACD0985}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -727,7 +727,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 59"
-              DTS:DTSID="{947F2910-4215-4CF7-830E-9841DF544994}"
+              DTS:DTSID="{6561C687-FC06-499B-86C2-39F7017E94E1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -736,7 +736,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 60"
-              DTS:DTSID="{AC3AB74E-2A9B-46FF-A762-61E11E96E573}"
+              DTS:DTSID="{CF77EE0E-A4D2-487B-B801-7455FE3A5222}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -745,7 +745,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 61"
-              DTS:DTSID="{C2BAC1EE-066B-4EB2-A64A-D4F264A814EB}"
+              DTS:DTSID="{7CCBBD18-55C7-4B72-82F5-DC4C5CC9372F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -754,7 +754,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 62"
-              DTS:DTSID="{3109ED13-013E-4815-B386-E06F3C7888B4}"
+              DTS:DTSID="{5D5C6D70-AA02-4668-B201-6A256D31178A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -763,7 +763,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 63"
-              DTS:DTSID="{16E34DF0-1361-43D0-B2AA-86ED60A138BD}"
+              DTS:DTSID="{11F48275-A62C-46B0-8B7E-E17C37F1B8E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -772,7 +772,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 64"
-              DTS:DTSID="{4B2BC969-0A1A-46F7-8533-FF8E9A90A9DC}"
+              DTS:DTSID="{74E06618-0A92-4CC3-A6E0-BE0992445E4F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -781,7 +781,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 65"
-              DTS:DTSID="{426A10A9-B118-4C33-B7FA-1873366F10D0}"
+              DTS:DTSID="{6ACA3791-4A3C-4E33-B83F-3E6DFAB40919}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -790,7 +790,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 66"
-              DTS:DTSID="{9A5176FB-2392-4EB4-93BD-87363B485F0B}"
+              DTS:DTSID="{34E3188D-F197-4B6F-AA7E-67ABB06140A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -799,7 +799,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 67"
-              DTS:DTSID="{6329F9A1-18E7-43E0-BDAD-91086836AD57}"
+              DTS:DTSID="{1C3C47C3-706F-46AD-8E24-664F439A7D58}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -808,7 +808,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 68"
-              DTS:DTSID="{2D3AA152-8FDB-4F8F-BA73-5595EF1F585E}"
+              DTS:DTSID="{6E144410-47F7-45CE-992D-BA4A1EBE4FA4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -817,7 +817,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 69"
-              DTS:DTSID="{0685EFC8-680A-4943-B36D-72F7FAF7BE1C}"
+              DTS:DTSID="{A109D8D8-9D97-47BD-870B-879C8F7AB7D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -826,7 +826,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 70"
-              DTS:DTSID="{D0C81349-8F56-47AC-9AB6-27DCFB071244}"
+              DTS:DTSID="{DA3F3480-9CF8-400B-BDA4-D99406369A27}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -835,7 +835,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 71"
-              DTS:DTSID="{E9D9067F-1014-4C26-9BE3-B064ECD24DA4}"
+              DTS:DTSID="{15BAA017-31A7-4E20-AB41-C5F299BE9928}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -844,7 +844,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 72"
-              DTS:DTSID="{00E1F898-AE39-4CC5-8546-3DA7DBDBF0D3}"
+              DTS:DTSID="{594AD589-7E08-4F32-B36A-FC210AF84B21}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -853,7 +853,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 73"
-              DTS:DTSID="{0E8A2520-0EBC-461C-BFAE-18C09AF9024B}"
+              DTS:DTSID="{0EA10EDC-D03F-4956-830C-BCC98578FAA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -862,7 +862,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 74"
-              DTS:DTSID="{B0CF4727-4ED2-4293-A273-6D006ACC32A7}"
+              DTS:DTSID="{53A1F82E-1FB7-4DFC-8876-9D605F719E42}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -871,7 +871,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 75"
-              DTS:DTSID="{F18D362B-9BDC-4983-90B1-94C6774D02C6}"
+              DTS:DTSID="{D23FBECC-D065-446B-9A93-51B2CF48018B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -880,7 +880,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 76"
-              DTS:DTSID="{8D71275B-0C63-4725-A26F-D04A9B32DAEB}"
+              DTS:DTSID="{D9D7CE42-1442-4FBB-99AC-237E053D9C95}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -889,7 +889,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 77"
-              DTS:DTSID="{27938883-9648-4655-884D-077950B8B342}"
+              DTS:DTSID="{0336CD76-C618-4C5E-95B2-451AF4D5F7B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -898,7 +898,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 78"
-              DTS:DTSID="{C7E4571A-654E-480D-8D35-FE7D4836B982}"
+              DTS:DTSID="{854F9E3B-7025-4E99-BCEB-4C7A7A62153D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -907,7 +907,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 79"
-              DTS:DTSID="{965B11C2-762E-442B-9305-600F056AD587}"
+              DTS:DTSID="{3002C048-F687-40DE-8825-724FE5DB4081}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -916,7 +916,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 80"
-              DTS:DTSID="{A1795881-73D6-4F4D-A954-45BB192E4690}"
+              DTS:DTSID="{820B3730-2F92-4D70-8F74-00B84454024B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -925,7 +925,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 81"
-              DTS:DTSID="{F71741A8-6FC2-4538-A501-C8771E7ECC32}"
+              DTS:DTSID="{FFA4FF21-3FA1-4B0D-B553-56B833A73D31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -934,7 +934,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 82"
-              DTS:DTSID="{F0CA9D43-8B4D-4DA1-9B07-2565ABEF1CC9}"
+              DTS:DTSID="{1218260C-B3B0-4B0B-A837-6BEE76B34FA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -943,7 +943,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 83"
-              DTS:DTSID="{CEEC3DC5-2C1F-4F26-9D67-BD97A6F66301}"
+              DTS:DTSID="{9EC726CD-2880-4987-808F-C196E9B690B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -952,7 +952,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 84"
-              DTS:DTSID="{15429368-DD60-48FC-8AC8-0CCE701619D8}"
+              DTS:DTSID="{13636BB0-5854-4AED-8FD6-711C7BEF6E66}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -961,7 +961,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 85"
-              DTS:DTSID="{9DE6F472-713A-435C-99F5-2DE72465A3A8}"
+              DTS:DTSID="{2728DF8B-9F5E-43A6-88AC-B8BF331F5694}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -970,7 +970,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 86"
-              DTS:DTSID="{2BD1E05F-273D-4BDB-A90E-4EE0F8B6B6DD}"
+              DTS:DTSID="{693E60FF-6173-4DAF-A32A-B6D45B981C41}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -979,7 +979,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 87"
-              DTS:DTSID="{579E0326-9B96-4EED-845F-B850AB6B726D}"
+              DTS:DTSID="{313D6C69-773E-42EC-BD8B-170B63EC0947}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -988,7 +988,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 88"
-              DTS:DTSID="{2931ACED-979C-4EF1-B669-94B1B5BABE43}"
+              DTS:DTSID="{C6E90B23-FBA1-4E6E-A3C9-030561A4AD5F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -997,7 +997,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 89"
-              DTS:DTSID="{C6006809-0CE8-42D8-BA65-CA9C385782EF}"
+              DTS:DTSID="{08853A1B-BF77-49CA-B1BD-FD4506439488}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1006,7 +1006,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 90"
-              DTS:DTSID="{218B2E05-B513-44BB-AC52-4D538EF78AE9}"
+              DTS:DTSID="{728AA93B-A420-4471-ACAD-3AF27B1A118E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1015,16 +1015,24 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 91"
-              DTS:DTSID="{0A787B9D-6128-4168-A452-0B4343CFD469}"
+              DTS:DTSID="{E8178582-4F12-4E32-8B2E-3E97B4680F64}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 92"
-              DTS:DTSID="{A7D4BFFA-DCE8-4A83-B15D-474FE8633DDF}"
+              DTS:DTSID="{19687998-8A8E-4666-BB1B-6C4F4A5E9771}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 93"
+              DTS:DTSID="{F4E35928-9BC1-497D-8036-A5C69C954991}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -6814,6 +6822,14 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       cachedName="FAMTYPE"
                       externalMetadataColumnId="Package\Portfolios Export\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 92]"
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[FAMTYPE]" />
+                    <inputColumn
+                      refId="Package\Portfolios Export\Flat File Destination.Inputs[Flat File Destination Input].Columns[MAILERFLAG]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="MAILERFLAG"
+                      externalMetadataColumnId="Package\Portfolios Export\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 93]"
+                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[MAILERFLAG]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -7375,6 +7391,12 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                       dataType="str"
                       length="50"
                       name="Column 92" />
+                    <externalMetadataColumn
+                      refId="Package\Portfolios Export\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Column 93]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 93" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -7404,10 +7426,64 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">WITH DRDate
+AS
+
+(
+
+--Individual record 
+
+SELECT A05.AccountNumber as AccountNumber
+, A05.AssignedToAccessorId
+, max(A05d.DateValue) as 'DRDATE'
+FROM A05_AccountCommunications A05 with (nolock)
+INNER JOIN  A05dAccountCommunicationDates A05d with (nolock) on A05d.CommunicationRecordId = A05.RecordId 
+INNER JOIN A01_AccountMaster A01 with(nolock) on a05.AccountNumber = A01.AccountNumber
+
+WHERE  A05d.DateType = 'DRDATE'
+AND A01.FamilyiD ='0' 
+
+GROUP BY A05.AccountNumber, A05.AssignedToAccessorId
+
+UNION ALL 
+
+--Main group record 
+
+SELECT A05a.AccountNumber as AccountNumber
+, A05a.AssignedToAccessorId
+, max(A05d1.DateValue) as 'DRDATE'
+FROM A05_AccountCommunications A05a with (nolock)
+INNER JOIN  A05dAccountCommunicationDates A05d1 with (nolock) on A05d1.CommunicationRecordId = A05a.RecordId 
+INNER JOIN A01_AccountMaster A01 with(nolock) on a05a.AccountNumber = A01.AccountNumber
+
+WHERE  A05d1.DateType = 'DRDATE'
+AND A01.FamilyiD =A01.AccountNumber
+
+GROUP BY A05a.AccountNumber, A05a.AssignedToAccessorId
+
+UNION ALL 
+
+--Individual group record 
+
+SELECT A01.FamilyId as AccountNumber
+, A05b.AssignedToAccessorId
+, max(A05d2.DateValue) as 'DRDATE'
+FROM A05_AccountCommunications A05b with (nolock)
+INNER JOIN  A05dAccountCommunicationDates A05d2 with (nolock) on A05d2.CommunicationRecordId = A05b.RecordId 
+INNER JOIN A01_AccountMaster A01 with(nolock) on a05b.AccountNumber = A01.AccountNumber
+
+WHERE  A05d2.DateType = 'DRDATE'
+AND A01.FamilyMemberType IN ('SP','CN','DP')
+
+GROUP BY A01.FamilyId, A05b.AssignedToAccessorId
+
+) 
+
+
+SELECT DISTINCT 
 	A01.AccountNumber AS  DONORNBR, 
 	isnull(FP07.[EventCode],'') AS  MEVENT,
-	isnull(x04.Description,'') AS  WKNAME,
+	isnull(x04.[Description],'') AS  WKNAME,
 	LEFT(dbo.getformattednamebyaccountnumber(A01.AccountNumber),70)AS  DNAME,
 	isnull(A03.AddressLine4,'') AS D2NAME,								--As per Frank 3/2/19
 	isnull(A06.Salutation,'') AS  DSALUT,
@@ -7446,7 +7522,10 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
 	--iif(SELA01d2.LastContactDate is not null, format(SELA01d2.LastContactDate,'MM/dd/yyyy','en-US'),'') CDATE,
 	COALESCE(CONVERT(VARCHAR(10),SELA01d2.LastContactDate,(101)), '') AS CDATE, 
 	--'' DCLASS,	-- Classification		As per Frank this field is not in DRS
-	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') FROM FP07_Campaign dtsnd WHERE dtsnd.AccountNumber = A01.AccountNumber AND dtsnd.[EventCode] IN ('HD19S1', 'HD19D1', 'MD19C1','MD19S1') )  ,
+	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') 
+				  FROM FP07_Campaign dtsnd 
+				  WHERE dtsnd.AccountNumber = A01.AccountNumber 
+				  AND dtsnd.[EventCode] IN ('HD19S1', 'HD19D1', 'MD19C1','MD19S1'))  ,
 	isnull(AcctCodes.ORGTYPE,'')  AS DORGAN,	
 	isnull(AcctCodes.PHNCOD,'') AS  DPHNCD,	
 	''  DPHON2,							-- As per Framk we are bringing Primary phone only
@@ -7462,9 +7541,9 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
 	COALESCE(CONVERT(VARCHAR(10),DonorStats.[Date First Gift],(101)), '') AS MDATE,
 	isnull(A07.EmailAddress,'') AS DEEADD,
 	isnull(AcctCodes.EMLPREF,'') AS DESUPD,	
-	isnull(A01b.NumberValue,0) AS DDYR,
-	isnull(A01b2.NumberValue,0) AS DDMM,
-	isnull(A01b3.NumberValue,0) AS DDDD,
+	isnull(DonBday.DDYR,0) AS DDYR,
+	isnull(DonBday.DDMM,0) AS DDMM,
+	isnull(DonBday.DDDD,0) AS DDDD,
 	isnull(A01.LastName,'') AS NPLNAM,
 	isnull(A01.FirstName,'') AS NPFNAM,
 	isnull(A23.P2GScore1,'') AS DP2G1,
@@ -7532,45 +7611,27 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
 	--'' AS SENDFLYER,
 	--'' AS PORTCHANGE,
 	--'' AS PORTAOHITM,
-	 ISNULL(CONVERT(VARCHAR(10),SELDRDate.DRDATE,101),'') AS DRDATE, 
-	 A01.FamilyMemberType AS FAMTYPE
-	 
+	 ISNULL(CONVERT(VARCHAR(10),dr.DRDATE,101),'') AS DRDATE, 
+
+	 CASE WHEN A01.FamilyMemberType IS NULL THEN 'I' 
+	 ELSE A01.FamilyMemberType 
+	 END  AS FAMTYPE, 
+
+	 MAILERFLAG = CASE WHEN A01h.AssignedToAccessorId = FP07.Assignment AND (FP07.DateLetSent &lt;&gt; '' or  FP07.DateLetSent is not null ) THEN 'N'
+					   WHEN FP07.EventCode IS NULL THEN 'N'
+					   ELSE 'Y'
+					   END  
+
+
 	
-from A01_AccountMaster A01 (NOLOCK)
-left join FP07_Campaign FP07 (NOLOCK)
-on FP07.[AccountNumber] = A01.AccountNumber and FP07.[EventCode] in ('HD19S1', 'HD19D1', 'MD19C1','MD19S1')
-join A01hAccountAssignments A01h (NOLOCK)
-on A01.AccountNumber = A01h.AccountNumber
-join A02_AccountAddresses A02 with (NOLOCK)	
-on A02.AccountNumber = A01.AccountNumber and A02.UseAsPrimary = 1
-join A03_AddressMaster A03 with (NOLOCK)	
-on A03.AddressID = A02.AddressID
-left join A06_AccountSalutations A06 with (NOLOCK)	
-on A06.AccountNumber = A01.AccountNumber AND A06.UseAsPrimary = 1
-left join A07_AccountEmails A07 with (NOLOCK)	
-on A07.AccountNumber = A01.AccountNumber AND A07.UseAsPrimary = 1
-
-
---left join A01cAccountCodes A01c3 with (NOLOCK)	
---on A01.AccountNumber = A01C3.AccountNumber and A01C3.CodeType = 'LANGUAGE'
---left join A01cAccountCodes A01c2 with (NOLOCK)	
---on A01.AccountNumber = A01C2.AccountNumber and A01C2.CodeType = 'ORGTYPE' and A01c2.Active = 1
---left join A01cAccountCodes A01c4 with (NOLOCK)	
---on A01.AccountNumber = A01C4.AccountNumber and A01C4.CodeType = 'MAILSTAT'
---left join A01cAccountCodes A01c5 with (NOLOCK)	
---on A01.AccountNumber = A01C5.AccountNumber and A01C5.CodeType = 'RELCOD'
-----left join A01cAccountCodes A01c9 with (NOLOCK)	
-----on A01.AccountNumber = A01C9.AccountNumber and A01C9.CodeType = 'PREMREF'
---left join A01cAccountCodes A01c10 with (NOLOCK)	
---on A01.AccountNumber = A01C10.AccountNumber and A01C10.CodeType = 'DDCSRCCODE'
---left join A01cAccountCodes A01c11 with (NOLOCK)	
---on A01.AccountNumber = A01C11.AccountNumber and A01C11.CodeType = 'PHNCOD'
---left join A01cAccountCodes A01c12 with (NOLOCK)	
---on A01.AccountNumber = A01C12.AccountNumber and A01C12.CodeType = 'MEXCFLAG'
---left join A01cAccountCodes A01c13 with (NOLOCK)	
---on A01.AccountNumber = A01C13.AccountNumber and A01C13.CodeType = 'HEXCFLAG'
---left join A01cAccountCodes A01c14 with (NOLOCK)	
---on A01.AccountNumber = A01C14.AccountNumber and A01C14.CodeType = 'EMLPREF'
+	
+FROM A01_AccountMaster A01 WITH (NOLOCK)
+LEFT OUTER JOIN FP07_Campaign FP07 WITH (NOLOCK) ON A01.AccountNumber = FP07.[AccountNumber]  and  FP07.[EventCode] IN ('HD19S1', 'HD19D1', 'MD19C1','MD19S1')
+LEFT OUTER JOIN A01hAccountAssignments A01h (NOLOCK)ON A01.AccountNumber = A01h.AccountNumber
+INNER join A02_AccountAddresses A02 with (NOLOCK)	 on A02.AccountNumber = A01.AccountNumber 
+INNER join A03_AddressMaster A03 with (NOLOCK)	on A03.AddressID = A02.AddressID
+left OUTER  join A06_AccountSalutations A06 with (NOLOCK)	on A06.AccountNumber = A01.AccountNumber 
+left OUTER join A07_AccountEmails A07 with (NOLOCK)	 on A07.AccountNumber = A01.AccountNumber 
 
 
 OUTER APPLY(
@@ -7602,7 +7663,7 @@ A01c.AccountNumber
 ,TESTGR= MAX(CASE WHEN A01c.CodeType = 'TESTGR' THEN  A01c.CodeValue END )
 
 FROM A01cAccountCodes A01c  WITH (NOLOCK)
-WHERE  A01c.Active =1 
+WHERE  A01c.Active ='1' 
 and a01c.AccountNumber = A01.AccountNumber
 
 GROUP BY A01c.AccountNumber, 
@@ -7610,93 +7671,107 @@ A01c.Active
 )AcctCodes
 
 
-left join A01bAccountNumbers A01b (nolock)
-on A01b.AccountNumber = A01.AccountNumber and A01b.NumberType = 'BIRTHYEAR'
-	and A01b.Active = 1
-left join A01bAccountNumbers A01b2 (nolock)
-on A01b2.AccountNumber = A01.AccountNumber and A01b2.NumberType = 'BIRTHMONTH'
-	and A01b2.Active = 1
-left join A01bAccountNumbers A01b3 (nolock)
-on A01b3.AccountNumber = A01.AccountNumber and A01b3.NumberType = 'BIRTHDAY'
-	and A01b3.Active = 1
+
+OUTER APPLY(
+SELECT A01B.AccountNumber
+, A01B.Active
+,'DDYR' = MAX(CASE WHEN A01B.NumberType = 'BIRTHYEAR' THEN A01B.NumberValue END)
+,'DDMM' = MAX(CASE WHEN A01B.NumberType = 'BIRTHMONTH' THEN A01B.NumberValue END)
+,'DDDD' = MAX(CASE WHEN A01B.NumberType = 'BIRTHDAY' THEN A01B.NumberValue END)
+ 
+FROM A01bAccountNumbers A01B
+WHERE --A01B.Active ='1'
+ --AND 
+ A01B.AccountNumber = A01.AccountNumber
+ GROUP BY A01B.AccountNumber
+, A01B.Active
+ )
+ DonBday
+
+--left Join X04_CODEVALUES X04 WITH (NOLOCK) ON X04.[VALUE] = CONVERT(VARCHAR(10), A01h.AssignedToAccessorId) 
 left Join X04_CODEVALUES X04 WITH (NOLOCK)
 ON convert(bigint,X04.VALUE) = A01h.AssignedToAccessorId and X04.Type = 'SRCWRK'
-left join A23_AccountWealthEngine A23 (nolock)
-on A23.AccountNumber = A01.AccountNumber
+
+
+left join A23_AccountWealthEngine A23 WITH (nolock) on A23.AccountNumber = A01.AccountNumber
 outer apply(
-    select top 1 DONSTATS.[Date First Gift] as 'DteFstGft'
-    from tbl_FFPDonorStats DONSTATS (nolock)
-    Where DonStats.AccountNumber = A01.AccountNumber
+	   select top 1 DONSTATS.[Date First Gift] as 'DteFstGft'
+		 from tbl_FFPDonorStats DONSTATS WITH (nolock)
+	    Where DonStats.AccountNumber = A01.AccountNumber
     ) SELFstGftDte
 outer apply (
-        select 
-                A01d.DateValue as 'InceptionDate'
-        from
-                A01dAccountDates A01d WITH (NOLOCK)
-        where
-                A01d.AccountNumber = A01.AccountNumber and A01d.DateType = 'DDCINCEPT' and A01d.Active = '1' 
+        select A01d.DateValue as 'InceptionDate'
+          from A01dAccountDates A01d WITH (NOLOCK)
+         where A01d.AccountNumber = A01.AccountNumber 
+		   and A01d.DateType = 'DDCINCEPT' 
+		   and A01d.Active = '1' 
         ) SELA01d
 outer apply (
-        select 
-                MAX(A01d2.DateValue) as 'LastContactDate'
-        from
-                A01dAccountDates A01d2 WITH (NOLOCK)
-        where
-                A01d2.AccountNumber = A01.AccountNumber and A01d2.DateType = 'LASTCONT'
+    --    select MAX(A01d2.DateValue) as 'LastContactDate'
+    --     from  A01dAccountDates A01d2 WITH (NOLOCK)
+    --    where A01d2.AccountNumber = A01.AccountNumber 
+		  --and A01d2.DateType = 'LASTCONT'
+
+		  
+		select MAX(cd.[Date])as 'LastContactDate'
+		FROM A05_AccountCommunications cd WITH (NOLOCK)
+		where cd.AccountNumber = A01.AccountNumber
+
         ) SELA01d2
----- left join A01dAccountDates A01d on A01d.AccountNumber = A01.AccountNumber and  A01d.DateType = 'DDCINCEPT'
----- left join A01dAccountDates A01d2 on A01d.AccountNumber = A01.AccountNumber and  A01d2.DateType = 'LASTCONT'
+
 OUTER APPLY (
         select top 1
                 A04.AccountNumber
 				,trim(A04.AreaCode) as 'AreaCode', trim(A04.TelephoneNumber) as 'PhoneNumber'
-				,A01c6.CodeValue as 'PhoneCode'
-		from
-                A04_AccountPhones A04 WITH (NOLOCK)
-        left outer join
-                A01cAccountCodes A01c6 WITH (NOLOCK)
-        on
-                A01c6.AccountNumber = A04.AccountNumber and
-                A01c6.CodeType = 'PHNCOD' and A04.Active = 1 --and A04.UseAsPrimary = 1
-         where
-                A04.AccountNumber = A01.AccountNumber and A04.Active = 1 and A04.UseAsPrimary = 1
-				-- and A01c6.CodeValue not in('P','T')
+				--,A01c6. as 'PhoneCode'
+		FROM A04_AccountPhones A04 WITH (NOLOCK)        
+         WHERE
+                A04.AccountNumber = A01.AccountNumber 
+				and AcctCodes.AccountNumber = A04.AccountNumber
+				and A04.Active = 1 
+				and A04.UseAsPrimary = 1
         ) PhoneCodeSEL
 OUTER APPLY (
-        select top 1 X04.Description as 'RELNAME'
-        from  A01cAccountCodes A01c8
-		left join X04_CodeValues X04
-		on x04.Type = A01c8.CodeType and X04.Value = A01c8.CodeValue
-        where A01c8.AccountNumber = A01.AccountNumber and A01c8.CodeType = 'RELCOD'
+        select top 1 X04.[Description] as 'RELNAME'
+        from X04_CodeValues X04 WITH (NOLOCK)			  
+        where AcctCodes.AccountNumber = A01.AccountNumber 
+		and AcctCodes.RELCOD = X04.[Value] 
+		and X04.[Type] = 'RELCOD'		  
         ) SELRelName
 OUTER APPLY (
-        select top 1 X04.Description as 'PREMDESC'
-        from  A01cAccountCodes A01c15
-		left join X04_CodeValues X04
-		on x04.Type = A01c15.CodeType and X04.Value = A01c15.CodeValue
-        where A01c15.AccountNumber = A01.AccountNumber and A01c15.CodeType = 'PREMREF'
+        select top 1 X04.[Description] as 'PREMDESC'
+        from X04_CodeValues X04 WITH (NOLOCK)
+        where AcctCodes.AccountNumber = A01.AccountNumber 
+		and X04.[Value] = AcctCodes.PREMREF
+		and X04.[Type] = 'PREMREF'
         ) SELPremDesc
-		
-OUTER APPLY(
-SELECT A05.AccountNumber, max(A05d.DateValue) as 'DRDATE'
-FROM A05_AccountCommunications A05 (nolock)
-join  A05dAccountCommunicationDates A05d (nolock)
-on A05d.CommunicationRecordId = A05.RecordId and DateType = 'DRDATE'
-where A05.AccountNumber = A01.AccountNumber
-group by A05.AccountNumber
-) SELDRDate          
+		         
 
-left join tbl_FFPDonorStats DonorStats
-on DonorStats.AccountNumber = A01.AccountNumber 
+
+OUTER APPLY (SELECT dr1.AccountNumber, dr1.AssignedToAccessorId , MAX(dr1.DRDATE) as DRDATE 
+			 FROM  DRDate dr1 WITH (NOLOCK) WHERE dr1.AccountNumber = A01.AccountNumber AND dr1.AssignedToAccessorId = A01h.AssignedToAccessorId
+			 GROUP BY AccountNumber, AssignedToAccessorId ) dr
+--LEFT OUTER JOIN DRDate dr ON dr.AccountNumber = A01.AccountNumber AND dr.AssignedToAccessorId = A01h.AssignedToAccessorId
+left outer join tbl_FFPDonorStats DonorStats on DonorStats.AccountNumber = A01.AccountNumber 
+
+
 
 
 WHERE ((A01.AccountNumber = A01.FamilyId and A01.FamilyMemberType = 'F') 
 or (A01.AccountType = 'O' and A01.FamilyMemberType = 'O')
-OR ( A01.AccountType = 'I' and A01.FamilyId = 0))
+OR (A01.AccountType = 'I' and A01.FamilyId = 0))
 
 AND A01h.FunctionalCategory = 'DR' 
 AND A01h.Active = '1' 
-AND A01h.[Primary] = '1'</property>
+AND A01h.[Primary] = '1'
+and (A02.UseAsPrimary IS NULL or A02.UseAsPrimary = '1'  ) 
+
+--AND (FP07.[EventCode]  is  NULL or )
+AND (A06.UseAsPrimary is null or A06.UseAsPrimary = 1 )
+AND (A07.UseAsPrimary is null or A07.UseAsPrimary = 1) 
+--and (X04.[Type] = 'SRCWRK')
+
+--and a01.AccountNumber= '22646582'</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -7762,17 +7837,6 @@ AND A01h.[Primary] = '1'</property>
                       length="40"
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[WKNAME]"
                       name="WKNAME"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DNAME]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DNAME]"
-                      length="70"
-                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DNAME]"
-                      name="DNAME"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[D2NAME]"
@@ -8689,6 +8753,28 @@ AND A01h.[Primary] = '1'</property>
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[FAMTYPE]"
                       name="FAMTYPE"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DNAME]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DNAME]"
+                      length="70"
+                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DNAME]"
+                      name="DNAME"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[MAILERFLAG]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MAILERFLAG]"
+                      length="1"
+                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[MAILERFLAG]"
+                      name="MAILERFLAG"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -8708,12 +8794,6 @@ AND A01h.[Primary] = '1'</property>
                       dataType="str"
                       length="40"
                       name="WKNAME" />
-                    <externalMetadataColumn
-                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DNAME]"
-                      codePage="1252"
-                      dataType="str"
-                      length="70"
-                      name="DNAME" />
                     <externalMetadataColumn
                       refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[D2NAME]"
                       codePage="1252"
@@ -9184,6 +9264,18 @@ AND A01h.[Primary] = '1'</property>
                       dataType="str"
                       length="10"
                       name="FAMTYPE" />
+                    <externalMetadataColumn
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DNAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="DNAME" />
+                    <externalMetadataColumn
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[MAILERFLAG]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MAILERFLAG" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -9776,6 +9868,13 @@ AND A01h.[Primary] = '1'</property>
                       length="10"
                       lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FAMTYPE]"
                       name="FAMTYPE" />
+                    <outputColumn
+                      refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MAILERFLAG]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[MAILERFLAG]"
+                      name="MAILERFLAG" />
                     <outputColumn
                       refId="Package\Portfolios Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -10716,7 +10815,7 @@ WHERE
     design-time-name="Package\Comments Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="129,42"
           Id="Package\Comments Export\Comments"
@@ -10744,7 +10843,9 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10762,7 +10863,7 @@ WHERE
     design-time-name="Package\Group Record Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Group Record Export\OLE DB Source"
@@ -10790,7 +10891,9 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10808,7 +10911,7 @@ WHERE
     design-time-name="Package\Portfolio Import to tbl_FFPDRSPortolios">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination"
@@ -10848,7 +10951,9 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10879,15 +10984,15 @@ WHERE
     design-time-name="Package\Portfolios Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="150,45"
-          Id="Package\Portfolios Export\OLE DB Source"
-          TopLeft="126,96" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,42"
           Id="Package\Portfolios Export\Flat File Destination"
           TopLeft="323,102" />
+        <NodeLayout
+          Size="150,45"
+          Id="Package\Portfolios Export\OLE DB Source"
+          TopLeft="126,96" />
         <EdgeLayout
           Id="Package\Portfolios Export.Paths[OLE DB Source Output]"
           TopLeft="276,120.75">
@@ -10907,9 +11012,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10927,7 +11030,7 @@ WHERE
     design-time-name="Package\Transactions Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Transactions Export\OLE DB Source"
@@ -10955,7 +11058,9 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
