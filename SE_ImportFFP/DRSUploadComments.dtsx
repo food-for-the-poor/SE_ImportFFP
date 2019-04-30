@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSUploadComments"
   DTS:PackageType="5"
-  DTS:VersionBuild="90"
-  DTS:VersionGUID="{AFC5B482-8AFD-4422-9A3E-5FEC18588CC8}">
+  DTS:VersionBuild="100"
+  DTS:VersionGUID="{EAB482B8-487F-45BC-94BE-9542C1A0D5E5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -32,7 +32,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\DRSCOMTUPL_test.CSV">
+          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\DRSCOMTUPL.CSV">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -40,15 +40,16 @@
               DTS:DataType="21"
               DTS:TextQualified="True"
               DTS:ObjectName="DONOR"
-              DTS:DTSID="{97CFC324-1C18-4A40-BFFD-81E83A1DA8D2}"
+              DTS:DTSID="{BAC570B6-60B2-44E1-AF95-7E8DA60D134E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="7"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CMTDATE"
-              DTS:DTSID="{8A696CA3-97C0-48ED-B236-4B6F09C9001E}"
+              DTS:DTSID="{E2D8181A-A75C-45F8-8B09-3672CD131056}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +58,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CMTTYPE"
-              DTS:DTSID="{09905913-9978-4114-9377-BF2B27031C5C}"
+              DTS:DTSID="{43FA417F-52CE-49DD-BE72-C7B5D210EDAC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +67,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SHORTCOMT"
-              DTS:DTSID="{47BA50E7-55B7-47E4-9C8F-C9383DBDA727}"
+              DTS:DTSID="{558FF097-518C-4DA5-9C74-F519F91102DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +76,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="COMMENT"
-              DTS:DTSID="{46930913-7C7E-4BB9-84D3-A6B70689588D}"
+              DTS:DTSID="{203E7E5A-A1B6-4B85-B533-97B55D6AE246}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +85,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="INOUTBOUND"
-              DTS:DTSID="{23681AEA-0637-4D0E-B051-891EFCF8C5D6}"
+              DTS:DTSID="{3F9B6D87-9243-4103-8D82-80387B031835}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CMTSRCCOD"
-              DTS:DTSID="{C7D6A5C3-7C9D-4C53-BD63-9F7D92E71062}"
+              DTS:DTSID="{03534F40-EF51-414D-BC5B-5CC501F7AE16}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -101,7 +102,7 @@
               DTS:DataType="21"
               DTS:TextQualified="True"
               DTS:ObjectName="WORKER"
-              DTS:DTSID="{0C1C3291-DE13-4ACC-9A86-627CB71E2BB5}"
+              DTS:DTSID="{8D48F769-353E-4A3C-83F5-FDA6F43B21E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -110,7 +111,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="STATUS"
-              DTS:DTSID="{9EE090C1-0580-4499-8129-FEC85ACB350B}"
+              DTS:DTSID="{DA74AC0E-8A5C-463A-97B9-063A54DCFDC9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -119,15 +120,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CONTACTED"
-              DTS:DTSID="{45439C4D-E854-4E63-9C68-3FE4EFBBBD28}"
+              DTS:DTSID="{836533FE-3D76-49ED-BFA5-2F0D34412648}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="7"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="DRDATE"
-              DTS:DTSID="{3878CD28-7CF9-4ADF-A7CA-EC9B5208808A}"
+              DTS:DTSID="{9FEFA537-88E1-4B23-BE52-90B07ACDC9A4}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -143,7 +145,125 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:FileUsageType="1"
-          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\\Archive\DRSCOMTUPL20190429.csv" />
+          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\\Archive\DRSCOMTUPL20190430.csv" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Exception Export Conn Mgr]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9671391A-2EB9-4BBA-BDAB-208ECCFD46C0}"
+      DTS:ObjectName="Exception Export Conn Mgr">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\CommentsException.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{4AC131B6-34F0-4F4B-8FAD-BC3B9AA89C18}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{14E0B73B-EC33-4AAB-B342-764C6BADA7B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{1BD71923-DB15-4A24-B62F-E92852A4937F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{37FD1872-0121-465D-846F-A0AA1D46C2D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 4"
+              DTS:DTSID="{3C7ED59C-205B-43C8-A461-93BB57432972}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 5"
+              DTS:DTSID="{4C5FC4EC-E2A2-44FB-BA60-64DD3A80C974}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{A6C6E9D0-E63A-461D-A7BB-9E009952C324}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{C8A58DFA-859F-4F4D-A600-A8E52F6D6316}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 8"
+              DTS:DTSID="{A587B6FD-F24E-4EFE-B98B-9540DAE68231}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 9"
+              DTS:DTSID="{B8F2C5C9-3375-4D4B-BDF3-5FEFC749D18F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 10"
+              DTS:DTSID="{FB4F2E6B-649B-4A9E-8FC0-640E09EDDD55}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ProdServer]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D0BAFD9C-F42A-4344-AA42-8AF6A65C9582}"
+      DTS:ObjectName="ProdServer">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=172.16.50.8;Initial Catalog=SE_PROD;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -186,7 +306,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ArchiveDestLoc">
       <DTS:VariableValue
-        DTS:DataType="8">\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\\Archive\DRSCOMTUPL20190429.csv</DTS:VariableValue>
+        DTS:DataType="8">\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\\Archive\DRSCOMTUPL20190430.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -206,7 +326,7 @@
       DTS:ObjectName="FileName"
       DTS:RaiseChangedEvent="True">
       <DTS:VariableValue
-        DTS:DataType="8">DRSCOMTUPL_test.CSV</DTS:VariableValue>
+        DTS:DataType="8">DRSCOMTUPL.CSV</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -245,7 +365,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="TimeStamp">
       <DTS:VariableValue
-        DTS:DataType="8">20190429</DTS:VariableValue>
+        DTS:DataType="8">20190430</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -343,35 +463,14 @@
           Language="CSharp"
           ReadOnlyVariables="User::FileName,User::FolderPath">
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_a5a010d2db09473f948d775b19b8fc38")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_a5a010d2db09473f948d775b19b8fc38")]
-[assembly: AssemblyCopyright("Copyright @  2019")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -492,91 +591,34 @@ using System.Runtime.CompilerServices;
   </resheader>
 </root>]]></ProjectItem>
           <ProjectItem
-            Name="ST_a5a010d2db09473f948d775b19b8fc38.csproj"
-            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{befc2c44-fe7f-42a8-bf37-982eb7266c4a}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ST_a5a010d2db09473f948d775b19b8fc38</RootNamespace>
-    <AssemblyName>ST_a5a010d2db09473f948d775b19b8fc38</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="ScriptMain.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <!-- Include the build rules for a C# project.-->
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
-        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
-        <ProjectClient>
-          <HostIdentifier>SSIS_ST140</HostIdentifier>
-        </ProjectClient>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-</Project>]]></ProjectItem>
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_a5a010d2db09473f948d775b19b8fc38.Properties.Settings.get_Default():ST_a5a010d2db09473f948d775b19b8fc38.Properties.Sett" +
+    "ings")]
+
+namespace ST_a5a010d2db09473f948d775b19b8fc38.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -737,43 +779,121 @@ namespace ST_a5a010d2db09473f948d775b19b8fc38
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_a5a010d2db09473f948d775b19b8fc38")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_a5a010d2db09473f948d775b19b8fc38")]
+[assembly: AssemblyCopyright("Copyright @  2019")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_a5a010d2db09473f948d775b19b8fc38.Properties.Settings.get_Default():ST_a5a010d2db09473f948d775b19b8fc38.Properties.Sett" +
-    "ings")]
-
-namespace ST_a5a010d2db09473f948d775b19b8fc38.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="ST_a5a010d2db09473f948d775b19b8fc38.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{befc2c44-fe7f-42a8-bf37-982eb7266c4a}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_a5a010d2db09473f948d775b19b8fc38</RootNamespace>
+    <AssemblyName>ST_a5a010d2db09473f948d775b19b8fc38</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST140</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1030,7 +1150,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{101B1CDA-8B2C-43E9-B92C-E1E8E0C54841}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="select  ComtAccount  from [tbl_FFPDRSComtRecords]"
+          SQLTask:SqlStatementSource="select distinct  ComtAccount  from [tbl_FFPDRSComtRecords]"
           SQLTask:ResultType="ResultSetType_Rowset"
           SQLTask:TypeConversionMode="None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -1075,69 +1195,38 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           version="1">
           <components>
             <component
-              refId="Package\Table Upload\Conditional Split"
+              refId="Package\Table Upload\Comment Date Error"
               componentClassID="Microsoft.ConditionalSplit"
               contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
-              name="Conditional Split"
+              name="Comment Date Error"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Table Upload\Conditional Split.Inputs[Conditional Split Input]"
+                  refId="Package\Table Upload\Comment Date Error.Inputs[Conditional Split Input]"
                   description="Input to the Conditional Split Transformation"
                   name="Conditional Split Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Table Upload\Conditional Split.Inputs[Conditional Split Input].Columns[CMTDATE]"
-                      cachedDataType="date"
+                      refId="Package\Table Upload\Comment Date Error.Inputs[Conditional Split Input].Columns[CMTDATE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="CMTDATE"
                       lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[CMTDATE]" />
-                    <inputColumn
-                      refId="Package\Table Upload\Conditional Split.Inputs[Conditional Split Input].Columns[WORKER]"
-                      cachedDataType="ui8"
-                      cachedName="WORKER"
-                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[WORKER]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Table Upload\Conditional Split.Outputs[Case 2]"
-                  description="Output 2 of the Conditional Split Transformation"
-                  errorOrTruncationOperation="Computation"
-                  errorRowDisposition="FailComponent"
-                  exclusionGroup="1"
-                  name="Case 2"
-                  synchronousInputId="Package\Table Upload\Conditional Split.Inputs[Conditional Split Input]"
-                  truncationRowDisposition="FailComponent">
-                  <properties>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">(DT_WSTR,10)#{Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[WORKER]} != "0"</property>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Specifies the friendly version of the expression. This expression version uses column names."
-                      expressionType="Notify"
-                      name="FriendlyExpression">(DT_WSTR,10)WORKER != "0"</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
-                      name="EvaluationOrder">0</property>
-                  </properties>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Table Upload\Conditional Split.Outputs[Case 1]"
+                  refId="Package\Table Upload\Comment Date Error.Outputs[Case 1]"
                   description="Output 1 of the Conditional Split Transformation"
                   errorOrTruncationOperation="Computation"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
                   name="Case 1"
-                  synchronousInputId="Package\Table Upload\Conditional Split.Inputs[Conditional Split Input]"
+                  synchronousInputId="Package\Table Upload\Comment Date Error.Inputs[Conditional Split Input]"
                   truncationRowDisposition="FailComponent">
                   <properties>
                     <property
@@ -1154,16 +1243,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
-                      name="EvaluationOrder">1</property>
+                      name="EvaluationOrder">0</property>
                   </properties>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Table Upload\Conditional Split.Outputs[Conditional Split Default Output]"
+                  refId="Package\Table Upload\Comment Date Error.Outputs[Conditional Split Default Output]"
                   description="Default Output of the Conditional Split Transformation"
                   exclusionGroup="1"
                   name="Conditional Split Default Output"
-                  synchronousInputId="Package\Table Upload\Conditional Split.Inputs[Conditional Split Input]">
+                  synchronousInputId="Package\Table Upload\Comment Date Error.Inputs[Conditional Split Input]">
                   <properties>
                     <property
                       dataType="System.Boolean"
@@ -1172,29 +1261,221 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Table Upload\Conditional Split.Outputs[Conditional Split Error Output]"
+                  refId="Package\Table Upload\Comment Date Error.Outputs[Conditional Split Error Output]"
                   description="Error Output of the Conditional Split Transformation"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Conditional Split Error Output"
-                  synchronousInputId="Package\Table Upload\Conditional Split.Inputs[Conditional Split Input]">
+                  synchronousInputId="Package\Table Upload\Comment Date Error.Inputs[Conditional Split Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Table Upload\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      refId="Package\Table Upload\Comment Date Error.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Table Upload\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Table Upload\Comment Date Error.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Table Upload\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      refId="Package\Table Upload\Comment Date Error.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Table Upload\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Table Upload\Comment Date Error.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
               </outputs>
+            </component>
+            <component
+              refId="Package\Table Upload\Comments Exception File"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Comments Exception File">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Table Upload\Comments Exception File.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Exception Export Conn Mgr]"
+                  connectionManagerRefId="Package.ConnectionManagers[Exception Export Conn Mgr]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[DONOR]"
+                      cachedDataType="ui8"
+                      cachedName="DONOR"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[DONOR]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[CMTDATE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CMTDATE"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 1]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[CMTDATE]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[CMTTYPE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="CMTTYPE"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 2]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[CMTTYPE]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[SHORTCOMT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="SHORTCOMT"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[SHORTCOMT]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[COMMENT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5000"
+                      cachedName="COMMENT"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[COMMENT]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[STATUS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="STATUS"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[STATUS]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[CMTSRCCOD]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="CMTSRCCOD"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[CMTSRCCOD]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[WORKER]"
+                      cachedDataType="ui8"
+                      cachedName="WORKER"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[WORKER]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[CONTACTED]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="CONTACTED"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[CONTACTED]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[DRDATE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DRDATE"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 9]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[DRDATE]" />
+                    <inputColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].Columns[INOUTBOUND]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="INOUTBOUND"
+                      externalMetadataColumnId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 10]"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[INOUTBOUND]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 0" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 1" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 2" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 3" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 4" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 5" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 6" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 7]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 7" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 8]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 8" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 9" />
+                    <externalMetadataColumn
+                      refId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input].ExternalColumns[Column 10]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Column 10" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
             </component>
             <component
               refId="Package\Table Upload\CSV Comments File"
@@ -1249,10 +1530,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[CMTDATE]"
-                      dataType="date"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].ExternalColumns[CMTDATE]"
+                      length="50"
                       lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[CMTDATE]"
                       name="CMTDATE"
                       truncationRowDisposition="FailComponent">
@@ -1421,10 +1704,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[DRDATE]"
-                      dataType="date"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].ExternalColumns[DRDATE]"
+                      length="50"
                       lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[DRDATE]"
                       name="DRDATE"
                       truncationRowDisposition="FailComponent">
@@ -1470,7 +1755,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       name="DONOR" />
                     <externalMetadataColumn
                       refId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].ExternalColumns[CMTDATE]"
-                      dataType="date"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="CMTDATE" />
                     <externalMetadataColumn
                       refId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].ExternalColumns[CMTTYPE]"
@@ -1514,7 +1801,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       name="CONTACTED" />
                     <externalMetadataColumn
                       refId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].ExternalColumns[DRDATE]"
-                      dataType="date"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
                       name="DRDATE" />
                     <externalMetadataColumn
                       refId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].ExternalColumns[INOUTBOUND]"
@@ -1633,7 +1922,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[DONOR]" />
                     <inputColumn
                       refId="Package\Table Upload\dbo_tbl_FFPDRSComtRecords.Inputs[OLE DB Destination Input].Columns[CMTDATE]"
-                      cachedDataType="date"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="CMTDATE"
                       externalMetadataColumnId="Package\Table Upload\dbo_tbl_FFPDRSComtRecords.Inputs[OLE DB Destination Input].ExternalColumns[ComtDate]"
                       lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[CMTDATE]" />
@@ -1701,7 +1992,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                       lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[CONTACTED]" />
                     <inputColumn
                       refId="Package\Table Upload\dbo_tbl_FFPDRSComtRecords.Inputs[OLE DB Destination Input].Columns[DRDATE]"
-                      cachedDataType="date"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="DRDATE"
                       externalMetadataColumnId="Package\Table Upload\dbo_tbl_FFPDRSComtRecords.Inputs[OLE DB Destination Input].ExternalColumns[DRDate]"
                       lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[DRDATE]" />
@@ -1793,16 +2086,115 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Table Upload\Worker &quot;0&quot; Error"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Worker &quot;0&quot; Error"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Table Upload\Worker &quot;0&quot; Error.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Table Upload\Worker &quot;0&quot; Error.Inputs[Conditional Split Input].Columns[WORKER]"
+                      cachedDataType="ui8"
+                      cachedName="WORKER"
+                      lineageId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[WORKER]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Table Upload\Worker &quot;0&quot; Error.Outputs[Case 1]"
+                  description="Output 2 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Case 1"
+                  synchronousInputId="Package\Table Upload\Worker &quot;0&quot; Error.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">(DT_WSTR,10)#{Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output].Columns[WORKER]} != "0"</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">(DT_WSTR,10)WORKER != "0"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Table Upload\Worker &quot;0&quot; Error.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\Table Upload\Worker &quot;0&quot; Error.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Table Upload\Worker &quot;0&quot; Error.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Table Upload\Worker &quot;0&quot; Error.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Table Upload\Worker &quot;0&quot; Error.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Table Upload\Worker &quot;0&quot; Error.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Table Upload\Worker &quot;0&quot; Error.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Table Upload\Worker &quot;0&quot; Error.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
-              refId="Package\Table Upload.Paths[Conditional Split Default Output]"
+              refId="Package\Table Upload.Paths[Case 1]"
+              endId="Package\Table Upload\Comment Date Error.Inputs[Conditional Split Input]"
+              name="Case 1"
+              startId="Package\Table Upload\Worker &quot;0&quot; Error.Outputs[Case 1]" />
+            <path
+              refId="Package\Table Upload.Paths[Case 11]"
               endId="Package\Table Upload\dbo_tbl_FFPDRSComtRecords.Inputs[OLE DB Destination Input]"
+              name="Case 1"
+              startId="Package\Table Upload\Comment Date Error.Outputs[Case 1]" />
+            <path
+              refId="Package\Table Upload.Paths[Conditional Split Default Output]"
+              endId="Package\Table Upload\Comments Exception File.Inputs[Flat File Destination Input]"
               name="Conditional Split Default Output"
-              startId="Package\Table Upload\Conditional Split.Outputs[Conditional Split Default Output]" />
+              startId="Package\Table Upload\Worker &quot;0&quot; Error.Outputs[Conditional Split Default Output]" />
             <path
               refId="Package\Table Upload.Paths[Flat File Source Output]"
-              endId="Package\Table Upload\Conditional Split.Inputs[Conditional Split Input]"
+              endId="Package\Table Upload\Worker &quot;0&quot; Error.Inputs[Conditional Split Input]"
               name="Flat File Source Output"
               startId="Package\Table Upload\CSV Comments File.Outputs[Flat File Source Output]" />
           </paths>
@@ -2144,52 +2536,48 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     design-time-name="Package\Table Upload">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Table Upload\Worker &quot;0&quot; Error"
+          TopLeft="50,272" />
+        <NodeLayout
+          Size="197,42"
+          Id="Package\Table Upload\Comments Exception File"
+          TopLeft="518,263" />
+        <NodeLayout
+          Size="219,42"
+          Id="Package\Table Upload\dbo_tbl_FFPDRSComtRecords"
+          TopLeft="282,426" />
         <NodeLayout
           Size="170,42"
           Id="Package\Table Upload\CSV Comments File"
           TopLeft="71,129" />
         <NodeLayout
-          Size="219,42"
-          Id="Package\Table Upload\dbo_tbl_FFPDRSComtRecords"
-          TopLeft="256,133" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Table Upload\Conditional Split"
-          TopLeft="157,262" />
+          Size="176,42"
+          Id="Package\Table Upload\Comment Date Error"
+          TopLeft="37,381" />
         <EdgeLayout
-          Id="Package\Table Upload.Paths[Conditional Split Default Output]"
-          TopLeft="259,262">
+          Id="Package\Table Upload.Paths[Case 1]"
+          TopLeft="126.75,314">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="106.5,-87"
+              EndConnector="0,67"
               Start="0,0"
-              End="106.5,-79.5">
+              End="0,59.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-31.3333333333333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-31.3333333333333"
-                    Point2="0,-35.3333333333333"
-                    Point3="4,-35.3333333333333" />
-                  <mssgle:LineSegment
-                    End="102.5,-35.3333333333333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="102.5,-35.3333333333333"
-                    Point2="106.5,-35.3333333333333"
-                    Point3="106.5,-39.3333333333333" />
-                  <mssgle:LineSegment
-                    End="106.5,-79.5" />
+                    End="0,59.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-26.0250390625,-30.3333333333333,158.550078125,16"
+              BoundingBox="-15.2180859375,24.97314453125,30.436171875,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2199,33 +2587,103 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="78.5,91"
+              EndConnector="-27.5,101"
               Start="0,0"
-              End="78.5,83.5">
+              End="-27.5,93.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.5" />
+                    End="0,46.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,41.5"
-                    Point2="0,45.5"
-                    Point3="4,45.5" />
+                    Point1="0,46.5"
+                    Point2="0,50.5"
+                    Point3="-4,50.5" />
                   <mssgle:LineSegment
-                    End="74.5,45.5" />
+                    End="-23.5,50.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="74.5,45.5"
-                    Point2="78.5,45.5"
-                    Point3="78.5,49.5" />
+                    Point1="-23.5,50.5"
+                    Point2="-27.5,50.5"
+                    Point3="-27.5,54.5" />
                   <mssgle:LineSegment
-                    End="78.5,83.5" />
+                    End="-27.5,93.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Table Upload.Paths[Conditional Split Default Output]"
+          TopLeft="207,293">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="311,-9"
+              Start="0,0"
+              End="303.5,-9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="151.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="151.5,0"
+                    Point2="155.5,0"
+                    Point3="155.5,-4" />
+                  <mssgle:LineSegment
+                    End="155.5,-5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="155.5,-5"
+                    Point2="155.5,-9"
+                    Point3="159.5,-9" />
+                  <mssgle:LineSegment
+                    End="303.5,-9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="31.25,50.5,16,16"
+              BoundingBox="84.88609375,1,141.2278125,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Table Upload.Paths[Case 11]"
+          TopLeft="213,402">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="69,45"
+              Start="0,0"
+              End="61.5,45">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="30.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.5,0"
+                    Point2="34.5,0"
+                    Point3="34.5,4" />
+                  <mssgle:LineSegment
+                    End="34.5,41" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.5,41"
+                    Point2="34.5,45"
+                    Point3="38.5,45" />
+                  <mssgle:LineSegment
+                    End="61.5,45" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="19.2819140625,-15.5537109375,30.436171875,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
