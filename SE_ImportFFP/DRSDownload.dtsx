@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="172"
-  DTS:VersionGUID="{97048F9E-0C64-4797-B14F-241D207E14F3}">
+  DTS:VersionBuild="175"
+  DTS:VersionGUID="{C8A80F09-2642-4BB1-A88E-C12B00089ACA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7482,6 +7482,7 @@ GROUP BY A01.FamilyId, A05b.AssignedToAccessorId
 
 SELECT DISTINCT 
 	A01.AccountNumber AS  DONORNBR, 
+
 	isnull(FP07.[EventCode],'') AS  MEVENT,
 	isnull(x04.[Description],'') AS  WKNAME,
 	LEFT(dbo.getformattednamebyaccountnumber(A01.AccountNumber),70)AS  DNAME,
@@ -7616,9 +7617,10 @@ SELECT DISTINCT
 	 CASE WHEN A01.FamilyMemberType IS NULL THEN 'I' 
 	 ELSE A01.FamilyMemberType 
 	 END  AS FAMTYPE, 
-
-	 MAILERFLAG = CASE WHEN A01h.AssignedToAccessorId = FP07.Assignment AND (FP07.DateLetSent &lt;&gt; '' or  FP07.DateLetSent is not null ) THEN 'N'
-					   WHEN FP07.EventCode IS NULL THEN 'N'
+	
+	 MAILERFLAG = CASE WHEN FP07.EventCode IS NULL THEN 'N'
+					   WHEN A01h.AssignedToAccessorId = FP07.Assignment AND (FP07.DateLetSent is not null or FP07.DateLetSent &lt;&gt; '' ) THEN 'N'
+					   WHEN A01h.AssignedToAccessorId = FP07.Assignment AND (FP07.DateLetSent is null AND FP07.OutcomeCode IS NULL ) THEN 'N'
 					   ELSE 'Y'
 					   END  
 
@@ -7631,7 +7633,7 @@ LEFT OUTER JOIN A01hAccountAssignments A01h (NOLOCK)ON A01.AccountNumber = A01h.
 INNER join A02_AccountAddresses A02 with (NOLOCK)	 on A02.AccountNumber = A01.AccountNumber 
 INNER join A03_AddressMaster A03 with (NOLOCK)	on A03.AddressID = A02.AddressID
 left OUTER  join A06_AccountSalutations A06 with (NOLOCK)	on A06.AccountNumber = A01.AccountNumber 
-left OUTER join A07_AccountEmails A07 with (NOLOCK)	 on A07.AccountNumber = A01.AccountNumber 
+left OUTER join A07_AccountEmails A07 with (NOLOCK)	 on A07.AccountNumber = A01.AccountNumber and a07.UseAsPrimary = 1 
 
 
 OUTER APPLY(
@@ -7768,10 +7770,8 @@ and (A02.UseAsPrimary IS NULL or A02.UseAsPrimary = '1'  )
 
 --AND (FP07.[EventCode]  is  NULL or )
 AND (A06.UseAsPrimary is null or A06.UseAsPrimary = 1 )
-AND (A07.UseAsPrimary is null or A07.UseAsPrimary = 1) 
---and (X04.[Type] = 'SRCWRK')
-
---and a01.AccountNumber= '22646582'</property>
+--AND (A07.UseAsPrimary is null or A07.UseAsPrimary = 1 ) 
+--and (X04.[Type] = 'SRCWRK')</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."

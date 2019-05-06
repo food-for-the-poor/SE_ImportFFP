@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">INF-DR</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAACAAAAAAADZgAAwAAAABAAAABhzInyXxlfjcVJzmuKb3W7AAAAAASAAACgAAAAEAAAAAS898DjlNl4iUavY4ueRvmIAAAApdVQE9uLwGy202nJV3ftRCJZPNFs59duzjml1RhGi/v5cwKJ9A260DaEhWAsM8wMFN5M9xShHuHXaK1+Y6WeDdjRu0z8bqxSIRK8dYtqEKYCrrYkuJ6QcZmDmsRXGQxMAsCuv0zkdsgaQBTPUFJJTcWxIRNt88icvIPf8LnulA+KgMynH6Od6BQAAABPtGN8sZTLqu50BeBIvQsT+obbPA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAACAAAAAAADZgAAwAAAABAAAADyLXoHLhsjppL+wqQ/NEPrAAAAAASAAACgAAAAEAAAAKwUJFk0yjic78pixBXK+wOIAAAA0glo2q9/ZxwrCVoS/jz/SGEncRAYH1GeI6co/5MABbK8qgp+kGYOQV9gS2Q+1ev8X6BFI6vj56g2rRbaeixsnl2TsSmNcSSPrSRmRErWNh5YF9MhgF50czDn3nALrgEORVa9oYkwjS7ufYZEgMm2GpqjUQp08nfl5HcmJt0r0SDMOBHWQffKYRQAAABAL9aDPWTWeP+NcuLnPWME5EKVzg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -1186,10 +1186,10 @@
                 <SSIS:Property SSIS:Name="Name">DRSDownload</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">172</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">174</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{97048F9E-0C64-4797-B14F-241D207E14F3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{9D8C8215-62AD-4658-9850-278A9CA81565}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1960,10 +1960,10 @@
                 <SSIS:Property SSIS:Name="Name">DRSUploadComments</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">100</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">101</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{EAB482B8-487F-45BC-94BE-9542C1A0D5E5}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{9E32D21B-F05D-438D-9B9D-867873CB75CE}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2578,10 +2578,10 @@
                 <SSIS:Property SSIS:Name="Name">DRSUploadCampaigns</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">107</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">120</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{6449C30E-3467-488D-808B-7D88ED1C4CAA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D321E080-7B90-4C9C-AF81-C0307437783F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2753,6 +2753,21 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.Dest.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\Archive\test.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.ProdServer.ConnectionString">

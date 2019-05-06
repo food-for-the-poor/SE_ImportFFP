@@ -7,12 +7,12 @@
   DTS:CreatorName="FFP\danielruiz"
   DTS:DTSID="{772415F3-80F7-408D-8A60-05E2FB9DA12A}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1100.123"
+  DTS:LastModifiedProductVersion="15.0.1300.375"
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSUploadCampaigns"
   DTS:PackageType="5"
-  DTS:VersionBuild="107"
-  DTS:VersionGUID="{6449C30E-3467-488D-808B-7D88ED1C4CAA}">
+  DTS:VersionBuild="128"
+  DTS:VersionGUID="{5925253C-5ACC-48BE-BA43-8585742CE19F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,7 +40,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{7060590A-4079-49A7-BAF2-CDB80E2697FE}"
+              DTS:DTSID="{09F71CE7-58B5-4516-A7B8-6BEBB150AB5D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 1"
-              DTS:DTSID="{7ABEDD37-0329-4EC6-8A17-629E08FC113A}"
+              DTS:DTSID="{58292920-0AC3-45F6-BFC3-63036C63C719}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 2"
-              DTS:DTSID="{1843BBBC-17F6-40F1-A323-E237FE9AB86F}"
+              DTS:DTSID="{5794DB0C-9C54-4750-9A38-0B2F032EC5A4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 3"
-              DTS:DTSID="{72562CCD-A121-405C-B2B2-16E0F7F91341}"
+              DTS:DTSID="{ED440B62-5482-497D-935C-982AF1A57302}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 4"
-              DTS:DTSID="{BAB99A9F-6D7C-41A3-9571-4DB22131A9E1}"
+              DTS:DTSID="{2E57B625-0207-45CB-B7B4-81F31FA45617}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 5"
-              DTS:DTSID="{1C7C8004-BB0B-4DE6-9E74-785966D14329}"
+              DTS:DTSID="{8F0A1E3A-2537-4119-AEC3-603BC1CFCC73}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -91,7 +91,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 6"
-              DTS:DTSID="{7831E140-3346-4149-AAA3-B85E1B64B3C5}"
+              DTS:DTSID="{D245BF15-7537-47AF-A1AE-E7E8713CB281}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -99,7 +99,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 7"
-              DTS:DTSID="{EBDA44C4-41D0-46FA-A335-B1B178CF259A}"
+              DTS:DTSID="{540B531A-30B0-40C2-9ED2-B3E612B1FA33}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -107,7 +107,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 8"
-              DTS:DTSID="{0895FBB4-FAA1-436D-A9D8-DBD1463B31D4}"
+              DTS:DTSID="{F7907BE2-C611-41A6-B627-7F4E7B5868DA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -115,7 +115,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 9"
-              DTS:DTSID="{2D7AB50A-C8FA-40BE-B283-DB181BE67EEE}"
+              DTS:DTSID="{2AE944E1-3A90-4DEC-BDC8-10ACA1D01B74}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -123,7 +123,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 10"
-              DTS:DTSID="{3F0DC2F5-F2B7-48B6-AFC4-C6359C709E53}"
+              DTS:DTSID="{06B25B8C-2F57-45B0-9834-E37044B724AC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -131,7 +131,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 11"
-              DTS:DTSID="{696764D5-0925-43BD-B30A-06F639D80167}"
+              DTS:DTSID="{0F54C3B6-67F2-419F-A00E-AEDB34965FB4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,7 +139,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 12"
-              DTS:DTSID="{C4E59FE2-3449-4AFA-8107-1D90FF39E788}"
+              DTS:DTSID="{79E19787-915A-4F64-B275-70898D567803}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 13"
-              DTS:DTSID="{991DC182-A1BB-45E1-BECB-91C72D8B4C58}"
+              DTS:DTSID="{EEC481A2-D747-45DB-891E-18EDD8CCE901}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -155,10 +155,21 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 14"
-              DTS:DTSID="{EE32E4FE-D06A-4650-913B-F46BA8A2D079}"
+              DTS:DTSID="{DE4F01C9-1F13-4E80-A8E0-7E7183DE63A0}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Dest]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{6786A7C5-4740-4325-B3CD-D40E2C1813E3}"
+      DTS:ObjectName="Dest">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\Archive\test.txt" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -205,6 +216,17 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{20DBA1B0-8899-4574-B310-86218AC1FBC7}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::FolderPath]+&quot;\\Archive\\TABDRSMidUpld&quot;+ @[User::TimeStamp]+&quot;.txt&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ArchiveDest">
+      <DTS:VariableValue
+        DTS:DataType="8">\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\\Archive\TABDRSMidUpld20190506.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{1AA44F21-5110-4BD2-8331-67F350719FC5}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
@@ -241,6 +263,17 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{B4640068-17B9-4EAA-8CD2-06D0DA930FD1}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="REPLACE((DT_WSTR, 10)(DT_DBDATE)GETDATE(),&quot;-&quot;,&quot;&quot;)"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TimeStamp">
+      <DTS:VariableValue
+        DTS:DataType="8">20190506</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{1B57D133-10B7-4AF4-B649-0EA56F42E72A}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
@@ -252,10 +285,28 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
+      DTS:refId="Package\Archive File"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:DelayValidation="True"
+      DTS:Description="File System Task"
+      DTS:DTSID="{2a8297f9-2498-45ca-92de-28552b6371c5}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Archive File"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="RenameFile"
+          TaskOverwriteDestFile="True"
+          TaskSourcePath="{362eed03-8a2c-439c-b33a-18b04c766ad6}"
+          TaskDestinationPath="{6786A7C5-4740-4325-B3CD-D40E2C1813E3}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Check if file exist"
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Script Task"
-      DTS:Disabled="True"
       DTS:DTSID="{5C9F37CF-F283-4C34-B76F-78BFF9023A0B}"
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
@@ -908,7 +959,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Process Actions in DD Campaigns"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -941,7 +992,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="List Of Actions"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -960,12 +1011,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:refId="Package\No File Notification"
       DTS:CreationName="Microsoft.SendMailTask"
       DTS:Description="Send email when no file is in folder"
-      DTS:Disabled="True"
       DTS:DTSID="{98D5AFDF-3ECB-45F9-8F5D-FBAAF5BDC417}"
       DTS:ExecutableType="Microsoft.SendMailTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="No File Notification"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SendMailTask:SendMailTaskData
@@ -1719,7 +1769,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate table"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1770,6 +1820,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
       DTS:To="Package\Get list of Actions to process" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{EB37225A-9849-48F2-92DD-DFE8C439CAF5}"
+      DTS:From="Package\Get list of Actions to process"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Archive File" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1783,6 +1841,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:s="clr-namespace:System;assembly=mscorlib">
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Archive File"
+          TopLeft="979,165" />
         <NodeLayout
           Size="159,42"
           Id="Package\Check if file exist"
@@ -1833,26 +1895,60 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="139,36"
+              EndConnector="138,37"
               Start="0,0"
-              End="131.5,36">
+              End="130.5,37">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="65.5,0" />
+                    End="65,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="65.5,0"
-                    Point2="69.5,0"
-                    Point3="69.5,4" />
+                    Point1="65,0"
+                    Point2="69,0"
+                    Point3="69,4" />
                   <mssgle:LineSegment
-                    End="69.5,32" />
+                    End="69,33" />
                   <mssgle:CubicBezierSegment
-                    Point1="69.5,32"
-                    Point2="69.5,36"
-                    Point3="73.5,36" />
+                    Point1="69,33"
+                    Point2="69,37"
+                    Point3="73,37" />
                   <mssgle:LineSegment
-                    End="131.5,36" />
+                    End="130.5,37" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="830,164.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="149,21.5"
+              Start="0,0"
+              End="141.5,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="70.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="70.5,0"
+                    Point2="74.5,0"
+                    Point3="74.5,4" />
+                  <mssgle:LineSegment
+                    End="74.5,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="74.5,17.5"
+                    Point2="74.5,21.5"
+                    Point3="78.5,21.5" />
+                  <mssgle:LineSegment
+                    End="141.5,21.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1868,25 +1964,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <NodeLayout
           Size="141,42"
           Id="Package\Table Upload"
-          TopLeft="26.5,99.5" />
+          TopLeft="27.5,96.5" />
         <NodeLayout
           Size="147,42"
           Id="Package\List Of Actions"
-          TopLeft="13.5,186.5" />
+          TopLeft="15.5,197.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="95.5,47.5">
+          TopLeft="96,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52"
+              EndConnector="0,49"
               Start="0,0"
-              End="0,44.5">
+              End="0,41.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.5" />
+                    End="0,41.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1897,30 +1993,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="97,141.5">
+          TopLeft="98,138.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-10,45"
+              EndConnector="-32.1666666666667,59"
               Start="0,0"
-              End="-10,37.5">
+              End="-32.1666666666667,51.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.5" />
+                    End="0,31.0188425302826" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.5"
-                    Point2="0,22.5"
-                    Point3="-4,22.5" />
+                    Point1="0,31.0188425302826"
+                    Point2="0,35.0188425302826"
+                    Point3="-4,35.0188425302826" />
                   <mssgle:LineSegment
-                    End="-6,22.5" />
+                    End="-28.1666666666667,35.0188425302826" />
                   <mssgle:CubicBezierSegment
-                    Point1="-6,22.5"
-                    Point2="-10,22.5"
-                    Point3="-10,26.5" />
+                    Point1="-28.1666666666667,35.0188425302826"
+                    Point2="-32.1666666666667,35.0188425302826"
+                    Point3="-32.1666666666667,39.0188425302826" />
                   <mssgle:LineSegment
-                    End="-10,37.5" />
+                    End="-32.1666666666667,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1942,30 +2038,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           TopLeft="218,13" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="160.5,207.5">
+          TopLeft="112.166666666667,197.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="57.5,-114"
+              EndConnector="234.833333333333,-23.5"
               Start="0,0"
-              End="50,-114">
+              End="234.833333333333,-16">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="24.75,0" />
+                    End="0,-5.55181695827726" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.75,0"
-                    Point2="28.75,0"
-                    Point3="28.75,-4" />
+                    Point1="0,-5.55181695827726"
+                    Point2="0,-9.55181695827726"
+                    Point3="4,-9.55181695827726" />
                   <mssgle:LineSegment
-                    End="28.75,-110" />
+                    End="230.833333333333,-9.55181695827726" />
                   <mssgle:CubicBezierSegment
-                    Point1="28.75,-110"
-                    Point2="28.75,-114"
-                    Point3="32.75,-114" />
+                    Point1="230.833333333333,-9.55181695827726"
+                    Point2="234.833333333333,-9.55181695827726"
+                    Point3="234.833333333333,-13.5518169582773" />
                   <mssgle:LineSegment
-                    End="50,-114" />
+                    End="234.833333333333,-16" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1979,8 +2075,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="499,284"
-          Size="499,327"
+          PanelSize="499,295"
+          Size="499,338"
           Id="2eb66aba-0f73-4325-8896-452a50379ff3"
           TopLeft="354.5,27.5">
           <GroupLayout.ChildrenIds>
@@ -2002,13 +2098,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,42"
-          Id="Package\Table Upload\TAB Campaigns File"
-          TopLeft="42,194" />
-        <NodeLayout
           Size="237,42"
           Id="Package\Table Upload\dbo_tbl_FFPDRSCampaignUpdate"
           TopLeft="334,189" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Table Upload\TAB Campaigns File"
+          TopLeft="42,194" />
         <EdgeLayout
           Id="Package\Table Upload.Paths[Flat File Source Output]"
           TopLeft="214,212.5">
