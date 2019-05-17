@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSUploadComments"
   DTS:PackageType="5"
-  DTS:VersionBuild="131"
-  DTS:VersionGUID="{9F1E8795-9B82-465D-BEBA-F511A508239E}">
+  DTS:VersionBuild="137"
+  DTS:VersionGUID="{7D71DA37-0043-4C01-8EB6-3B780DCF3FBD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -145,7 +145,7 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:FileUsageType="1"
-          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\\Archive\DRSCOMTUPL20190510.csv" />
+          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\\Archive\DRSCOMTUPL20190517.csv" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -267,7 +267,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn6jVveENHkuveuvQSHuOSAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACpVMstKWF2ocqzYavT8aVbAAAAAASAAACgAAAAEAAAAJpNVvGwcQBk2DDZYYz495YYAAAAIRKVINopr2jyeQbxlbLtZGNjLdlIav4hFAAAAKhUp7KfaybT8TN/bhjfD2pJQOcC</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn6jVveENHkuveuvQSHuOSAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADTSGkTrkSdWXwcy3ICR52hAAAAAASAAACgAAAAEAAAAIatqz2RbZTChnHkYpB4Qs4YAAAAw/zZBnURvUVoZa+U168YJ4N6Htu+9MxuFAAAAAoXERT54Z69PAjMqCXNq8gF20wS</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -311,7 +311,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ArchiveDestLoc">
       <DTS:VariableValue
-        DTS:DataType="8">\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\\Archive\DRSCOMTUPL20190510.csv</DTS:VariableValue>
+        DTS:DataType="8">\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\\Archive\DRSCOMTUPL20190517.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -370,7 +370,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="TimeStamp">
       <DTS:VariableValue
-        DTS:DataType="8">20190510</DTS:VariableValue>
+        DTS:DataType="8">20190517</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1086,6 +1086,38 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </ScriptProject>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create Comm Codes"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D1E23408-AD86-4059-A7DD-683012576D00}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Comm Codes"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D0BAFD9C-F42A-4344-AA42-8AF6A65C9582}"
+          SQLTask:SqlStatementSource="INSERT INTO A05cAccountCommunicationCodes&#xA;&#x9;(CommunicationRecordId&#xA;&#x9;, CodeType&#xA;&#x9;, CodeValue&#xA;&#x9;, Active)&#xA;&#xA;SELECT DISTINCT&#xA;&#x9;RecordId&#xA;&#x9;, 'CONTTYP'&#xA;&#x9;, ContactType&#xA;&#x9;, 1&#xA;&#xA;--select RecordId, AccountNumber, tbl.ContactType --into #temp  &#xA;from A05_AccountCommunications a05&#xA;inner join tbl_FFPDRSComtRecords tbl on a05.AccountNumber = tbl.ComtAccount &#xA;where&#xA; a05.[Date] = tbl.ComtDate &#xA;and a05.AssignedToAccessorId = tbl.ComtWorker &#xA;and a05.CommunicationType = tbl.ComtType  &#xA;and a05.LongComment = tbl.CommentMemo" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create Comm Dates"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C21CCED6-3160-458D-A596-DE014270B483}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create Comm Dates"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D0BAFD9C-F42A-4344-AA42-8AF6A65C9582}"
+          SQLTask:SqlStatementSource="&#xA;INSERT INTO A05dAccountCommunicationDates&#xA;&#x9;(CommunicationRecordId&#xA;&#x9;, DateType&#xA;&#x9;, DateValue&#xA;&#x9;, Active)&#xA;&#xA;SELECT DISTINCT&#xA;&#x9;RecordId&#xA;&#x9;, 'DRDATE'&#xA;&#x9;, DRDate&#xA;&#x9;, 1&#xA;--select RecordId, AccountNumber, tbl.ContactType --into #temp  &#xA;from A05_AccountCommunications a05&#xA;inner join tbl_FFPDRSComtRecords tbl on a05.AccountNumber = tbl.ComtAccount &#xA;where&#xA; a05.[Date] = tbl.ComtDate &#xA;and a05.AssignedToAccessorId = tbl.ComtWorker &#xA;and a05.CommunicationType = tbl.ComtType  &#xA;and a05.LongComment = tbl.CommentMemo" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2362,11 +2394,27 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
-      DTS:DTSID="{2BF2C6AA-6B7A-4AB3-9D14-BA8EF405EDFE}"
-      DTS:From="Package\Get list of Account Numbers to insert"
+      DTS:DTSID="{CB60E9AC-2E7D-4C67-A0F5-AFD6640CD46D}"
+      DTS:From="Package\Create Comm Dates"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
       DTS:To="Package\Archive File" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{E1EC4D08-98DD-4C99-BEA7-3993ADDF9A62}"
+      DTS:From="Package\Create Comm Codes"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Create Comm Dates" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{11099A12-E4C9-4336-8AA1-E58BE84D965D}"
+      DTS:From="Package\Get list of Account Numbers to insert"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Create Comm Codes" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -2379,7 +2427,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:s="clr-namespace:System;assembly=mscorlib">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:s="clr-namespace:System;assembly=mscorlib">
         <NodeLayout
           Size="133,42"
           Id="Package\Archive File"
@@ -2454,40 +2502,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     Point3="73,37" />
                   <mssgle:LineSegment
                     End="130.5,37" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="830,164.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="163,107.5"
-              Start="0,0"
-              End="155.5,107.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="77.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="77.5,0"
-                    Point2="81.5,0"
-                    Point3="81.5,4" />
-                  <mssgle:LineSegment
-                    End="81.5,103.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="81.5,103.5"
-                    Point2="81.5,107.5"
-                    Point3="85.5,107.5" />
-                  <mssgle:LineSegment
-                    End="155.5,107.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2597,13 +2611,77 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Create Comm Codes"
+          TopLeft="254,229" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Create Comm Dates"
+          TopLeft="248,321" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="338,271">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="356,174">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-14.5,55"
+              Start="0,0"
+              End="-14.5,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="-4,27.5" />
+                  <mssgle:LineSegment
+                    End="-10.5,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10.5,27.5"
+                    Point2="-14.5,27.5"
+                    Point3="-14.5,31.5" />
+                  <mssgle:LineSegment
+                    End="-14.5,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <GroupLayout
           Text="Comments data processting"
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="499,284"
-          Size="499,327"
+          PanelSize="499,418"
+          Size="499,461"
           Id="2eb66aba-0f73-4325-8896-452a50379ff3"
           TopLeft="354.5,27.5">
           <GroupLayout.ChildrenIds>
@@ -2614,8 +2692,46 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             <s:String>Package.PrecedenceConstraints[Constraint 3]</s:String>
             <s:String>Package\Get list of Account Numbers to insert</s:String>
             <s:String>Package.PrecedenceConstraints[Constraint 4]</s:String>
+            <s:String>Package\Create Comm Codes</s:String>
+            <s:String>Package\Create Comm Dates</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 6]</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 7]</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="688.5,392">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="371,-99"
+              Start="0,0"
+              End="371,-91.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-45.5"
+                    Point2="0,-49.5"
+                    Point3="4,-49.5" />
+                  <mssgle:LineSegment
+                    End="367,-49.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="367,-49.5"
+                    Point2="371,-49.5"
+                    Point3="371,-53.5" />
+                  <mssgle:LineSegment
+                    End="371,-91.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -2637,9 +2753,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157,42"
-          Id="Package\Table Upload\Worker &quot;0&quot; Error"
-          TopLeft="66,134" />
+          Size="154,42"
+          Id="Package\Table Upload\Derived Column"
+          TopLeft="174,340" />
         <NodeLayout
           Size="197,42"
           Id="Package\Table Upload\Comments Exception File"
@@ -2649,6 +2765,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Id="Package\Table Upload\dbo_tbl_FFPDRSComtRecords"
           TopLeft="495,376" />
         <NodeLayout
+          Size="157,42"
+          Id="Package\Table Upload\Worker &quot;0&quot; Error"
+          TopLeft="66,134" />
+        <NodeLayout
           Size="170,42"
           Id="Package\Table Upload\CSV Comments File"
           TopLeft="62,34" />
@@ -2656,42 +2776,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Size="176,42"
           Id="Package\Table Upload\Comment Date Error"
           TopLeft="34,244" />
-        <EdgeLayout
-          Id="Package\Table Upload.Paths[Case 1]"
-          TopLeft="144.5,176">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-22.5,68"
-              Start="0,0"
-              End="-22.5,60.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30"
-                    Point2="0,34"
-                    Point3="-4,34" />
-                  <mssgle:LineSegment
-                    End="-18.5,34" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,34"
-                    Point2="-22.5,34"
-                    Point3="-22.5,38" />
-                  <mssgle:LineSegment
-                    End="-22.5,60.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-26.4680859375,39,30.436171875,9.5537109375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Table Upload.Paths[Flat File Source Output]"
           TopLeft="145.75,76">
@@ -2706,6 +2790,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Table Upload.Paths[Derived Column Output]"
+          TopLeft="328,361">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="167,36"
+              Start="0,0"
+              End="159.5,36">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="79.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.5,0"
+                    Point2="83.5,0"
+                    Point3="83.5,4" />
+                  <mssgle:LineSegment
+                    End="83.5,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="83.5,32"
+                    Point2="83.5,36"
+                    Point3="87.5,36" />
+                  <mssgle:LineSegment
+                    End="159.5,36" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2750,44 +2868,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Table Upload\Derived Column"
-          TopLeft="174,340" />
-        <EdgeLayout
-          Id="Package\Table Upload.Paths[Derived Column Output]"
-          TopLeft="328,361">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="167,36"
-              Start="0,0"
-              End="159.5,36">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="79.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="79.5,0"
-                    Point2="83.5,0"
-                    Point3="83.5,4" />
-                  <mssgle:LineSegment
-                    End="83.5,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="83.5,32"
-                    Point2="83.5,36"
-                    Point3="87.5,36" />
-                  <mssgle:LineSegment
-                    End="159.5,36" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Table Upload.Paths[Case 11]"
           TopLeft="122,286">
@@ -2821,6 +2901,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="49.2819140625,32,30.436171875,9.5537109375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Table Upload.Paths[Case 1]"
+          TopLeft="144.5,176">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-22.5,68"
+              Start="0,0"
+              End="-22.5,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30"
+                    Point2="0,34"
+                    Point3="-4,34" />
+                  <mssgle:LineSegment
+                    End="-18.5,34" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,34"
+                    Point2="-22.5,34"
+                    Point3="-22.5,38" />
+                  <mssgle:LineSegment
+                    End="-22.5,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-26.4680859375,39,30.436171875,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
