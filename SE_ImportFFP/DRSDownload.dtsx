@@ -7,12 +7,12 @@
   DTS:CreatorName="FFP\danielruiz"
   DTS:DTSID="{83D9B63E-CD49-494D-B2A6-3428C9BF49B5}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1100.123"
+  DTS:LastModifiedProductVersion="15.0.1300.375"
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="176"
-  DTS:VersionGUID="{0EB0D8E4-7FAE-41F9-8DD0-293ED263118D}">
+  DTS:VersionBuild="177"
+  DTS:VersionGUID="{5BA2F872-F9DF-4EA3-AA35-FF0B1C76CC79}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9945,7 +9945,12 @@ AND (A06.UseAsPrimary is null or A06.UseAsPrimary = 1 )
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">with T 
+as 
+
+(
+
+SELECT DISTINCT 
 	DRSPORT.DonorNbr AS 'TRDOOR'
 	,T04.SourceCode AS 'TRNSRCCOD'
 	,P04.[Description] AS  'TRNSRCDSC'
@@ -9961,6 +9966,8 @@ AND (A06.UseAsPrimary is null or A06.UseAsPrimary = 1 )
 	--,COALESCE(CONVERT(VARCHAR(10),D03.printdate,(101)), '') AS 'DTRNPRODTE' 	
 	,'' AS 'DTRNPRODTE'
 	, P04C.CodeValue AS 'TRNDEPT'
+	,t01.DocumentNumber
+--	INTO #TEMP 
 from
 tbl_FFPDRSPortfolios DRSPORT WITH (NOLOCK)
 left outer join T01_TransactionMaster T01 WITH(NOLOCK) ON	T01.AccountNumber = DRSPORT.DonorNbr
@@ -9989,7 +9996,25 @@ WHERE
 --T12.CommunicationType = 'RECEIPT' 
 --AND T12.ProfileGroupId &gt; 1
 --and
- P04C.CodeType = 'DEPCOD'</property>
+ P04C.CodeType = 'DEPCOD'
+ --and DRSPORT.DonorNbr = '42394'
+ --order by T01.[Date] desc 
+ )
+ SELECT TRDOOR
+ ,TRNSRCCOD
+ ,TRNSRCDSC
+ ,TRNBATCH
+ ,TRNPLEDGE
+ ,TRNBANK
+ ,TRNGFTDATE
+ ,TRNPRODATE
+ ,TRNCOUNT
+ ,TRNAMT
+ ,DTRNGFTDTE
+ ,DTRNPRODTE
+ ,TRNDEPT
+ 
+ FROM T</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -11031,7 +11056,7 @@ WHERE
     design-time-name="Package\Transactions Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
           Id="Package\Transactions Export\OLE DB Source"
@@ -11059,9 +11084,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
