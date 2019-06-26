@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="178"
-  DTS:VersionGUID="{B5E82ECA-6B31-44B8-85C7-DC310C6CBDDA}">
+  DTS:VersionBuild="179"
+  DTS:VersionGUID="{E1AA4D14-4909-44E4-80F4-61123226C3F9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1516,7 +1516,7 @@ SELECT
 	,ISNULL(A05.CommunicationType,'') CCTYPE
 	, SELTypeDesc.[Description] AS COMTDESC
 	,' ' AS COMTAMT
-	,ISNULL(FP30.WorkerName,'') CUSER
+	,ISNULL(FP30.AccessorDescription,'') CUSER
 	, CONVERT(VARCHAR(10),A05.[Date],(101)) AS COMTDATE
 
 
@@ -1525,7 +1525,7 @@ INNER JOIN A01_AccountMaster A01 WITH (NOLOCK) ON  DRSPORT.DONORNBR = A01.Accoun
 LEFT OUTER JOIN A01hAccountAssignments A01h WITH (NOLOCK) on A01h.AccountNumber = A01.AccountNumber
 LEFT OUTER JOIN A05_AccountCommunications A05 WITH (NOLOCK) on A05.AccountNumber = A01.AccountNumber
 
-LEFT OUTER JOIN FP30_WorkerIdXref FP30 WITH (NOLOCK) on FP30.WorkerId = A05.AssignedToAccessorId
+LEFT OUTER JOIN SEC03_Accessors FP30 WITH (NOLOCK) on FP30.AccessorId = A05.AssignedToAccessorId
 
 OUTER APPLY
 	(SELECT TOP 1 [Description]
@@ -1557,7 +1557,7 @@ SELECT
 	,ISNULL(A05.CommunicationType,'') CCTYPE
 	, SELTypeDesc.[Description] AS COMTDESC
 	,' ' AS COMTAMT
-	,ISNULL(FP30.WorkerName,'') CUSER
+	,ISNULL(FP30.AccessorDescription,'') CUSER
 	, CONVERT(VARCHAR(10),A05.[Date],(101)) AS COMTDATE
 
 
@@ -1566,7 +1566,7 @@ INNER JOIN A01_AccountMaster A01 WITH (NOLOCK) ON  DRSPORT.DONORNBR = A01.Accoun
 LEFT OUTER JOIN A01hAccountAssignments A01h WITH (NOLOCK) on A01h.AccountNumber = A01.AccountNumber
 LEFT OUTER JOIN A05_AccountCommunications A05 WITH (NOLOCK) on A05.AccountNumber = A01.AccountNumber
 
-LEFT OUTER JOIN FP30_WorkerIdXref FP30 WITH (NOLOCK) on FP30.WorkerId = A05.AssignedToAccessorId
+LEFT OUTER JOIN SEC03_Accessors FP30 WITH (NOLOCK) on FP30.AccessorId = A05.AssignedToAccessorId
 
 OUTER APPLY
 	(SELECT TOP 1 [Description]
@@ -1593,7 +1593,7 @@ SELECT  a01.FamilyId CMTDONOR
 	,ISNULL(A05.CommunicationType,'') CCTYPE
 	, SELTypeDesc.[Description] AS COMTDESC
 	,' ' AS COMTAMT
-	,ISNULL(FP30.WorkerName,'') CUSER
+	,ISNULL(FP30.AccessorDescription,'') CUSER
 	, CONVERT(VARCHAR(10),A05.[Date],(101)) AS COMTDATE
 
 
@@ -1602,7 +1602,7 @@ INNER JOIN A01_AccountMaster A01 WITH (NOLOCK) ON  DRSPORT.DONORNBR = A01.Family
 LEFT JOIN A01hAccountAssignments A01h WITH (NOLOCK) on A01h.AccountNumber = A01.AccountNumber
 LEFT JOIN A05_AccountCommunications A05 WITH (NOLOCK) on A05.AccountNumber = A01.AccountNumber
  
-LEFT OUTER JOIN FP30_WorkerIdXref FP30 WITH (NOLOCK) on FP30.WorkerId = A05.AssignedToAccessorId
+LEFT OUTER JOIN SEC03_Accessors FP30 WITH (NOLOCK) on FP30.AccessorId = A05.AssignedToAccessorId
 
 OUTER APPLY
 	(SELECT TOP 1 [Description]
@@ -1625,7 +1625,7 @@ AND A01.FamilyMemberType IN ('SP','CN','DP')
 
 SELECT DISTINCT * 
 FROM ConvComms
---WHERE CMTDONOR in ('22585533')
+--WHERE CMTDONOR in ('438166')
 ORDER by CCOMDT DESC</property>
                 <property
                   dataType="System.String"
@@ -10843,7 +10843,7 @@ WHERE
     design-time-name="Package\Comments Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="129,42"
           Id="Package\Comments Export\Comments"
@@ -10871,9 +10871,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
