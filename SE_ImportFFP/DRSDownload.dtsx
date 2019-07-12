@@ -7,12 +7,12 @@
   DTS:CreatorName="FFP\danielruiz"
   DTS:DTSID="{83D9B63E-CD49-494D-B2A6-3428C9BF49B5}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1300.375"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="181"
-  DTS:VersionGUID="{9CB40433-8930-4068-BDE5-F39374056052}">
+  DTS:VersionBuild="186"
+  DTS:VersionGUID="{11B4C35D-6FF6-40BB-B3F2-9876CAF9DD32}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3582,7 +3582,7 @@ or (A01.AccountType = 'O' and A01.FamilyMemberType = 'CN'))</property>
 	COALESCE(CONVERT(VARCHAR(10),DonorStats.[Date Largest Gift], (101)) , '') AS LDATE,
 	--iif(SELA01d2.LastContactDate is not null, format(SELA01d2.LastContactDate,'MM/dd/yyyy','en-US'),'') CDATE,
 	COALESCE(CONVERT(VARCHAR(10),SELA01d2.LastContactDate,(101)), '') AS CDATE, 
-	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') FROM FP07_Campaign dtsnd WHERE dtsnd.AccountNumber = A01.AccountNumber AND dtsnd.[EventCode] IN ('HD19S1', 'HD19D1', 'MD19C3','MD19S1') )  ,
+	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') FROM FP07_Campaign dtsnd WHERE dtsnd.AccountNumber = A01.AccountNumber AND dtsnd.[EventCode] IN (SELECT EventCode FROM tbl_FFPEventCodes WHERE Active = '1') )  ,
 	isnull(A01c2.CodeValue,'')  AS DORGAN,	
 	isnull(A01c11.CodeValue,'') AS  DPHNCD,	
 	''  DPHON2,							-- As per Framk we are bringing Primary phone only
@@ -3669,7 +3669,7 @@ or (A01.AccountType = 'O' and A01.FamilyMemberType = 'CN'))</property>
 	
 from A01_AccountMaster A01 (NOLOCK)
 left join FP07_Campaign FP07 (NOLOCK)
-on FP07.[AccountNumber] = A01.AccountNumber and FP07.[EventCode] in ('HD19S1', 'HD19D1', 'MD19C1', 'MD19S1')
+on FP07.[AccountNumber] = A01.AccountNumber and FP07.[EventCode] in (SELECT CampEvent FROM tbl_FFPEventCodes WHERE Active = '1')
 join A01hAccountAssignments A01h (NOLOCK)
 on A01.AccountNumber = A01h.AccountNumber
 join A02_AccountAddresses A02 with (NOLOCK)	
@@ -7529,7 +7529,7 @@ SELECT DISTINCT
 	LETSENTOUT = (SELECT COALESCE(CONVERT(VARCHAR(10),MAX(dtsnd.DateLetSent),(101)),'') 
 				  FROM FP07_Campaign dtsnd 
 				  WHERE dtsnd.AccountNumber = A01.AccountNumber 
-				  AND dtsnd.[EventCode] IN ('HD19S1', 'HD19D1', 'MD19C1','MD19S1'))  ,
+				  AND dtsnd.[EventCode] IN (SELECT CampEvent FROM tbl_FFPEventCodes WHERE Active = '1'))  ,
 	isnull(AcctCodes.ORGTYPE,'')  AS DORGAN,	
 	isnull(AcctCodes.PHNCOD,'') AS  DPHNCD,	
 	''  DPHON2,							-- As per Framk we are bringing Primary phone only
@@ -7623,7 +7623,7 @@ SELECT DISTINCT
 	
 	 MAILERFLAG = CASE WHEN FP07.EventCode IS NULL THEN 'N'
 					   WHEN A01h.AssignedToAccessorId = FP07.Assignment AND (FP07.DateLetSent is not null or FP07.DateLetSent &lt;&gt; '' ) THEN 'N'
-					   WHEN A01h.AssignedToAccessorId = FP07.Assignment AND (FP07.DateLetSent is null AND FP07.OutcomeCode IS NULL ) THEN 'N'
+					   WHEN A01h.AssignedToAccessorId = FP07.Assignment AND (FP07.OutcomeCode is null AND FP07.OutcomeCode IS NULL ) THEN 'N'
 					   ELSE 'Y'
 					   END  
 
@@ -7631,7 +7631,7 @@ SELECT DISTINCT
 	
 	
 FROM A01_AccountMaster A01 WITH (NOLOCK)
-LEFT OUTER JOIN FP07_Campaign FP07 WITH (NOLOCK) ON A01.AccountNumber = FP07.[AccountNumber]  and  FP07.[EventCode] IN ('HD19S1', 'HD19D1', 'MD19C1','MD19S1')
+LEFT OUTER JOIN FP07_Campaign FP07 WITH (NOLOCK) ON A01.AccountNumber = FP07.[AccountNumber]  and  FP07.[EventCode] IN (SELECT CampEvent FROM tbl_FFPEventCodes WHERE Active = '1')
 LEFT OUTER JOIN A01hAccountAssignments A01h (NOLOCK)ON A01.AccountNumber = A01h.AccountNumber
 INNER join A02_AccountAddresses A02 with (NOLOCK)	 on A02.AccountNumber = A01.AccountNumber 
 INNER join A03_AddressMaster A03 with (NOLOCK)	on A03.AddressID = A02.AddressID
@@ -10892,7 +10892,7 @@ WHERE
     design-time-name="Package\Group Record Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
           Id="Package\Group Record Export\OLE DB Source"
@@ -10920,9 +10920,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10940,7 +10938,7 @@ WHERE
     design-time-name="Package\Portfolio Import to tbl_FFPDRSPortolios">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
           Id="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination"
@@ -10980,9 +10978,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
