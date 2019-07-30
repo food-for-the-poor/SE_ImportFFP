@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="186"
-  DTS:VersionGUID="{11B4C35D-6FF6-40BB-B3F2-9876CAF9DD32}">
+  DTS:VersionBuild="203"
+  DTS:VersionGUID="{C205AA3E-670A-49CF-8888-6F871952543A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -166,6 +166,130 @@
               DTS:TextQualified="True"
               DTS:ObjectName="Column 3"
               DTS:DTSID="{D1D6EB08-F8DA-4188-96E3-09C4F141CBCC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Pledges_LocFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{b5fc214e-f084-4b7e-a15a-eab216fe1eaa}"
+      DTS:ObjectName="Pledges_LocFile">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FolderPath]+  @[User::TABPledges]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\TABDRSPLG.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Donor Number"
+              DTS:DTSID="{D70E9F82-36CC-42E9-A361-4346CFFEAFA3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pledge Type"
+              DTS:DTSID="{C2A287FF-ED31-4597-A602-6080AFDC68E0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pledge Code"
+              DTS:DTSID="{34DD4FEC-113F-4FEC-B292-D445F5B6E7FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Beginning Date"
+              DTS:DTSID="{9F0AF280-0EA0-49A9-B852-C872910DE0F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Ending Date"
+              DTS:DTSID="{3877F4BF-C0A2-43EF-AFAC-390EE04DFD37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Last Pymt Date"
+              DTS:DTSID="{2E93AC6C-2158-4C93-966C-83DA19A4C4DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Amount Paid"
+              DTS:DTSID="{231C3935-50BA-4945-BCEE-2CB982E12321}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total Pledge"
+              DTS:DTSID="{3FE4C5AF-6473-4686-8D87-4974D321023E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AmountPerGift"
+              DTS:DTSID="{81AC560C-F0D5-4519-A4BC-829A6626F3A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Remaining Amount"
+              DTS:DTSID="{04FDBBD6-B5E8-4B22-A239-DFF37DFF71A0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bill Cycle"
+              DTS:DTSID="{876F8BC3-1BC5-4BAD-A9F5-34AC6B434238}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PledgeStatus"
+              DTS:DTSID="{E5C10B3E-9B63-4D88-B164-591573BEE51E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1049,6 +1173,79 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Stats_LocFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{dfa3a42d-586d-4d74-a0c1-e796d56dbd3c}"
+      DTS:ObjectName="Stats_LocFile">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FolderPath]+  @[User::TabStats]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\ORACLE5\Users\Applications\VFP-DDSYNC\DRS\TABDRSStats.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DonorNum"
+              DTS:DTSID="{D4D24CAB-A46A-4236-BCF2-F6D291690E0B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SourceCode"
+              DTS:DTSID="{C1168542-F535-41CC-8CED-C7818CDB201C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SCDescription"
+              DTS:DTSID="{A6A433B3-B33F-4C8F-9064-CC3DB0FC7E66}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="70"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EventCode"
+              DTS:DTSID="{550E5DE3-AE51-4B5E-A0E1-F17E6505988D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DropDate"
+              DTS:DTSID="{22BD3A96-4585-4C02-8D95-0D169DCBA342}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Department"
+              DTS:DTSID="{155B5B5D-D751-4CF9-8D43-1F47D141EC8F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Transactions_LocFile]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{d06f3e5b-71a1-4cbf-a29d-33a4360284a5}"
@@ -1256,12 +1453,30 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{09C2BF58-6235-49BF-B0CB-DB7C16C1FAD7}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TABPledges">
+      <DTS:VariableValue
+        DTS:DataType="8">TABDRSPLG.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{894DFBFB-B723-476E-BD34-9F1562E64D05}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="TabPortfolios">
       <DTS:VariableValue
         DTS:DataType="8">TABDRSPortfolios.txt</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D90A6598-9916-45AA-93C4-1A4782070ED1}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TabStats">
+      <DTS:VariableValue
+        DTS:DataType="8">TABDRSStats.txt</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -2237,6 +2452,611 @@ or (A01.AccountType = 'O' and A01.FamilyMemberType = 'CN'))</property>
               endId="Package\Group Record Export\Flat File Destination.Inputs[Flat File Destination Input]"
               name="OLE DB Source Output"
               startId="Package\Group Record Export\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Pledge Export"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{d0877251-875f-4835-89f6-72130c43c0a2}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Pledge Export"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Pledge Export\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">with T 
+as 
+
+(
+SELECT 
+       DRSPORT.DonorNbr AS 'Donor'
+       ,T04.PledgeID 'PledgeCode'
+       ,sum(T04.TotalAmount) 'PaidAmount'
+       ,Max(T01.Date) 'LastPaymentDate'
+from
+tbl_FFPDRSPortfolios DRSPORT WITH (NOLOCK)
+left outer join T01_TransactionMaster T01 WITH(NOLOCK) ON     T01.AccountNumber = DRSPORT.DonorNbr
+inner join T04_GiftDetails T04 WITH(NOLOCK) ON T04.DocumentNumber = T01.DocumentNumber
+join P04_SourceCodesMaster P04 WITH (NOLOCK) ON P04.SourceCode = T04.SourceCode
+WHERE 
+  --DRSPORT.DonorNbr = @DonorNumber AND 
+  T04.PledgeID &gt; ' '
+group by DRSPORT.DonorNbr, T04.PledgeID
+)
+SELECT
+              T.Donor 'Donor Number'
+       , SELA10.PledgeType 'Pledge Type'
+       , SELA10.PledgeCode 'Pledge Code'
+       , COALESCE(CONVERT(VARCHAR(10),SELA10.StartDate,(101)), '') AS 'Beginning Date'   
+       , COALESCE(CONVERT(VARCHAR(10),SELA10.EndDate,(101)), '') AS 'Ending Date' 
+       , COALESCE(CONVERT(VARCHAR(10),T.LastPaymentDate,(101)), '') AS 'Last Pymt Date' 
+       , T.PaidAmount 'Amount Paid'
+       , iif(SELA10.PledgeType = 'G',0,SELA10.TotalAmount) 'Total Pledge'
+       , SELA10.AmountPerGift
+       , iif(SELA10.PledgeType = 'P', SELA10.TotalAmount - T.PaidAmount,0) 'Remaining Amount'
+--     , iif(SELA10.PledgeType = 'P', SELA10.AmountPerGift * SELA10.NumberPledged - T.PaidAmount,0) 'Remaining Amount'
+       , SELA10.PledgeFrequency 'Bill Cycle'
+       , SELA10.PledgeStatus      
+
+FROM T
+outer apply
+       (select top 1
+              A10.PledgeCode, A10.TotalAmount, A10.AmountPerGift, A10.PledgeFrequency
+              ,A10.NumberPledged, A10.StartDate, A10.EndDate, iif(A10.OpenEnded = 1,'G','P') as 'PledgeType'         
+              ,A10.PledgeStatus
+       from A10_AccountPledges A10 with (NOLOCK)
+       where
+         A10.AccountNumber = T.Donor and A10.PledgeId = T.PledgeCode
+       ) SELA10
+order by SELA10.EndDate</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Pledge Export\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ProdServer]"
+                  connectionManagerRefId="Package.ConnectionManagers[ProdServer]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Donor Number]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Donor Number]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Donor Number]"
+                      name="Donor Number"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pledge Type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Pledge Type]"
+                      length="1"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pledge Type]"
+                      name="Pledge Type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pledge Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Pledge Code]"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pledge Code]"
+                      name="Pledge Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Beginning Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Beginning Date]"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Beginning Date]"
+                      name="Beginning Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Ending Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Ending Date]"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Ending Date]"
+                      name="Ending Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Last Pymt Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Last Pymt Date]"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Last Pymt Date]"
+                      name="Last Pymt Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Amount Paid]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Amount Paid]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Amount Paid]"
+                      name="Amount Paid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total Pledge]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Total Pledge]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total Pledge]"
+                      name="Total Pledge"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[AmountPerGift]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AmountPerGift]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[AmountPerGift]"
+                      name="AmountPerGift"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Remaining Amount]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Remaining Amount]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Remaining Amount]"
+                      name="Remaining Amount"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Bill Cycle]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Bill Cycle]"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Bill Cycle]"
+                      name="Bill Cycle"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[PledgeStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PledgeStatus]"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[PledgeStatus]"
+                      name="PledgeStatus"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Donor Number]"
+                      dataType="i8"
+                      name="Donor Number" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Pledge Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Pledge Type" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Pledge Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Pledge Code" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Beginning Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Beginning Date" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Ending Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Ending Date" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Last Pymt Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Last Pymt Date" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Amount Paid]"
+                      dataType="cy"
+                      name="Amount Paid" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Total Pledge]"
+                      dataType="cy"
+                      name="Total Pledge" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AmountPerGift]"
+                      dataType="cy"
+                      name="AmountPerGift" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Remaining Amount]"
+                      dataType="cy"
+                      name="Remaining Amount" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Bill Cycle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Bill Cycle" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PledgeStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="PledgeStatus" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Donor Number]"
+                      dataType="i8"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Donor Number]"
+                      name="Donor Number" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Pledge Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Pledge Type]"
+                      name="Pledge Type" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Pledge Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Pledge Code]"
+                      name="Pledge Code" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Beginning Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Beginning Date]"
+                      name="Beginning Date" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Ending Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Ending Date]"
+                      name="Ending Date" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Last Pymt Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Last Pymt Date]"
+                      name="Last Pymt Date" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Amount Paid]"
+                      dataType="cy"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Amount Paid]"
+                      name="Amount Paid" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Total Pledge]"
+                      dataType="cy"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Total Pledge]"
+                      name="Total Pledge" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AmountPerGift]"
+                      dataType="cy"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AmountPerGift]"
+                      name="AmountPerGift" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Remaining Amount]"
+                      dataType="cy"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Remaining Amount]"
+                      name="Remaining Amount" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Bill Cycle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Bill Cycle]"
+                      name="Bill Cycle" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PledgeStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PledgeStatus]"
+                      name="PledgeStatus" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Pledge Export\Pledges"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Pledges">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">false</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Pledge Export\Pledges.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Pledges_LocFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[Pledges_LocFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Donor Number]"
+                      cachedDataType="i8"
+                      cachedName="Donor Number"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Donor Number]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Donor Number]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Pledge Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Pledge Type"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Pledge Type]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pledge Type]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Pledge Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Pledge Code"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Pledge Code]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pledge Code]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Beginning Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Beginning Date"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Beginning Date]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Beginning Date]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Ending Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Ending Date"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Ending Date]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Ending Date]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Last Pymt Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Last Pymt Date"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Last Pymt Date]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Last Pymt Date]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Amount Paid]"
+                      cachedDataType="cy"
+                      cachedName="Amount Paid"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Amount Paid]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Amount Paid]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Total Pledge]"
+                      cachedDataType="cy"
+                      cachedName="Total Pledge"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Total Pledge]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total Pledge]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[AmountPerGift]"
+                      cachedDataType="cy"
+                      cachedName="AmountPerGift"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[AmountPerGift]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[AmountPerGift]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Remaining Amount]"
+                      cachedDataType="cy"
+                      cachedName="Remaining Amount"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Remaining Amount]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Remaining Amount]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Bill Cycle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Bill Cycle"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Bill Cycle]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Bill Cycle]" />
+                    <inputColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[PledgeStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="PledgeStatus"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[PledgeStatus]"
+                      lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[PledgeStatus]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Donor Number]"
+                      dataType="i8"
+                      name="Donor Number" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Pledge Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Pledge Type" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Pledge Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Pledge Code" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Beginning Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Beginning Date" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Ending Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Ending Date" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Last Pymt Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Last Pymt Date" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Amount Paid]"
+                      dataType="cy"
+                      name="Amount Paid" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Total Pledge]"
+                      dataType="cy"
+                      name="Total Pledge" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[AmountPerGift]"
+                      dataType="cy"
+                      name="AmountPerGift" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Remaining Amount]"
+                      dataType="cy"
+                      name="Remaining Amount" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Bill Cycle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Bill Cycle" />
+                    <externalMetadataColumn
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[PledgeStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="PledgeStatus" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Pledge Export.Paths[OLE DB Source Output]"
+              endId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -9907,6 +10727,395 @@ AND (A06.UseAsPrimary is null or A06.UseAsPrimary = 1 )
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\STATS Export"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{7e062d85-912c-49ba-bde7-2b678f85a66c}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="STATS Export"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\STATS Export\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              validateExternalMetadata="False"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">WITH StastsData 
+AS 
+(
+     SELECT  DonorNum
+	 , AccountNumber
+	 , SourceCode
+	 , EventCode
+	 , MailDropDate
+	 , SrcCode 
+     FROM  FP08_STATS
+     WHERE AccountNumber IN(SELECT DISTINCT AccountNumber
+                            FROM T01_TransactionMaster T01 
+							INNER JOIN tbl_FFPDRSPortfolios TBL ON T01.AccountNumber = TBL.DONORNBR)
+)
+
+
+SELECT t.DonorNum
+, t.[SourceCode]
+, P04.[Description] 'SCDescription'
+, t.EventCode
+, isnull(CONVERT(varchar(10), t .MailDropDate, 101), '') AS DropDate
+, LEFT(P04c.CodeValue, 2) AS 'Department'
+FROM StastsData T 
+LEFT OUTER JOIN P04_SourceCodesMaster P04 WITH (NOLOCK) ON P04.SourceCode = t .SrcCode 
+INNER JOIN P04cSourceCodes P04C WITH (NOLOCK) ON P04.SourceCode = P04C.SourceCode
+WHERE P04C.CodeType = 'DEPCOD'</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\STATS Export\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[ProdServer]"
+                  connectionManagerRefId="Package.ConnectionManagers[ProdServer]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DonorNum]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DonorNum]"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DonorNum]"
+                      name="DonorNum"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[SourceCode]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SourceCode]"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[SourceCode]"
+                      name="SourceCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SCDescription]"
+                      length="40"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCDescription]"
+                      name="SCDescription"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[EventCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EventCode]"
+                      length="70"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[EventCode]"
+                      name="EventCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DropDate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DropDate]"
+                      length="10"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DropDate]"
+                      name="DropDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Department]"
+                      length="2"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Department]"
+                      name="Department"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DonorNum]"
+                      dataType="i8"
+                      name="DonorNum" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SourceCode]"
+                      dataType="i8"
+                      name="SourceCode" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SCDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="SCDescription" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EventCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="EventCode" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DropDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="DropDate" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="Department" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DonorNum]"
+                      dataType="i8"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DonorNum]"
+                      name="DonorNum" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SourceCode]"
+                      dataType="i8"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SourceCode]"
+                      name="SourceCode" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SCDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SCDescription]"
+                      name="SCDescription" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EventCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EventCode]"
+                      name="EventCode" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DropDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DropDate]"
+                      name="DropDate" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Department]"
+                      name="Department" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\STATS Export\Stats"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Stats">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\STATS Export\Stats.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Stats_LocFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[Stats_LocFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[DonorNum]"
+                      cachedDataType="i8"
+                      cachedName="DonorNum"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[DonorNum]"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DonorNum]" />
+                    <inputColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[SourceCode]"
+                      cachedDataType="i8"
+                      cachedName="SourceCode"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[SourceCode]"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[SourceCode]" />
+                    <inputColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[SCDescription]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="40"
+                      cachedName="SCDescription"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[SCDescription]"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCDescription]" />
+                    <inputColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[EventCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="70"
+                      cachedName="EventCode"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[EventCode]"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[EventCode]" />
+                    <inputColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[DropDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="DropDate"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[DropDate]"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DropDate]" />
+                    <inputColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[Department]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="Department"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Department]"
+                      lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Department]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[DonorNum]"
+                      dataType="i8"
+                      name="DonorNum" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[SourceCode]"
+                      dataType="i8"
+                      name="SourceCode" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[SCDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="SCDescription" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[EventCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="70"
+                      name="EventCode" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[DropDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="DropDate" />
+                    <externalMetadataColumn
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Department]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="Department" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\STATS Export.Paths[OLE DB Source Output]"
+              endId="Package\STATS Export\Stats.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Transactions Export"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
@@ -10633,6 +11842,22 @@ WHERE
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
       DTS:To="Package\Portfolios Export" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{77F9EE0B-0E78-4F8D-8BA5-4C50E2E7EA27}"
+      DTS:From="Package\STATS Export"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Pledge Export" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{53574DF2-58AC-4B6F-839E-821E5E40D495}"
+      DTS:From="Package\Comments Export"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\STATS Export" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -10649,33 +11874,33 @@ WHERE
         <NodeLayout
           Size="222,42"
           Id="Package\Truncate tbl_FFPDRSPortfolios"
-          TopLeft="21,53" />
+          TopLeft="21,288" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="243,74">
+          TopLeft="132,288">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="195,14"
+              EndConnector="438,-111"
               Start="0,0"
-              End="187.5,14">
+              End="438,-103.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="93.5,0" />
+                    End="0,-51.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="93.5,0"
-                    Point2="97.5,0"
-                    Point3="97.5,4" />
+                    Point1="0,-51.5"
+                    Point2="0,-55.5"
+                    Point3="4,-55.5" />
                   <mssgle:LineSegment
-                    End="97.5,10" />
+                    End="434,-55.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="97.5,10"
-                    Point2="97.5,14"
-                    Point3="101.5,14" />
+                    Point1="434,-55.5"
+                    Point2="438,-55.5"
+                    Point3="438,-59.5" />
                   <mssgle:LineSegment
-                    End="187.5,14" />
+                    End="438,-103.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10687,7 +11912,7 @@ WHERE
         <NodeLayout
           Size="163,42"
           Id="Package\Comments Export"
-          TopLeft="65.5,361.5" />
+          TopLeft="54.5,280.5" />
         <NodeLayout
           Size="264,42"
           Id="Package\Portfolio Import to tbl_FFPDRSPortolios"
@@ -10695,14 +11920,48 @@ WHERE
         <NodeLayout
           Size="156,42"
           Id="Package\Portfolios Export"
-          TopLeft="57.5,194.5" />
+          TopLeft="56.5,137.5" />
         <NodeLayout
           Size="172,42"
           Id="Package\Transactions Export"
-          TopLeft="56.5,270.5" />
+          TopLeft="56.5,204.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="139,236.5">
+          TopLeft="134.5,179.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8,25"
+              Start="0,0"
+              End="8,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.5"
+                    Point2="0,12.5"
+                    Point3="4,12.5" />
+                  <mssgle:LineSegment
+                    End="4,12.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4,12.5"
+                    Point2="8,12.5"
+                    Point3="8,16.5" />
+                  <mssgle:LineSegment
+                    End="8,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="139.25,246.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10722,58 +11981,30 @@ WHERE
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="144.75,312.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,49"
-              Start="0,0"
-              End="0,41.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="177,42"
           Id="Package\Group Record Export"
-          TopLeft="62,88" />
+          TopLeft="53,68" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="137.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="13,40.5"
+              EndConnector="92.5,41.5"
               Start="0,0"
-              End="13,33">
+              End="85,41.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.25" />
+                    End="0,37.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.25"
-                    Point2="0,20.25"
-                    Point3="4,20.25" />
+                    Point1="0,37.5"
+                    Point2="0,41.5"
+                    Point3="4,41.5" />
                   <mssgle:LineSegment
-                    End="9,20.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="9,20.25"
-                    Point2="13,20.25"
-                    Point3="13,24.25" />
-                  <mssgle:LineSegment
-                    End="13,33" />
+                    End="85,41.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10784,30 +12015,70 @@ WHERE
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="150.5,130">
+          TopLeft="138,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-15,64.5"
+              EndConnector="0,27.5"
               Start="0,0"
-              End="-15,57">
+              End="0,20">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.25"
-                    Point2="0,32.25"
-                    Point3="-4,32.25" />
+                    End="0,20" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="143,42"
+          Id="Package\STATS Export"
+          TopLeft="68,347" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Pledge Export"
+          TopLeft="71,423.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="141.25,389">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.5"
+              Start="0,0"
+              End="0,27">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-11,32.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-11,32.25"
-                    Point2="-15,32.25"
-                    Point3="-15,36.25" />
+                    End="0,27" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="137.75,322.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24.5"
+              Start="0,0"
+              End="0,17">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-15,57" />
+                    End="0,17" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10821,10 +12092,10 @@ WHERE
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="282,496"
-          Size="282,539"
+          PanelSize="275,477"
+          Size="275,520"
           Id="396ab4d5-b440-411a-b6bb-775395dfea39"
-          TopLeft="432.5,18.5">
+          TopLeft="432.5,86.5">
           <GroupLayout.ChildrenIds>
             <s:String>Package\Comments Export</s:String>
             <s:String>Package\Portfolio Import to tbl_FFPDRSPortolios</s:String>
@@ -10835,6 +12106,10 @@ WHERE
             <s:String>Package\Group Record Export</s:String>
             <s:String>Package.PrecedenceConstraints[Constraint]</s:String>
             <s:String>Package.PrecedenceConstraints[Constraint 4]</s:String>
+            <s:String>Package\STATS Export</s:String>
+            <s:String>Package\Pledge Export</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 5]</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 6]</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
       </GraphLayout>
@@ -10892,7 +12167,7 @@ WHERE
     design-time-name="Package\Group Record Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Group Record Export\OLE DB Source"
@@ -10920,7 +12195,9 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10935,10 +12212,70 @@ WHERE
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\Pledge Export">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="115,42"
+          Id="Package\Pledge Export\Pledges"
+          TopLeft="265,36" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Pledge Export\OLE DB Source"
+          TopLeft="49,47" />
+        <EdgeLayout
+          Id="Package\Pledge Export.Paths[OLE DB Source Output]"
+          TopLeft="199,68">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="66,-11"
+              Start="0,0"
+              End="58.5,-11">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="29,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="29,0"
+                    Point2="33,0"
+                    Point3="33,-4" />
+                  <mssgle:LineSegment
+                    End="33,-7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33,-7"
+                    Point2="33,-11"
+                    Point3="37,-11" />
+                  <mssgle:LineSegment
+                    End="58.5,-11" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Pledge Export\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Portfolio Import to tbl_FFPDRSPortolios">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="171,42"
           Id="Package\Portfolio Import to tbl_FFPDRSPortolios\OLE DB Destination"
@@ -10978,7 +12315,9 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11009,7 +12348,7 @@ WHERE
     design-time-name="Package\Portfolios Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,42"
           Id="Package\Portfolios Export\Flat File Destination"
@@ -11037,7 +12376,9 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11052,10 +12393,68 @@ WHERE
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Transactions Export">
+    design-time-name="Package\STATS Export">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="102,42"
+          Id="Package\STATS Export\Stats"
+          TopLeft="257,40" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\STATS Export\OLE DB Source"
+          TopLeft="49,52" />
+        <EdgeLayout
+          Id="Package\STATS Export.Paths[OLE DB Source Output]"
+          TopLeft="199,73">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58,-12"
+              Start="0,0"
+              End="50.5,-12">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="25,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25,0"
+                    Point2="29,0"
+                    Point3="29,-4" />
+                  <mssgle:LineSegment
+                    End="29,-8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="29,-8"
+                    Point2="29,-12"
+                    Point3="33,-12" />
+                  <mssgle:LineSegment
+                    End="50.5,-12" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\STATS Export\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Transactions Export">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Transactions Export\OLE DB Source"
@@ -11083,7 +12482,9 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

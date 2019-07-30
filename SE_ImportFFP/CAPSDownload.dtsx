@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/15/2019 9:51:58 AM"
@@ -7,12 +7,12 @@
   DTS:CreatorName="FFP\danielruiz"
   DTS:DTSID="{67F0C53C-25A7-43A7-96F3-278C0DEF3556}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1100.123"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
   DTS:LocaleID="1033"
   DTS:ObjectName="CAPSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="38"
-  DTS:VersionGUID="{49C5B02B-64A3-4899-85A5-C55DFEEDC8ED}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{416C4F0E-119F-41DD-9F93-5632FDEBBAF4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUpKsldgF80+ddYRTUj6dHwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADYVxVLM0iEMNJ7xF9Qyt8FAAAAAASAAACgAAAAEAAAAJKeTADl151av97WMWzLVXMYAAAA8E7iEForOiOSJckg1n+XDT9X30HtFtdEFAAAACMLz3BP8ODuVn1R8w6951nFoUpj</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn6jVveENHkuveuvQSHuOSAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB1rF18+pFatqoqDtbuQEirAAAAAASAAACgAAAAEAAAAFU9cXBQI9xUrsMXO1lxoIcYAAAAMi9iXQ90qqEHhPtrPv9knlfJUkcZoPMHFAAAAH7Im8mOwurv5kQOPIDrDmpsGR6B</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -129,7 +129,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{609198EA-FB0D-45CD-B55B-97933E52EF00}"
-          SQLTask:SqlStatementSource="SELECT top 1 &#xA; * &#xA;FROM P04cSourceCodes P04c (NOLOCK)&#xA;LEFT JOIN T04_GiftDetails T04 (NOLOCK) ON T04.SourceCode = P04c.SourceCode &#xA;LEFT JOIN T01_TransactionMaster T01 (NOLOCK) ON T01.DocumentNumber = T04.DocumentNumber&#xA;JOIN P04_SourceCodesMaster P04 (NOLOCK) ON P04.SourceCode = P04c.SourceCode&#xA;OUTER APPLY&#xA;       (SELECT TOP 1 P04c2.CodeValue                                                            &#xA;&#x9;&#x9;FROM P04cSourceCodes P04c2 WITH (NOLOCK) &#xA;&#x9;&#x9;WHERE P04c2.SourceCode = P04c.SourceCode and CodeType =  'GFTCOD'&#xA;       ) SEL1&#xA;WHERE P04c.CodeType = 'DEPCOD' &#xA;  AND P04c.CodeValue IN('30.000','65.000')&#xA;  AND SEL1.CodeValue NOT IN('PA', 'HO', 'EX', 'SJ', 'CH')"
+          SQLTask:SqlStatementSource="SELECT top 1 &#xA; * &#xA;FROM P04cSourceCodes P04c WITH (NOLOCK)&#xA;LEFT JOIN T04_GiftDetails T04 WITH (NOLOCK) ON T04.SourceCode = P04c.SourceCode &#xA;LEFT JOIN T01_TransactionMaster T01 WITH (NOLOCK) ON T01.DocumentNumber = T04.DocumentNumber&#xA;JOIN P04_SourceCodesMaster P04 (NOLOCK) ON P04.SourceCode = P04c.SourceCode&#xA;OUTER APPLY&#xA;       (SELECT TOP 1 P04c2.CodeValue                                                            &#xA;&#x9;&#x9;FROM P04cSourceCodes P04c2 WITH (NOLOCK) &#xA;&#x9;&#x9;WHERE P04c2.SourceCode = P04c.SourceCode and CodeType =  'GFTCOD'&#xA;       ) SEL1&#xA;WHERE P04c.CodeType = 'DEPCOD' &#xA;  AND P04c.CodeValue IN('30.000','65.000')&#xA;  AND SEL1.CodeValue NOT IN('PA', 'HO', 'EX', 'SJ', 'CH')"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
             SQLTask:ResultName="0"
@@ -305,10 +305,10 @@ SELECT
    , '"'+P04.[Description]+'"' AS 'Description' 
    ,isnull(T04.TotalAmount,0) AS 'GiftAmount'
    , isnull(T01.[Date],'') AS 'Last Gift Date'	
-FROM P04cSourceCodes P04c (NOLOCK)
-LEFT JOIN T04_GiftDetails T04 (NOLOCK) ON T04.SourceCode = P04c.SourceCode 
-LEFT JOIN T01_TransactionMaster T01 (NOLOCK) ON T01.DocumentNumber = T04.DocumentNumber
-JOIN P04_SourceCodesMaster P04 (NOLOCK) ON P04.SourceCode = P04c.SourceCode
+FROM P04cSourceCodes P04c WITH (NOLOCK)
+LEFT JOIN T04_GiftDetails T04 WITH (NOLOCK) ON T04.SourceCode = P04c.SourceCode 
+LEFT JOIN T01_TransactionMaster T01 WITH (NOLOCK) ON T01.DocumentNumber = T04.DocumentNumber
+JOIN P04_SourceCodesMaster P04 WITH (NOLOCK) ON P04.SourceCode = P04c.SourceCode
 OUTER APPLY
        (SELECT TOP 1 P04c2.CodeValue                                                            /* SELECT SOURCE CODE WORKER */
 		FROM P04cSourceCodes P04c2 WITH (NOLOCK) 
