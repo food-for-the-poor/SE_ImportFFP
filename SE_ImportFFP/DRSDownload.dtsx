@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="203"
-  DTS:VersionGUID="{C205AA3E-670A-49CF-8888-6F871952543A}">
+  DTS:VersionBuild="206"
+  DTS:VersionGUID="{13255BEB-4D15-4D09-858C-B3A32DCC53E2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -190,97 +190,97 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="20"
               DTS:TextQualified="True"
-              DTS:ObjectName="Donor Number"
-              DTS:DTSID="{D70E9F82-36CC-42E9-A361-4346CFFEAFA3}"
+              DTS:ObjectName="Column0"
+              DTS:DTSID="{2620E4E9-B045-466E-9BF6-693D3B06B64E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="1"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Pledge Type"
-              DTS:DTSID="{C2A287FF-ED31-4597-A602-6080AFDC68E0}"
+              DTS:ObjectName="Column1"
+              DTS:DTSID="{ED169AD6-AD06-4AD8-AA15-6A36D1561F22}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Pledge Code"
-              DTS:DTSID="{34DD4FEC-113F-4FEC-B292-D445F5B6E7FC}"
+              DTS:ObjectName="Column2"
+              DTS:DTSID="{4D5FBFED-6FBC-40B9-B218-7EE7E8CF89D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Beginning Date"
-              DTS:DTSID="{9F0AF280-0EA0-49A9-B852-C872910DE0F6}"
+              DTS:ObjectName="Column3"
+              DTS:DTSID="{F0EE4924-7C4A-46DC-83CC-6532A16C10DA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Ending Date"
-              DTS:DTSID="{3877F4BF-C0A2-43EF-AFAC-390EE04DFD37}"
+              DTS:ObjectName="Column4"
+              DTS:DTSID="{B73DA6E9-42D7-4C40-B139-60D3CF658FA0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Last Pymt Date"
-              DTS:DTSID="{2E93AC6C-2158-4C93-966C-83DA19A4C4DE}"
+              DTS:ObjectName="Column5"
+              DTS:DTSID="{7CE70D19-E030-4BA1-ABFF-3792B48176C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="Amount Paid"
-              DTS:DTSID="{231C3935-50BA-4945-BCEE-2CB982E12321}"
+              DTS:ObjectName="Column6"
+              DTS:DTSID="{9F2C84EC-E0E6-42CD-8794-6E1E014E24DC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="Total Pledge"
-              DTS:DTSID="{3FE4C5AF-6473-4686-8D87-4974D321023E}"
+              DTS:ObjectName="Column7"
+              DTS:DTSID="{846AB67B-43D2-45B8-B26A-317C1D6F21D6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="AmountPerGift"
-              DTS:DTSID="{81AC560C-F0D5-4519-A4BC-829A6626F3A2}"
+              DTS:ObjectName="Column8"
+              DTS:DTSID="{FF191FDC-7037-4E07-AE41-8CFBBECA2D07}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="6"
               DTS:TextQualified="True"
-              DTS:ObjectName="Remaining Amount"
-              DTS:DTSID="{04FDBBD6-B5E8-4B22-A239-DFF37DFF71A0}"
+              DTS:ObjectName="Column9"
+              DTS:DTSID="{5B012301-95BC-4DF4-8D34-2088303B3339}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Bill Cycle"
-              DTS:DTSID="{876F8BC3-1BC5-4BAD-A9F5-34AC6B434238}"
+              DTS:ObjectName="Column10"
+              DTS:DTSID="{2D1FFD5C-1FBA-4F4A-8CC0-9217C8C6EAE7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -288,8 +288,8 @@
               DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="PledgeStatus"
-              DTS:DTSID="{E5C10B3E-9B63-4D88-B164-591573BEE51E}"
+              DTS:ObjectName="Column11"
+              DTS:DTSID="{C9E01762-0D1D-4320-B13C-0BF5EBB1C32E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1191,46 +1191,46 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="20"
               DTS:TextQualified="True"
-              DTS:ObjectName="DonorNum"
-              DTS:DTSID="{D4D24CAB-A46A-4236-BCF2-F6D291690E0B}"
+              DTS:ObjectName="Column0"
+              DTS:DTSID="{8CCB3FFF-FFC4-4F69-9939-D472337D66C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:DataType="20"
               DTS:TextQualified="True"
-              DTS:ObjectName="SourceCode"
-              DTS:DTSID="{C1168542-F535-41CC-8CED-C7818CDB201C}"
+              DTS:ObjectName="Column1"
+              DTS:DTSID="{690F34BA-FBC9-41C2-891C-C2A156F97A61}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="40"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="SCDescription"
-              DTS:DTSID="{A6A433B3-B33F-4C8F-9064-CC3DB0FC7E66}"
+              DTS:ObjectName="Column2"
+              DTS:DTSID="{7F76B62B-D8E1-443E-8C6E-ED03A6597249}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="70"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="EventCode"
-              DTS:DTSID="{550E5DE3-AE51-4B5E-A0E1-F17E6505988D}"
+              DTS:ObjectName="Column3"
+              DTS:DTSID="{A6CC1F10-FA1E-4D59-BE17-E8F0EDEEDC24}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="10"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="DropDate"
-              DTS:DTSID="{22BD3A96-4585-4C02-8D95-0D169DCBA342}"
+              DTS:ObjectName="Column4"
+              DTS:DTSID="{780AB907-DE5C-4376-AA5B-3BEA913F8FE0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1238,8 +1238,8 @@
               DTS:MaximumWidth="2"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="Department"
-              DTS:DTSID="{155B5B5D-D751-4CF9-8D43-1F47D141EC8F}"
+              DTS:ObjectName="Column5"
+              DTS:DTSID="{C5B05D7F-F597-4F5B-82E2-4058EB80D99E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -2871,7 +2871,7 @@ order by SELA10.EndDate</property>
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether the data will overwrite or append to the destination file."
-                  name="Overwrite">false</property>
+                  name="Overwrite">true</property>
                 <property
                   dataType="System.Null"
                   description="Specifies the text to write to the destination file before any data is written."
@@ -2899,7 +2899,7 @@ order by SELA10.EndDate</property>
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Donor Number]"
                       cachedDataType="i8"
                       cachedName="Donor Number"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Donor Number]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column0]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Donor Number]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Pledge Type]"
@@ -2907,7 +2907,7 @@ order by SELA10.EndDate</property>
                       cachedDataType="str"
                       cachedLength="1"
                       cachedName="Pledge Type"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Pledge Type]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column1]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pledge Type]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Pledge Code]"
@@ -2915,7 +2915,7 @@ order by SELA10.EndDate</property>
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Pledge Code"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Pledge Code]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column2]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pledge Code]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Beginning Date]"
@@ -2923,7 +2923,7 @@ order by SELA10.EndDate</property>
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Beginning Date"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Beginning Date]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column3]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Beginning Date]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Ending Date]"
@@ -2931,7 +2931,7 @@ order by SELA10.EndDate</property>
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Ending Date"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Ending Date]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column4]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Ending Date]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Last Pymt Date]"
@@ -2939,31 +2939,31 @@ order by SELA10.EndDate</property>
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Last Pymt Date"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Last Pymt Date]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column5]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Last Pymt Date]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Amount Paid]"
                       cachedDataType="cy"
                       cachedName="Amount Paid"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Amount Paid]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column6]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Amount Paid]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Total Pledge]"
                       cachedDataType="cy"
                       cachedName="Total Pledge"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Total Pledge]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column7]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Total Pledge]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[AmountPerGift]"
                       cachedDataType="cy"
                       cachedName="AmountPerGift"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[AmountPerGift]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column8]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[AmountPerGift]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Remaining Amount]"
                       cachedDataType="cy"
                       cachedName="Remaining Amount"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Remaining Amount]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column9]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Remaining Amount]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[Bill Cycle]"
@@ -2971,7 +2971,7 @@ order by SELA10.EndDate</property>
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Bill Cycle"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Bill Cycle]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column10]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Bill Cycle]" />
                     <inputColumn
                       refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].Columns[PledgeStatus]"
@@ -2979,73 +2979,73 @@ order by SELA10.EndDate</property>
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="PledgeStatus"
-                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[PledgeStatus]"
+                      externalMetadataColumnId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column11]"
                       lineageId="Package\Pledge Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[PledgeStatus]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Donor Number]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column0]"
                       dataType="i8"
-                      name="Donor Number" />
+                      name="Column0" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Pledge Type]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column1]"
                       codePage="1252"
                       dataType="str"
                       length="1"
-                      name="Pledge Type" />
+                      name="Column1" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Pledge Code]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column2]"
                       codePage="1252"
                       dataType="str"
                       length="10"
-                      name="Pledge Code" />
+                      name="Column2" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Beginning Date]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column3]"
                       codePage="1252"
                       dataType="str"
                       length="10"
-                      name="Beginning Date" />
+                      name="Column3" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Ending Date]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column4]"
                       codePage="1252"
                       dataType="str"
                       length="10"
-                      name="Ending Date" />
+                      name="Column4" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Last Pymt Date]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column5]"
                       codePage="1252"
                       dataType="str"
                       length="10"
-                      name="Last Pymt Date" />
+                      name="Column5" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Amount Paid]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column6]"
                       dataType="cy"
-                      name="Amount Paid" />
+                      name="Column6" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Total Pledge]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column7]"
                       dataType="cy"
-                      name="Total Pledge" />
+                      name="Column7" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[AmountPerGift]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column8]"
                       dataType="cy"
-                      name="AmountPerGift" />
+                      name="Column8" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Remaining Amount]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column9]"
                       dataType="cy"
-                      name="Remaining Amount" />
+                      name="Column9" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Bill Cycle]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column10]"
                       codePage="1252"
                       dataType="str"
                       length="10"
-                      name="Bill Cycle" />
+                      name="Column10" />
                     <externalMetadataColumn
-                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[PledgeStatus]"
+                      refId="Package\Pledge Export\Pledges.Inputs[Flat File Destination Input].ExternalColumns[Column11]"
                       codePage="1252"
                       dataType="str"
                       length="10"
-                      name="PledgeStatus" />
+                      name="Column11" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -11025,13 +11025,13 @@ WHERE P04C.CodeType = 'DEPCOD'</property>
                       refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[DonorNum]"
                       cachedDataType="i8"
                       cachedName="DonorNum"
-                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[DonorNum]"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column0]"
                       lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DonorNum]" />
                     <inputColumn
                       refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[SourceCode]"
                       cachedDataType="i8"
                       cachedName="SourceCode"
-                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[SourceCode]"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column1]"
                       lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[SourceCode]" />
                     <inputColumn
                       refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[SCDescription]"
@@ -11039,7 +11039,7 @@ WHERE P04C.CodeType = 'DEPCOD'</property>
                       cachedDataType="str"
                       cachedLength="40"
                       cachedName="SCDescription"
-                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[SCDescription]"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column2]"
                       lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[SCDescription]" />
                     <inputColumn
                       refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[EventCode]"
@@ -11047,7 +11047,7 @@ WHERE P04C.CodeType = 'DEPCOD'</property>
                       cachedDataType="str"
                       cachedLength="70"
                       cachedName="EventCode"
-                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[EventCode]"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column3]"
                       lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[EventCode]" />
                     <inputColumn
                       refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[DropDate]"
@@ -11055,7 +11055,7 @@ WHERE P04C.CodeType = 'DEPCOD'</property>
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="DropDate"
-                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[DropDate]"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column4]"
                       lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[DropDate]" />
                     <inputColumn
                       refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].Columns[Department]"
@@ -11063,43 +11063,43 @@ WHERE P04C.CodeType = 'DEPCOD'</property>
                       cachedDataType="str"
                       cachedLength="2"
                       cachedName="Department"
-                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Department]"
+                      externalMetadataColumnId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column5]"
                       lineageId="Package\STATS Export\OLE DB Source.Outputs[OLE DB Source Output].Columns[Department]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[DonorNum]"
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column0]"
                       dataType="i8"
-                      name="DonorNum" />
+                      name="Column0" />
                     <externalMetadataColumn
-                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[SourceCode]"
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column1]"
                       dataType="i8"
-                      name="SourceCode" />
+                      name="Column1" />
                     <externalMetadataColumn
-                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[SCDescription]"
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column2]"
                       codePage="1252"
                       dataType="str"
                       length="40"
-                      name="SCDescription" />
+                      name="Column2" />
                     <externalMetadataColumn
-                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[EventCode]"
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column3]"
                       codePage="1252"
                       dataType="str"
                       length="70"
-                      name="EventCode" />
+                      name="Column3" />
                     <externalMetadataColumn
-                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[DropDate]"
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column4]"
                       codePage="1252"
                       dataType="str"
                       length="10"
-                      name="DropDate" />
+                      name="Column4" />
                     <externalMetadataColumn
-                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Department]"
+                      refId="Package\STATS Export\Stats.Inputs[Flat File Destination Input].ExternalColumns[Column5]"
                       codePage="1252"
                       dataType="str"
                       length="2"
-                      name="Department" />
+                      name="Column5" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -12215,49 +12215,35 @@ WHERE
     design-time-name="Package\Pledge Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="115,42"
-          Id="Package\Pledge Export\Pledges"
-          TopLeft="265,36" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
           Id="Package\Pledge Export\OLE DB Source"
           TopLeft="49,47" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\Pledge Export\Pledges"
+          TopLeft="255,53" />
         <EdgeLayout
           Id="Package\Pledge Export.Paths[OLE DB Source Output]"
-          TopLeft="199,68">
+          TopLeft="199,71">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="66,-11"
+              EndConnector="56,0"
               Start="0,0"
-              End="58.5,-11">
+              End="48.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="29,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29,0"
-                    Point2="33,0"
-                    Point3="33,-4" />
-                  <mssgle:LineSegment
-                    End="33,-7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="33,-7"
-                    Point2="33,-11"
-                    Point3="37,-11" />
-                  <mssgle:LineSegment
-                    End="58.5,-11" />
+                    End="48.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
