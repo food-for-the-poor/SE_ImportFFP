@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="209"
-  DTS:VersionGUID="{D0970E4A-70B0-4653-B9E7-611E558D216C}">
+  DTS:VersionBuild="211"
+  DTS:VersionGUID="{5223F7EA-0610-4789-9963-B1354F94E1DE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -8320,7 +8320,7 @@ SELECT DISTINCT
 	A03.City AS  DCITY,
 	A03.[State] AS  DSTATE,
 	left(A03.ZipPostal,5) AS  DZIP,
-	right(A03.ZipPostal,4) AS  DZIP4,
+	CASE WHEN LEN(A03.ZipPostal)&gt;5 and A03.Country = 'USA' THEN right(A03.ZipPostal,4) ELSE '' END AS  DZIP4,
 	isnull(PhoneCodeSEL.AreaCode,'') AS  AREACODE,
 	isnull(PhoneCodeSEL.PhoneNumber,'') AS  PHONE,
 	isnull(AcctCodes.MAILSTAT,' ') AS  DMAILS,	
@@ -12338,7 +12338,7 @@ WHERE
     design-time-name="Package\Portfolios Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,42"
           Id="Package\Portfolios Export\Flat File Destination"
@@ -12366,9 +12366,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
