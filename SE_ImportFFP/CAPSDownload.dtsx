@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="CAPSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{416C4F0E-119F-41DD-9F93-5632FDEBBAF4}">
+  DTS:VersionBuild="49"
+  DTS:VersionGUID="{C07EDA5C-8E28-4781-8E5D-0DA6078D0E16}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAn6jVveENHkuveuvQSHuOSAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB1rF18+pFatqoqDtbuQEirAAAAAASAAACgAAAAEAAAAFU9cXBQI9xUrsMXO1lxoIcYAAAAMi9iXQ90qqEHhPtrPv9knlfJUkcZoPMHFAAAAH7Im8mOwurv5kQOPIDrDmpsGR6B</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZL901nwO8UKpSDRImuJqywAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABsYl530H82e26QMCW8A8IFAAAAAASAAACgAAAAEAAAAHNdvxI6vEjLH8O+i+Nu1IgYAAAA5nPxyoL25uwP5eeX+bxqqUHlbYn5Lxe9FAAAAKl8Cwa3tc4b4+cwz9dQ4aqiF3Iv</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -93,6 +93,19 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Dest]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{536C02B2-2C7C-45E3-9735-92FADB43C64A}"
+      DTS:ObjectName="Dest">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::Dest]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\Backup\SRCCODEDownload20190927.CSV" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SMTPConn]"
       DTS:CreationName="SMTP"
       DTS:Description="Connection to Send Emails"
@@ -107,6 +120,37 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{7B4E434F-64F5-473F-B8DA-42FFC30A59F1}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::FilePath]+&quot;SRCCODEDownload&quot;+ @[User::TimeStamp]+&quot;.CSV&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Dest">
+      <DTS:VariableValue
+        DTS:DataType="8">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\Backup\SRCCODEDownload20190927.CSV</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{67BCF42B-043D-469C-AC58-078D88DA08B7}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\Backup\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F565F0D2-F231-4F58-BAF8-16332B1BDC89}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="REPLACE((DT_WSTR, 10)(DT_DBDATE)GETDATE(),&quot;-&quot;,&quot;&quot;)"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="TimeStamp">
+      <DTS:VariableValue
+        DTS:DataType="8">20190927</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{3D7E572A-BE75-4E3F-B123-F62A5B0D36BD}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
@@ -116,6 +160,22 @@
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Archive Backup"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="File System Task"
+      DTS:DTSID="{6c824711-1561-47e8-a020-845628a4e682}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Archive Backup"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskSourcePath="{EB9BBC9E-EF71-4C69-9498-775D34CDF0E5}"
+          TaskDestinationPath="{536C02B2-2C7C-45E3-9735-92FADB43C64A}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Check if any records to export"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
@@ -533,6 +593,14 @@ ORDER BY SRCDownload.SourceCode</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Gift Data update" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{BC87BE3E-5FDB-4100-8452-EE56FD6A62A1}"
+      DTS:From="Package\Archive Backup"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Check if any records to export" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -549,85 +617,111 @@ ORDER BY SRCDownload.SourceCode</property>
         <NodeLayout
           Size="221,42"
           Id="Package\Check if any records to export"
-          TopLeft="81,59" />
+          TopLeft="207,119" />
         <NodeLayout
           Size="249,42"
           Id="Package\Email notification nothing processed"
-          TopLeft="48,173" />
+          TopLeft="152,262" />
         <NodeLayout
           Size="157,42"
           Id="Package\Gift Data update"
-          TopLeft="378,160" />
+          TopLeft="485,250" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="191.5,101">
+          TopLeft="279.25,161">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-19,72"
+              EndConnector="0,101"
               Start="0,0"
-              End="-19,64.5">
+              End="0,93.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32"
-                    Point2="0,36"
-                    Point3="-4,36" />
-                  <mssgle:LineSegment
-                    End="-15,36" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-15,36"
-                    Point2="-19,36"
-                    Point3="-19,40" />
-                  <mssgle:LineSegment
-                    End="-19,64.5" />
+                    End="0,93.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-17.5,41,16,16"
+              BoundingBox="-8,38.75,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="227,101">
+          TopLeft="353,161">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="229.5,59"
+              EndConnector="210.5,89"
               Start="0,0"
-              End="229.5,51.5">
+              End="210.5,81.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.8544474393531" />
+                    End="0,31.9838274932615" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.8544474393531"
-                    Point2="0,23.8544474393531"
-                    Point3="4,23.8544474393531" />
+                    Point1="0,31.9838274932615"
+                    Point2="0,35.9838274932615"
+                    Point3="4,35.9838274932615" />
                   <mssgle:LineSegment
-                    End="225.5,23.8544474393531" />
+                    End="206.5,35.9838274932615" />
                   <mssgle:CubicBezierSegment
-                    Point1="225.5,23.8544474393531"
-                    Point2="229.5,23.8544474393531"
-                    Point3="229.5,27.8544474393531" />
+                    Point1="206.5,35.9838274932615"
+                    Point2="210.5,35.9838274932615"
+                    Point3="210.5,39.9838274932615" />
                   <mssgle:LineSegment
-                    End="229.5,51.5" />
+                    End="210.5,81.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="106.75,28.8544474393531,16,16"
+              BoundingBox="97.25,40.9838274932615,16,16"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Archive Backup"
+          TopLeft="146,22" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="221.5,64">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96,55"
+              Start="0,0"
+              End="96,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="4,27.5" />
+                  <mssgle:LineSegment
+                    End="92,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="92,27.5"
+                    Point2="96,27.5"
+                    Point3="96,31.5" />
+                  <mssgle:LineSegment
+                    End="96,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
