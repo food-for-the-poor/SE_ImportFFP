@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">INF-DR</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZL901nwO8UKpSDRImuJqywAAAAACAAAAAAADZgAAwAAAABAAAAByNGl3+93CkXow9fEkLxuzAAAAAASAAACgAAAAEAAAACPsjxxF0hsZt5LgUmYmgTaIAAAAzndaGwfqwuhb02QoMvW7MheJzmEBQeOY4i3K5KGAdq42CilRQy3KzYpNpJ+gDTbCM1txlIyyTgX/b1nVau6lr7irpKrhKNHpnhlGhXQwqGZbl7FxMwAZ+KcfQxWRwcRxQtlRpmctezspBuyP0rq0ctS1jk6yu2bPFlRo2kI9Lbj4co080vtYxRQAAABs/gDET6cH8CKJrms+/P2EPxPeVQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZL901nwO8UKpSDRImuJqywAAAAACAAAAAAADZgAAwAAAABAAAAA4LgRqZpkJ7wtFDrKO2l5HAAAAAASAAACgAAAAEAAAAGh3LsmxW5JaWvP2oAAJMrOIAAAAdgP28SPty9sGQLQHF/3+zHgvAKvKrZW+VEDEgNRRxwhBzaBngida6zHb5o5JJaV5WlAHmT2PqSslznEFPFvFM0Pihpx0RjfmLbr/ui/s0+RnpnnHXrHiFjAzoxovlvO4Z1ip5HivCuJFbj9MWGnf87MDdJ7oAPSj1pUTW620S7C3xamrdFG+SxQAAABvQBdzyC/cJQFnASVuT1u5s5+o0w==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -51,10 +51,10 @@
                 <SSIS:Property SSIS:Name="Name">CAPSUpload</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">113</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">116</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{18058736-5C06-440F-B934-2D15A452854F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CD0ADDF9-4BDC-4CB0-AC86-EC51BA3BF77A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -132,7 +132,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\TABSRCUpload.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\TABSRCUploadtest.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -751,8 +751,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

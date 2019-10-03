@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="211"
-  DTS:VersionGUID="{5223F7EA-0610-4789-9963-B1354F94E1DE}">
+  DTS:VersionBuild="212"
+  DTS:VersionGUID="{BEE5B7C1-DFDB-4CA1-8EB2-2BD2C126F7CE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1518,8 +1518,7 @@
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="1033"
-              name="Comments"
-              version="1">
+              name="Comments">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -1717,7 +1716,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">WITH ConvComms
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">WITH ConvComms
 AS
 
 (
@@ -2167,8 +2166,7 @@ ORDER by CCOMDT DESC</property>
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="1033"
-              name="Flat File Destination"
-              version="1">
+              name="Flat File Destination">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -2281,7 +2279,7 @@ ORDER by CCOMDT DESC</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT 
 A01.AccountNumber
 ,A01.FamilyID
 ,CASE WHEN A01.FamilyMemberType = 'SP' THEN 'SPOUSE'
@@ -2497,7 +2495,7 @@ or (A01.AccountType = 'O' and A01.FamilyMemberType = 'CN'))</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">with T 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">with T 
 as 
 
 (
@@ -2868,8 +2866,7 @@ order by SELA10.EndDate</property>
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="1033"
-              name="Pledges"
-              version="1">
+              name="Pledges">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -3103,7 +3100,7 @@ order by SELA10.EndDate</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4364,7 +4361,7 @@ order by SELA10.EndDate</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT
 	A01.AccountNumber AS  DONORNBR, 
 	isnull(FP07.[EventCode],'') AS  MEVENT,
 	isnull(x04.Description,'') AS  WKNAME,
@@ -6941,8 +6938,7 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="1033"
-              name="Flat File Destination"
-              version="1">
+              name="Flat File Destination">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -8253,7 +8249,7 @@ where A01h.FunctionalCategory = 'DR' and A01h.Active = '1' and A01h.[Primary] = 
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">WITH DRDate
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">WITH DRDate
 AS
 
 (
@@ -10770,7 +10766,7 @@ AND (A06.UseAsPrimary is null or A06.UseAsPrimary = 1 )
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">WITH StastsData 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">WITH StastsData 
 AS 
 (
      SELECT  DonorNum
@@ -10996,8 +10992,7 @@ WHERE P04C.CodeType = 'DEPCOD'</property>
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="1033"
-              name="Stats"
-              version="1">
+              name="Stats">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -11159,12 +11154,12 @@ WHERE P04C.CodeType = 'DEPCOD'</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">with T 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">with T 
 as 
 
 (
 
-SELECT DISTINCT 
+SELECT 
 	DRSPORT.DonorNbr AS 'TRDOOR'
 	,T04.SourceCode AS 'TRNSRCCOD'
 	,P04.[Description] AS  'TRNSRCDSC'
@@ -11174,8 +11169,8 @@ SELECT DISTINCT
 	,' ' AS 'TRNGFTDATE'
 	,' ' AS 'TRNPRODATE'
 	,0 AS 'TRNCOUNT'
-	,T04.TotalAmount 'TRNAMT'
-	,format(T01.[Date],'MM/dd/yyyy') AS 'DTRNGFTDTE'
+	,SUM(T04.TotalAmount) 'TRNAMT'
+	,MAX(format(T01.[Date],'MM/dd/yyyy')) AS 'DTRNGFTDTE'
 
 	--,COALESCE(CONVERT(VARCHAR(10),D03.printdate,(101)), '') AS 'DTRNPRODTE' 	
 	,'' AS 'DTRNPRODTE'
@@ -11214,6 +11209,14 @@ WHERE
  P04C.CodeType = 'DEPCOD'
  --and DRSPORT.DonorNbr = '42394'
  --order by T01.[Date] desc 
+GROUP BY DRSPORT.DonorNbr
+,T04.SourceCode 
+,P04.[Description] 
+,SELA10.PledgeCode
+,SELBank.BankCode
+,P04C.CodeValue
+,t01.DocumentNumber
+
  )
  SELECT TRDOOR
  ,TRNSRCCOD
@@ -11582,8 +11585,7 @@ WHERE
               contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Destination"
               localeId="1033"
-              name="Transactions"
-              version="1">
+              name="Transactions">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -12442,7 +12444,7 @@ WHERE
     design-time-name="Package\Transactions Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,42"
           Id="Package\Transactions Export\OLE DB Source"
@@ -12470,9 +12472,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
