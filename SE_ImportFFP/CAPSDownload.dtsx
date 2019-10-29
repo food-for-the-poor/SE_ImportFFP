@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="CAPSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="70"
-  DTS:VersionGUID="{952A3319-88F2-4400-BF84-5FA4ECE1E4AB}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{0881D04A-EDB0-4D29-896A-E362F1DAAAC9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZL901nwO8UKpSDRImuJqywAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADZRlSBDJ4npRi8gb7zYKfPAAAAAASAAACgAAAAEAAAAMzADCjqvkPFyYKYLqPjh3kYAAAAmO53THbnkC+CnfOps1J6nPxOvzHBVftIFAAAAKnKTFC8jb+Cs8d32jtlXLONfT13</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZL901nwO8UKpSDRImuJqywAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAb7sBVtIVQ6HbJmuzXHlXdAAAAAASAAACgAAAAEAAAAD9PmyAvAhhzZoD6pWJofGAYAAAAuHjqCLkcJLez7THhwLo1OzlTJINs3Z0cFAAAAPXGSnbCLSU0NOfoXASGI3jBDJUf</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -164,7 +164,7 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:FileUsageType="1"
-          DTS:ConnectionString="\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\Backup\TxtSRCCODEDownload20191004.txt" />
+          DTS:ConnectionString="\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\Backup\TxtSRCCODEDownload20191018.txt" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -189,7 +189,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Dest">
       <DTS:VariableValue
-        DTS:DataType="8">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\Backup\TxtSRCCODEDownload20191004.txt</DTS:VariableValue>
+        DTS:DataType="8">\\oracle5\Users\Applications\VFP-DDSYNC\CAPS\Backup\TxtSRCCODEDownload20191018.txt</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -227,7 +227,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="TimeStamp">
       <DTS:VariableValue
-        DTS:DataType="8">20191004</DTS:VariableValue>
+        DTS:DataType="8">20191018</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -252,7 +252,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
-          TaskSourcePath="{EB9BBC9E-EF71-4C69-9498-775D34CDF0E5}"
+          TaskSourcePath="{e9d37f7a-d8f9-4894-80d8-6169922a1abf}"
           TaskDestinationPath="{536C02B2-2C7C-45E3-9735-92FADB43C64A}" />
       </DTS:ObjectData>
     </DTS:Executable>
