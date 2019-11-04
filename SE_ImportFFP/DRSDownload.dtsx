@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DRSDownload"
   DTS:PackageType="5"
-  DTS:VersionBuild="224"
-  DTS:VersionGUID="{4ACD42C4-741E-4EAB-9719-EA097F58D9D0}">
+  DTS:VersionBuild="225"
+  DTS:VersionGUID="{A38F1151-9BBF-466C-9733-9EB0CB9C23A2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -8458,7 +8458,7 @@ SELECT DISTINCT
 	isnull(FP07.FollowUpWeek,0) AS  DRMWNFUP,
 	DRWKWTP = case
 				when A01h.AssignedToAccessorId = 11837 then ''
-				when A01h.AssignedToAccessorId = 1339 then ''
+				when A01h.AssignedToAccessorId = 1339 then 'B'
 				when A01h.AssignmentType = 'SDA' then 'H'
 				when A01h.AssignmentType = 'DA' then 'P'
 				when A01h.AssignmentType = 'SCA' then 'M'
@@ -12428,7 +12428,7 @@ GROUP BY DRSPORT.DonorNbr
     design-time-name="Package\Portfolios Export">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150,45"
           Id="Package\Portfolios Export\OLE DB Source"
@@ -12456,9 +12456,7 @@ GROUP BY DRSPORT.DonorNbr
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
